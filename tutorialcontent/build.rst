@@ -1,2 +1,0 @@
-Heading: tutorialcontent/build.rst
-==================================

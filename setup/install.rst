@@ -1,2 +1,0 @@
-Heading: setup/install.rst
-==========================

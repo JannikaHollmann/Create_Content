@@ -1,2 +1,0 @@
-Heading: openscience/openscience.rst
-====================================
