@@ -13,7 +13,7 @@ chapters:
   - file: setup/install
   - file: setup/github
   - file: setup/bash
-  - file: setup/nbrader
+  - file: setup/nbgrader
 - file: tutorialcontent/create
 - file: tutorialcontent/aufbau
 - file: tutorialcontent/build
