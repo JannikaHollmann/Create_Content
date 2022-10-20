@@ -17,6 +17,7 @@ chapters:
 - file: tutorialcontent/aufbau
 - file: tutorialcontent/build
 - file: tutorialcontent/writing/writing
+  sections:
   - file: tutorialcontent/writing/cells
   - file: tutorialcontent/writing/styling
   - file: tutorialcontent/writing/links
@@ -24,6 +25,7 @@ chapters:
   - file: tutorialcontent/writing/material
   - file: tutorialcontent/writing/example
 - file: tutorialcontent/publishing/publishing
+  sections:
   - file: tutorialcontent/publishing/account
   - file: tutorialcontent/publishing/repo
   - file: tutorialcontent/publishing/gh-pages
