@@ -1,0 +1,36 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: intro/whyjb
+- file: intro/demo
+- file: setup/setup
+  sections:
+  - file: setup/miniconda
+  - file: setup/install
+  - file: setup/github
+  - file: setup/bash
+  - file: setup/nbgrader
+- file: tutorialcontent/create
+- file: tutorialcontent/aufbau
+- file: tutorialcontent/build
+- file: tutorialcontent/writing/writing
+  sections:
+  - file: tutorialcontent/writing/cells
+  - file: tutorialcontent/writing/styling
+  - file: tutorialcontent/writing/links
+  - file: tutorialcontent/writing/media
+  - file: tutorialcontent/writing/material
+  - file: tutorialcontent/writing/example
+- file: tutorialcontent/publishing/publishing
+  sections:
+  - file: tutorialcontent/publishing/account
+  - file: tutorialcontent/publishing/repo
+  - file: tutorialcontent/publishing/gh-pages
+- file: tutorialcontent/troubleshooting
+- file: tutorialcontent/nbgrader
+- file: coc/coc
+- file: openscience/openscience
+- file: add/add
