@@ -1,2 +1,0 @@
-Heading: tutorialcontent/troubleshooting.rst
-============================================

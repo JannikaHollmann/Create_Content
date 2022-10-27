@@ -1,2 +1,0 @@
-Heading: intro/demo.rst
-=======================
