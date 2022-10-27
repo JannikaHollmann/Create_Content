@@ -8,11 +8,10 @@ chapters:
 - file: intro/demo
 - file: setup/setup
   sections:
-  - file: setup/miniconda
   - file: setup/install
+  - file: setup/miniconda
   - file: setup/github
   - file: setup/bash
-  - file: setup/nbgrader
 - file: tutorialcontent/create
 - file: tutorialcontent/aufbau
 - file: tutorialcontent/build
