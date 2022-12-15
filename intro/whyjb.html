@@ -449,12 +449,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Why should you use Jupyter Books?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proprietary-software-works-great-for-me-why-should-i-consider-using-jupyter-book">
+   Proprietary software works great for me, why should I consider using Jupyter Book?
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -466,6 +495,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Why should you use Jupyter Books?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#proprietary-software-works-great-for-me-why-should-i-consider-using-jupyter-book">
+   Proprietary software works great for me, why should I consider using Jupyter Book?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -475,8 +522,13 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="why-should-you-use-jupyter-books">
 <h1>Why should you use Jupyter Books?<a class="headerlink" href="#why-should-you-use-jupyter-books" title="Permalink to this headline">#</a></h1>
-<p>There are countless ways of building a website, putting out content and deploying it on the web: If people want to publish videos they tend to go to Youtube or TikTok, for text they might send around slides or PDFs.</p>
-<p>Jupyter Book allows for an integration of various media types including Markdown/ text, slides, Images, videos, interactive code and more! plus</p>
+<p>There are countless ways of building a website, putting out content, and deploying it on the web: If people want to publish videos they tend to go to Youtube or TikTok, for text they might send around slides or PDFs.
+Of course, there are also platforms providing means to integrate multimodal resources. These, however, are oftentimes based on proprietary and non-opensource software.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="proprietary-software-works-great-for-me-why-should-i-consider-using-jupyter-book">
+<h1>Proprietary software works great for me, why should I consider using Jupyter Book?<a class="headerlink" href="#proprietary-software-works-great-for-me-why-should-i-consider-using-jupyter-book" title="Permalink to this headline">#</a></h1>
+<p>Great question! As stated earlier, we believe that digital literacy is one of the most important skills to possess in modern (research) environments.
+And while the usage of Jupyter Book allows for an integration of various media types including Markdown/ text, slides, Images, videos, interactive code, and more, another important benefit is the integration of other industry-standard, open-source tools, preparing students for real-world empirical work. While website-hosting and sharing of courses will be handled by GitHub, a local server system (JupyterHub) allows computationally-intense work on real datasets, regardless of a student’s resources. Furthermore, our framework allows for the integration of automatic grading (Using “nib grader).</p>
 </section>
 
     <script type="text/x-thebe-config">
