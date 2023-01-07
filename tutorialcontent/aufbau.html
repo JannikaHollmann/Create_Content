@@ -316,6 +316,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/aufbau.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -449,12 +478,30 @@ title="Print to PDF"
 <p>The structure of your book is based on a YAML file called _toc.yml, which contains the <em>Table of Contents</em>.
 In the simplest form, the _toc.yml looks like this:</p>
 <code>
-format: jb-book </p>
-root: index </p>
-chapters: </p>
-- file: path/to/chapter1 </p>
-- file: path/to/chapter2 </p>
-<code></section>
+format: jb-book
+root: index
+chapters:
+- file: path/to/chapter1
+- file: path/to/chapter2
+  sections:
+  - file: path/to/chapter2/section1
+</code><blockquote>
+<div><p><strong><code class="docutils literal notranslate"><span class="pre">format</span></code></strong></p>
+</div></blockquote>
+<p><em>Format</em> defines how the ToC will be interpreted. For many cases, <code class="docutils literal notranslate"><span class="pre">jb-book</span></code> will be the appropiate option. (other options and their usecases will be  described later.)</p>
+<blockquote>
+<div><p><strong><code class="docutils literal notranslate"><span class="pre">root</span></code></strong>
+<em>Root</em> defines the landing (aka first) page of your book. Paths that you define will be relative to the root.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong><code class="docutils literal notranslate"><span class="pre">chapters</span></code></strong>
+Contains a list of files.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong><code class="docutils literal notranslate"><span class="pre">file</span></code></strong>
+Path to the files that you want to include in your book. All the paths are relative to the root.</p>
+</div></blockquote>
+</section>
 
     <script type="text/x-thebe-config">
     {
