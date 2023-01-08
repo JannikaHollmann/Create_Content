@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Welcome! &#8212; Creating Content with Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>intro &#8212; Jupyter Book Tutorial</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -21,7 +20,7 @@
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -37,7 +36,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -52,7 +51,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Why should you use Jupyter Books?" href="whyjb.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,7 +94,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Creating Content with Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Jupyter Book Tutorial</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -106,26 +104,26 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Welcome!
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="whyjb.html">
-   Why should you use Jupyter Books?
+   why jupyter books?
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="demo.html">
-   Showcase Examples
+   demo
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../setup/setup.html">
-   Setup: Before Creating Content
+   setup
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -135,44 +133,39 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../setup/install.html">
-     Prerequisites
+     install
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../setup/miniconda.html">
-     Miniconda
+     miniconda
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../setup/github.html">
-     GitHub: Essential and Genius
+     github
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../setup/bash.html">
-     BASH, Terminal &amp; Shell
+     bash
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorialcontent/create.html">
-   Create Content
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../tutorialcontent/aufbau.html">
-   Structuring Books
+   Create
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorialcontent/build.html">
-   Build your Book
+   Build
   </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../tutorialcontent/writing/writing.html">
-   Creating Content
+   Writing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -182,12 +175,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/writing/cells.html">
-     Cells: Types and Usages
+     Cells
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/writing/styling.html">
-     Styling: The Look and Feel
+     Styling
     </a>
    </li>
    <li class="toctree-l2">
@@ -197,24 +190,19 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/writing/media.html">
-     Media: Images, Videos &amp; More
+     Media
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/writing/material.html">
-     Additional Material
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../tutorialcontent/writing/example.html">
-     Quick Example
+     Links
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../tutorialcontent/publishing/publishing.html">
-   Publishing: Getting the word out
+   Publishing
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -229,20 +217,15 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/publishing/repo.html">
-     What are Repositories?
+     Repositories
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorialcontent/publishing/gh-pages.html">
-     gh-pages: Quick and accessible
+     GitHub Pages
     </a>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../tutorialcontent/troubleshooting.html">
-   Troubleshooting
-  </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../tutorialcontent/nbgrader.html">
@@ -448,68 +431,23 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#digital-literacy">
-   Digital Literacy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome!</h1>
+                <h1>intro</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#digital-literacy">
-   Digital Literacy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -517,24 +455,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome">
-<h1>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this headline">#</a></h1>
-<p>Hello and welcome everyone to the introduction page for creating interactive content with “Jupyter Books”!</p>
-<p>As you read through the subsections of this website, you will gain insight on how to quickly create beatiful, easy-to-deploy and interactive content. While this tutorial was created with the goal of an integrated framework for digital education at Goethe University, this doesn’t limit the content to members of Goethe University: We utilize free, open-source software available to anyone.
-We believe that education should be available to as many people as possible, which is why diversity and accessiblity played major roles during the creation of this tutorial.</p>
-<section id="digital-literacy">
-<h2>Digital Literacy<a class="headerlink" href="#digital-literacy" title="Permalink to this headline">#</a></h2>
-<p>With the surge of progressively more available and interconnected data, <em>Digital Literacy</em> has become a skill integral in teaching, science, and everyday life. Digital Literacy is a term describing competencies of using modern information technology, managing information, thinking critically, and selecting and applicating these reasonably
-(Tang et al., 2016). These skills are not only relevant due to the increasing levels of complexity of science, limited access to resources, and intransparencies of digital infrastructures, but also nessessary for independent emperical research.
-Classic educational concepts are oftentimes not sufficiently equipped to convey what digital literacy entails.</p>
-<p>This project has the goal to better enable course instructors to leverage the benefits of interactive, flexible and open-source ressources in teaching students independent and self-regulated work based on real emperical data.</p>
-</section>
-<section id="id1">
-<h2><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-</section>
-<div class="toctree-wrapper compound">
+  <div class="tex2jax_ignore mathjax_ignore section" id="intro">
+<h1>intro<a class="headerlink" href="#intro" title="Permalink to this headline">#</a></h1>
 </div>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -563,13 +486,6 @@ Classic educational concepts are oftentimes not sufficiently equipped to convey 
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="whyjb.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Why should you use Jupyter Books?</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
