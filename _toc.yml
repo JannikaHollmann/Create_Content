@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: intro/whyjb
+- file: 
 - file: intro/demo
 - file: setup/setup
   sections:
@@ -30,6 +31,10 @@ chapters:
   - file: tutorialcontent/publishing/gh-pages
 - file: tutorialcontent/troubleshooting
 - file: tutorialcontent/nbgrader
-- file: coc/coc
+- file: ressources/info.md
+  sections:
+  - file: ressources/CoC.md
+  - file: ressources/dei.md
+  - file: ressources/questionnaires.md
 - file: openscience/openscience
 - file: add/add

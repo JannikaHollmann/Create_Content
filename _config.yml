@@ -1,14 +1,25 @@
+
+#######################################################################################
 # Book settings
+# Users are expected to override these values in their own `_config.yml` file.
 # Learn more at https://jupyterbook.org/customize/config.html
+title                       : "Creating educatinonal content with Jupyter Books"  # The title of the book. Will be placed in the left navbar.
+author                      : Felix Körber, Michael Ernst, Peer Herholz  # The author of the book
+copyright                   : "2020"  # Copyright year to be placed in the footer
+logo                        : "static/logo.png"  # A path to the book logo
+exclude_patterns            : []  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 
-title: Creating Content with Jupyter Book
-author: Goehte University
-logo: logo.png
 
+
+#######################################################################################
+# Execution settings
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
+
 execute:
-  execute_notebooks: force
+  execute_notebooks         : off  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  cache                     : ""  # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
+  exclude_patterns          : []  # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -16,14 +27,32 @@ latex:
     targetname: book.tex
 
 
+#######################################################################################
+# Launch button settings
+launch_buttons:
+  notebook_interface        : "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url             : "https://mybinder.org"  # The URL of the BinderHub (e.g., https://mybinder.org); needs to be adapted
+  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+
 # Information about where the book exists on the web
+# See also https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 repository:
   url: https://github.com/felixkoerber/jb/  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+
+#######################################################################################
+# HTML-specific settings
 html:
-  use_issues_button: true
-  use_repository_button: true
+  favicon                   : ""  # A path to a favicon image
+  use_edit_page_button      : True  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button     : True  # Whether to add a link to your repository button
+  use_issues_button         : True  # Whether to add an "open an issue" button
+  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_footer              : ""  # Will be displayed underneath the footer.
+  google_analytics_id       : ""  # A GA id that can be used to track book views.
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+  comments:
+    hypothesis: true
