@@ -30,10 +30,10 @@ chapters:
   - file: tutorialcontent/publishing/gh-pages
 - file: tutorialcontent/troubleshooting
 - file: tutorialcontent/nbgrader
-#- file: ressources/info
-#  sections:
-#  - file: ressources/CoC
-#  - file: ressources/dei
+- file: ressources/info
+  sections:
+  - file: ressources/CoC
+  - file: ressources/dei
 #  - file: ressources/questionnaires
 - file: openscience/openscience
 - file: add/add
