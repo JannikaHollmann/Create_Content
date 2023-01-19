@@ -1,4 +1,4 @@
-## Questionnaire templates
+# Questionnaire templates
 
 Below you can find questionnaire templates to be used for the evaluation of
 progress and difficulties along the lecture.
