@@ -5,7 +5,6 @@ format: jb-book
 root: intro
 chapters:
 - file: intro/whyjb
-- file: 
 - file: intro/demo
 - file: setup/setup
   sections:
