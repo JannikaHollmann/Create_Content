@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Setup: Before Creating Content &#8212; Creating Content with Jupyter Book</title>
+    <title>Setup: Before Creating Content &#8212; Creating educatinonal content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -42,6 +42,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -90,14 +91,9 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
       
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Creating Content with Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Creating educatinonal content with Jupyter Books</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -251,11 +247,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../coc/coc.html">
-   code of conduct
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../openscience/openscience.html">
    Open-Science
   </a>
@@ -400,6 +391,23 @@ title="Open an issue"
 
       </li>
       
+      <li>
+        <a href="https://github.com/felixkoerber/jb/edit/master/docs/setup/setup.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
     </ul>
   </div>
 </div>
@@ -475,6 +483,26 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="setup-before-creating-content">
 <h1>Setup: Before Creating Content<a class="headerlink" href="#setup-before-creating-content" title="Permalink to this headline">#</a></h1>
+<p>Fortunately and unfortunately comitting to open source projects usually requires more in-depth knowledge than just pushing some slides onto dropbox and sending a link to your students.</p>
+<p>To replicate the showcased websites here we’ll therefore be using some tools that you might not be familliar with. The following section will illustrate exatly what we need, how to install the necessary tools and where to go for further information.</p>
+<ul class="simple">
+<li><p>We’ll need the following</p></li>
+<li><p><a class="reference external" href="https://conda-forge.org/">conda</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com">git</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">VsCode</a></p></li>
+<li><p><a class="reference external" href="https://jupyter.org/">Jupyter</a></p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter books</a></p></li>
+<li><p>a <a class="reference external" href="https://github.com/">Github</a> account</p></li>
+<li><p><a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/">nbgrader</a></p></li>
+</ul>
+<p>helpful tools that are not strictly necessary but can be quite useful or make your life easier:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.gitkraken.com/">GitKraken</a></p></li>
+</ul>
+<p>if you want to provide interactive content:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mybinder.org/">https://mybinder.org/</a></p></li>
+</ul>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -527,9 +555,9 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Goehte University<br/>
+    By Felix Körber, Michael Ernst, Peer Herholz<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2020.<br/>
 </p>
         </footer>
     </div>

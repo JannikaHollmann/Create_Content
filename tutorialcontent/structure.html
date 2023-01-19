@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Troubleshooting &#8212; Creating educatinonal content with Jupyter Books</title>
+    <title>Structuring Books &#8212; Creating educatinonal content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,8 +53,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="nb Grader" href="nbgrader.html" />
-    <link rel="prev" title="gh-pages: Quick and accessible" href="publishing/gh-pages.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +107,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/whyjb.html">
    Why should you use Jupyter Books?
@@ -236,8 +234,8 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="troubleshooting.html">
    Troubleshooting
   </a>
  </li>
@@ -307,6 +305,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/structure.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -346,7 +373,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/troubleshooting.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/structure.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -363,7 +390,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/troubleshooting.ipynb"
+        <a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/structure.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -391,7 +418,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/tutorialcontent/troubleshooting.ipynb"
+        <a href="../_sources/tutorialcontent/structure.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -428,23 +455,170 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#format">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      format
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#root">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      root
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapters">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      chapters
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      file
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sections">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      sections
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generate-toc-based-on-existing-content-files">
+   Generate ToC based on existing content files
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Troubleshooting</h1>
+                <h1>Structuring Books</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#format">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      format
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#root">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      root
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapters">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      chapters
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      file
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sections">
+   <strong>
+    <code class="docutils literal notranslate">
+     <span class="pre">
+      sections
+     </span>
+    </code>
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generate-toc-based-on-existing-content-files">
+   Generate ToC based on existing content files
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -452,8 +626,87 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="troubleshooting">
-<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="structuring-books">
+<h1>Structuring Books<a class="headerlink" href="#structuring-books" title="Permalink to this headline">#</a></h1>
+<p>The structure of your book is based on a YAML file called _toc.yml, which contains the <em>Table of Contents</em>.
+In the simplest form, the _toc.yml looks like this:</p>
+<code>
+format: jb-book
+<p>root: index</p>
+<p>chapters:</p>
+<ul>
+<li><p>file: path/to/chapter1</p></li>
+<li><p>file: path/to/chapter2</p>
+<p>sections:</p>
+<ul class="simple">
+<li><p>file: path/to/chapter2/section1</p></li>
+</ul>
+</li>
+</ul>
+</code><section id="format">
+<h2><strong><code class="docutils literal notranslate"><span class="pre">format</span></code></strong><a class="headerlink" href="#format" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p><em>Format</em> defines how the ToC will be interpreted. For many cases, <code class="docutils literal notranslate"><span class="pre">jb-book</span></code> will be the appropiate option. (other options and their usecases will be  described later.)</p>
+</div></blockquote>
+</section>
+<section id="root">
+<h2><strong><code class="docutils literal notranslate"><span class="pre">root</span></code></strong><a class="headerlink" href="#root" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p><em>Root</em> defines the landing (aka first) page of your book. Paths that you define will be relative to the root.</p>
+</div></blockquote>
+</section>
+<section id="chapters">
+<h2><strong><code class="docutils literal notranslate"><span class="pre">chapters</span></code></strong><a class="headerlink" href="#chapters" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>Contains a list of files.</p>
+</div></blockquote>
+</section>
+<section id="file">
+<h2><strong><code class="docutils literal notranslate"><span class="pre">file</span></code></strong><a class="headerlink" href="#file" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>Path to the files that you want to include in your book. All the paths are relative to the root.
+Can also be a url.</p>
+</div></blockquote>
+</section>
+<section id="sections">
+<h2><strong><code class="docutils literal notranslate"><span class="pre">sections</span></code></strong><a class="headerlink" href="#sections" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>Defines sections of a chapter.</p>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="generate-toc-based-on-existing-content-files">
+<h2>Generate ToC based on existing content files<a class="headerlink" href="#generate-toc-based-on-existing-content-files" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Usage</span><span class="p">:</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">toc</span> <span class="n">from</span><span class="o">-</span><span class="n">project</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="n">SITE_DIR</span>
+
+  <span class="n">Create</span> <span class="n">a</span> <span class="n">ToC</span> <span class="n">file</span> <span class="kn">from</span> <span class="nn">a</span> <span class="n">project</span> <span class="n">directory</span><span class="o">.</span>
+
+<span class="n">Options</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">e</span><span class="p">,</span> <span class="o">--</span><span class="n">extension</span> <span class="n">TEXT</span>            <span class="n">File</span> <span class="n">extensions</span> <span class="n">to</span> <span class="n">consider</span> <span class="k">as</span> <span class="n">documents</span>
+                                  <span class="p">(</span><span class="n">use</span> <span class="n">multiple</span> <span class="n">times</span><span class="p">)</span>  <span class="p">[</span><span class="n">default</span><span class="p">:</span> <span class="o">.</span><span class="n">rst</span><span class="p">,</span> <span class="o">.</span><span class="n">md</span><span class="p">]</span>
+  <span class="o">-</span><span class="n">i</span><span class="p">,</span> <span class="o">--</span><span class="n">index</span> <span class="n">TEXT</span>                <span class="n">File</span> <span class="n">name</span> <span class="p">(</span><span class="n">without</span> <span class="n">suffix</span><span class="p">)</span> <span class="n">considered</span> <span class="k">as</span> <span class="n">the</span>
+                                  <span class="n">index</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">folder</span>  <span class="p">[</span><span class="n">default</span><span class="p">:</span> <span class="n">index</span><span class="p">]</span>
+  <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">match</span> <span class="n">TEXT</span>           <span class="n">File</span><span class="o">/</span><span class="n">Folder</span> <span class="n">names</span> <span class="n">which</span> <span class="n">match</span> <span class="n">will</span> <span class="n">be</span>
+                                  <span class="n">ignored</span> <span class="p">(</span><span class="n">use</span> <span class="n">multiple</span> <span class="n">times</span><span class="p">)</span>  <span class="p">[</span><span class="n">default</span><span class="p">:</span> <span class="o">.*</span><span class="p">]</span>
+  <span class="o">-</span><span class="n">t</span><span class="p">,</span> <span class="o">--</span><span class="n">guess</span><span class="o">-</span><span class="n">titles</span>              <span class="n">Guess</span> <span class="n">titles</span> <span class="n">of</span> <span class="n">documents</span> <span class="kn">from</span> <span class="nn">path</span> <span class="n">names</span>
+  <span class="o">-</span><span class="n">f</span><span class="p">,</span> <span class="o">--</span><span class="n">file</span><span class="o">-</span><span class="nb">format</span> <span class="p">[</span><span class="n">default</span><span class="o">|</span><span class="n">jb</span><span class="o">-</span><span class="n">book</span><span class="o">|</span><span class="n">jb</span><span class="o">-</span><span class="n">article</span><span class="p">]</span>
+                                  <span class="n">The</span> <span class="n">key</span><span class="o">-</span><span class="n">mappings</span> <span class="n">to</span> <span class="n">use</span><span class="o">.</span>  <span class="p">[</span><span class="n">default</span><span class="p">:</span> <span class="n">default</span><span class="p">]</span>
+  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>                      <span class="n">Show</span> <span class="n">this</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">Usage</span><span class="p">:</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">toc</span> <span class="n">from</span><span class="o">-</span><span class="n">project</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="n">SITE_DIR</span>
+                        <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,20 +736,6 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="publishing/gh-pages.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">gh-pages: Quick and accessible</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="nbgrader.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">nb Grader</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
