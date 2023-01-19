@@ -3,7 +3,7 @@
 Below you can find questionnaire templates to be used for the evaluation of
 progress and difficulties along the lecture.
 
-### 1) At the beginning of a lecture or lecture's section:
+## 1) At the beginning of a lecture or lecture's section:
 
 **1.1)** Please indicate whether you have received formal training in
 *<topic_of_interest>*:
@@ -39,9 +39,9 @@ do you think might be the most challenging for you?
 | **(free text)** |
 |:---------------:|
 
-### 2) Before and after specific training sessions:
+## 2) Before and after specific training sessions:
 
-#### Before:
+### Before:
 
 Please indicate how well prepared do you feel to take on the following part of
 the project.
