@@ -256,3 +256,38 @@ Once you reached this point, you should be ready the enter the matrix and follow
 
 ![logo](https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236)\
 <sub><sup><sub><sup>https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</sup></sub></sup></sub>
+
+
+First two tabs showing off defining a function.
+
+````{tab} Python
+```python
+def main():
+    return
+```
+````
+````{tab} C++
+```c++
+int main(const int argc, const char **argv) {
+  return 0;
+}
+```
+````
+
+Second two tabs showing off printing.
+
+````{tab} Python
+```python
+print("Hello World!")
+```
+````
+
+````{tab} C++
+```c++
+#include <iostream>
+
+int main() {
+  std::cout << "Hello World!" << std::endl;
+}
+```
+````
