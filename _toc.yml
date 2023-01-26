@@ -7,11 +7,11 @@ chapters:
 - file: intro/whyjb
 - file: intro/demo
 - file: setup/setup
-  sections:
-  - file: setup/install
-  - file: setup/miniconda
-  - file: setup/github
-  - file: setup/bash
+#  sections:
+#  - file: setup/install
+#  - file: setup/miniconda
+#  - file: setup/github
+#  - file: setup/bash
 - file: tutorialcontent/create
 - file: tutorialcontent/aufbau
 - file: tutorialcontent/build
