@@ -42,7 +42,7 @@ The rest of this page provides more detail on installation procedures for each o
 
 Select the tab that corresponds to your operating system and follow the instructions therein.
 
-```{tabbed} Windows
+````{tab} Windows
 
 
 **Git**
@@ -80,9 +80,9 @@ To use bash we'll be utilizing VSCode as that is the fastest way to implement a 
 - has to be evaluated, coming soon
 
 
-```
+````
 
-```{tabbed} Linux
+````{tab} Linux
 **Bash shell**
 
 You already have it!
@@ -137,9 +137,9 @@ If you are prompted to install it follow the instructions on-screen to do so.
         rm ./Miniconda3-latest-Linux-x86_64.sh
 
 
-```
+````
 
-```{tabbed} MacOs
+````{tab} MacOs
 **Bash shell**
 
 You already have it!
@@ -205,7 +205,7 @@ If you do not see something like “git version X.XX.X” printed out, then foll
 
 
 
-```
+````
 
 **Note**: If the instructions aren't working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you're having.
 One of the instructors will try and get back to you quickly to help resolve the situation.
