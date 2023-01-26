@@ -6,7 +6,7 @@ root: intro
 chapters:
 - file: intro/whyjb
 - file: intro/demo
-- file: setup/setup
+- file: setup
 #  sections:
 #  - file: setup/install
 #  - file: setup/miniconda
