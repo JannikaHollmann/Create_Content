@@ -222,7 +222,7 @@ It is a good idea to associate this with your university e-mail (if you have one
 
 Now that you have installed the required software (or not) to follow the course, it's time to gather the respective materials.
 
-```{tabbed} Local
+````{tabd} Local
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/>\
 <sub><sup><sub><sup>https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</sup></sub></sup></sub>
 
@@ -235,9 +235,9 @@ To get things up and running, please follow these steps:
 3. Download the notebooks in this repository via [this link](main.zip) and unzip them to your preferred location, e.g. `Desktop/digital_literacy_Winter2022`.
 4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate x` (or on older `conda environment` with `source activate x` for `mac` and `linux` and `activate x` for `windows`).
 5. Finally, via the `terminal`, move to the folder where you've put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/x` and run the command `jupyter notebook`. If the `notebook server` isn't automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
-```
+````
 
-```{tabbed} Cloud via Mybinder
+````{tab} Cloud via Mybinder
 
 <img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/>\
 <sub><sup><sub><sup>https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</sup></sub></sup></sub>
@@ -248,7 +248,7 @@ To get things up and running, please follow these steps:
 [MyBinder.org](https://mybinder.org/) is a great service that allows you to run Jupyter notebooks in a Docker or Python environment, directly online and for free. However, this service comes of course with a restricted computational environment (1-2GB of RAM). This means, many notebooks might be very slow and some might even crash, due to not enough memory.
 
 You can use this approach to run and test most of the notebooks and to explore the slides. To access the MyBinder instance, use [this link](https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD).
-```
+````
 
 ## Enter the matrix
 
@@ -256,38 +256,3 @@ Once you reached this point, you should be ready the enter the matrix and follow
 
 ![logo](https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236)\
 <sub><sup><sub><sup>https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</sup></sub></sup></sub>
-
-
-First two tabs showing off defining a function.
-
-````{tab} Python
-```python
-def main():
-    return
-```
-````
-````{tab} C++
-```c++
-int main(const int argc, const char **argv) {
-  return 0;
-}
-```
-````
-
-Second two tabs showing off printing.
-
-````{tab} Python
-```python
-print("Hello World!")
-```
-````
-
-````{tab} C++
-```c++
-#include <iostream>
-
-int main() {
-  std::cout << "Hello World!" << std::endl;
-}
-```
-````
