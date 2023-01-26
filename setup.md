@@ -1,10 +1,25 @@
-# Setup for the course
+# Setup: Before Creating Content
 
-There are a few things you need to get working on your machine in order to follow this course. However, don't worry as it's all gonna be [open source](), won't require a lot of storage and will be explained in detail.
+Fortunately and unfortunately comitting to open source projects usually requires more in-depth knowledge than just pushing some slides onto dropbox and sending a link to your students.
 
-Some parts and section of this course will be executable via `cloud computing` (click on the small rocket at the top right of the webpage to start [binder](https://mybinder.org/)), which mainly serves the puprose of making the lessons nice and easy to follow in an interactive manner. Although in general getting `Python` & friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. The following tools focusing open and reproducible (neuro-/data) science) will therefore not only be necessary for this course, but are curated in a way that you can build your "everyday" research workflow around them. This even applies if you won't continue with `python` (I certainly hope you do) and instead work with `R` (of course also cool), `matlab` (weeeeeeeell...) or what have you.
+To replicate the showcased websites here we'll therefore be using some tools that you might not be familliar with. The following section will illustrate exatly what we need, how to install the necessary tools and where to go for further information.
 
-You'll find the (hopefully) comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.  
+- We'll need the following
+
+- [conda](https://conda-forge.org/)
+- [Git](https://git-scm.com)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Jupyter](https://jupyter.org/)
+- a [Github](https://github.com/) account
+- [Jupyter book](https://jupyterbook.org/en/stable/intro.html)
+- [nbgrader](https://nbgrader.readthedocs.io/en/stable/)
+
+
+helpful tools that are not strictly necessary but can be quite useful or make your life easier:
+- [GitKraken](https://www.gitkraken.com/)
+
+if you want to provide interactive content:
+- https://mybinder.org/
 
 
 ## General things
@@ -15,28 +30,16 @@ There are a few computing requirements for the course that are absolutely necess
 
 If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.
 
-## Required software
 
-To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):
-
-- A command-line shell: [`Bash`](https://www.gnu.org/software/bash/)
-- (A version control system: [`Git`](https://git-scm.com/))
-- A remote-capable text editor: [`VSCode`](https://code.visualstudio.com/)
-- `Python 3` via [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)
-- A [`GitHub`](https://github.com/) account
-
-
-If you already have all of the above software tools/packages installed (what are you even doing here?), or are confident you’ll be able to install them by the time the course starts.
-The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
+You'll find the (hopefully) comprehensive set of install instructions below: The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
 
 ### Some quick general notes on instructions
 
 - There is no difference between `Enter` and `Return` in these instructions, so just press whatever the equivalent on your keyboard is whenever one is stated
 - If you already have some of these things installed on your computer already that should (theoretically) be okay.
-  However, you need to make sure that you are able to complete the steps described in [checking your install](#checking-your-install) without issue.
+  However, you need to make sure that you are able to complete the steps described in [checking your install]() without issue.
   - For example, having multiple different `Python` installations on your computer can lead to incredibly frustrating issues that are very difficult to debug.
     As such, if you have already installed `Python` via some other application (not `Miniconda`/`Anaconda`), it's strongly encouraged to uninstall it before following the instructions below.
-    You _must_ have `Python` installed via `Miniconda` for this course.
 
 ### OS-specific installation instructions
 
@@ -44,18 +47,25 @@ Select the tab that corresponds to your operating system and follow the instruct
 
 ````{tab} Windows
 
+**Conda*
+
+1. Download and execute the .exe file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
+2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
+
+
+**Jupyter, Jupyter Book and nbgrader**
+
+1. Press "Windows" and Search for "Anaconda Powershell Prompt"
+2. Paste the following commands:
+- `conda install -c conda-forge jupyter-book`
+- `conda install conda install -c conda-forge nbgrader`
+- `conda install jupyter`
+
 
 **Git**
 
 Download the respective version for your system from the [official website](https://git-scm.com) and run the .exe file. Now you should be good to go.
 As Git can be quite confusing for new users you may also want to additional install a GUI (graphical user interface) that makes it somewhat easier to interact and illustrate what git is actually doing/supposed to do, such as  [Gitkraken](https://www.gitkraken.com/).
-
-
-**Python**
-
-1. Download and execute the .exe file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
-1. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
-
 
 **VSCode**
 
@@ -66,32 +76,20 @@ As Git can be quite confusing for new users you may also want to additional inst
 **VSCode extensions**
 
 1. Open VSCode
-1. Press `Ctrl+Shift+P` in the new window that opens and type "Extensions: Install extensions" into the search bar that appears at the top of the screen.
+2. Press `Ctrl+Shift+P` in the new window that opens and type "Extensions: Install extensions" into the search bar that appears at the top of the screen.
    Select the appropriate entry from the dropdown menu that appears (there should be four entries; simply select the one that reads "Extensions: Install extensions").
-1. A new panel should appear on the left-hand side of the screen with a search bar.
+3. A new panel should appear on the left-hand side of the screen with a search bar.
    Search for each of the following extensions and press `Install` for the first entry that appears. (The author listed for all of these extensions should be "Microsoft".)
       - Python (n.b., you will need to reload VSCode after installing this)
-
-
-**Bash shell**
-
-To use bash we'll be utilizing VSCode as that is the fastest way to implement a working bash version on windows. Please open VSCode and do the following:
-
-- has to be evaluated, coming soon
-
-
+      - Jupyter
 ````
 
 ````{tab} Linux
-**Bash shell**
 
-You already have it!
-Depending on which version of Linux you’re running you may need to type `bash` inside the terminal to access it.
-To check whether this is necessary, follow these steps:
+**Conda*
 
-1. Open a terminal and type `echo $SHELL`.
-   If it reads `/bin/bash` then you are all set!
-   If not, whenever the instructions read "open a terminal," please assume you are to open a terminal, type `bash`, and the proceed with the instructions as specified.
+1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
+2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
 
 **Git**
 
@@ -112,6 +110,7 @@ If you are prompted to install it follow the instructions on-screen to do so.
 1. A new panel should appear on the left-hand side of the screen with a search bar.
    Search for each of the following extensions and press `Install` for the first entry that appears. (The author listed for all of these extensions should be "Microsoft".)
       - Python (n.b., you will need to reload VSCode after installing this)
+      - Jupyter
 
 **Python**
 
@@ -139,18 +138,12 @@ If you are prompted to install it follow the instructions on-screen to do so.
 
 ````
 
-````{tab} MacOs
-**Bash shell**
+````{tab} MacOS
 
-You already have it!
-Depending on which version of Mac OS you’re running you may need to type `bash` inside the terminal to access it.
-To check whether this is necessary, follow these steps:
+**Conda*
 
-1. Open a terminal and type `echo $SHELL`.
-   If it reads `/bin/bash` then you are all set!
-
-Note: If you are using Mac Catalina (10.15.X) then it is possible your default shell is NOT CORRECT.
-To set the default to bash, type `chsh -s /bin/bash` in the terminal, enter your password when prompted, and then close + re-open the terminal.
+1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
+2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
 
 **Git**
 
@@ -178,6 +171,7 @@ If you do not see something like “git version X.XX.X” printed out, then foll
 1. A new panel should appear on the left-hand side of the screen with a search bar.
    Search for each of the following extensions and press `Install` for the first entry that appears. (The author listed for all of these extensions should be "Microsoft".)
       - Python (n.b., you will need to reload VSCode after installing this)
+      - Jupyter
 
 
 **Python**
@@ -222,7 +216,7 @@ It is a good idea to associate this with your university e-mail (if you have one
 
 Now that you have installed the required software (or not) to follow the course, it's time to gather the respective materials.
 
-````{tabd} Local
+````{tab} Local
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/>\
 <sub><sup><sub><sup>https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</sup></sub></sup></sub>
 
