@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; Creating educatinonal content with Jupyter Books</title>
+    <title>Setup for the course &#8212; Creating educatinonal content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -339,7 +339,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Fsetup.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -356,7 +356,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb/edit/master/docs/README.md"
+        <a href="https://github.com/felixkoerber/jb/edit/master/docs/setup.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -384,7 +384,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/README.md"
+        <a href="_sources/setup.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -442,7 +442,44 @@ title="Print to PDF"
         <i class="fas fa-list"></i> Contents
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="simple visible nav section-nav flex-column">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-things">
+   General things
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#required-software">
+   Required software
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">
+     Some quick general notes on instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#os-specific-installation-instructions">
+     OS-specific installation instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-account">
+     GitHub account
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-the-course-content">
+   Getting the course content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enter-the-matrix">
+   Enter the matrix
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -452,7 +489,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Setup for the course</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -461,7 +498,44 @@ title="Print to PDF"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-things">
+   General things
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#required-software">
+   Required software
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#some-quick-general-notes-on-instructions">
+     Some quick general notes on instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#os-specific-installation-instructions">
+     OS-specific installation instructions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-account">
+     GitHub account
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-the-course-content">
+   Getting the course content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enter-the-matrix">
+   Enter the matrix
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -472,7 +546,69 @@ title="Print to PDF"
                 
               <div>
                 
-  <p>Hello World</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="setup-for-the-course">
+<h1>Setup for the course<a class="headerlink" href="#setup-for-the-course" title="Permalink to this headline">#</a></h1>
+<p>There are a few things you need to get working on your machine in order to follow this course. However, don’t worry as it’s all gonna be <span class="xref myst">open source</span>, won’t require a lot of storage and will be explained in detail.</p>
+<p>Some parts and section of this course will be executable via <code class="docutils literal notranslate"><span class="pre">cloud</span> <span class="pre">computing</span></code> (click on the small rocket at the top right of the webpage to start <a class="reference external" href="https://mybinder.org/">binder</a>), which mainly serves the puprose of making the lessons nice and easy to follow in an interactive manner. Although in general getting <code class="docutils literal notranslate"><span class="pre">Python</span></code> &amp; friends to work reliably on your machine is going to be very beneficial. This holds true for the course and especially beyond. The following tools focusing open and reproducible (neuro-/data) science) will therefore not only be necessary for this course, but are curated in a way that you can build your “everyday” research workflow around them. This even applies if you won’t continue with <code class="docutils literal notranslate"><span class="pre">python</span></code> (I certainly hope you do) and instead work with <code class="docutils literal notranslate"><span class="pre">R</span></code> (of course also cool), <code class="docutils literal notranslate"><span class="pre">matlab</span></code> (weeeeeeeell…) or what have you.</p>
+<p>You’ll find the (hopefully) comprehensive set of install instructions below. While not all of them might be totally necessary for the course, they all will help you a great deal going further and are especially useful/needed if we have to hold the course virtually due to the COVID-19 pandemic.</p>
+<section id="general-things">
+<h2>General things<a class="headerlink" href="#general-things" title="Permalink to this headline">#</a></h2>
+<p>There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):</p>
+<ul class="simple">
+<li><p>stub for listing e.g. necessary disk space, processing power, operating system etc.</p></li>
+</ul>
+<p>If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.</p>
+</section>
+<section id="required-software">
+<h2>Required software<a class="headerlink" href="#required-software" title="Permalink to this headline">#</a></h2>
+<p>To get the most out of the course, we ask that you arrive with the following software already installed (software/things in () are not entirely necessary but definitely great to have):</p>
+<ul class="simple">
+<li><p>A command-line shell: <a class="reference external" href="https://www.gnu.org/software/bash/"><code class="docutils literal notranslate"><span class="pre">Bash</span></code></a></p></li>
+<li><p>(A version control system: <a class="reference external" href="https://git-scm.com/"><code class="docutils literal notranslate"><span class="pre">Git</span></code></a>)</p></li>
+<li><p>A remote-capable text editor: <a class="reference external" href="https://code.visualstudio.com/"><code class="docutils literal notranslate"><span class="pre">VSCode</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3</span></code> via <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html"><code class="docutils literal notranslate"><span class="pre">Miniconda</span></code></a></p></li>
+<li><p>A <a class="reference external" href="https://github.com/"><code class="docutils literal notranslate"><span class="pre">GitHub</span></code></a> account</p></li>
+</ul>
+<p>If you already have all of the above software tools/packages installed (what are you even doing here?), or are confident you’ll be able to install them by the time the course starts.
+The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (<code class="docutils literal notranslate"><span class="pre">Windows</span></code>, <code class="docutils literal notranslate"><span class="pre">Mac</span> <span class="pre">OS</span></code>, and <code class="docutils literal notranslate"><span class="pre">Linux</span></code>).</p>
+<section id="some-quick-general-notes-on-instructions">
+<h3>Some quick general notes on instructions<a class="headerlink" href="#some-quick-general-notes-on-instructions" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>There is no difference between <code class="docutils literal notranslate"><span class="pre">Enter</span></code> and <code class="docutils literal notranslate"><span class="pre">Return</span></code> in these instructions, so just press whatever the equivalent on your keyboard is whenever one is stated</p></li>
+<li><p>If you already have some of these things installed on your computer already that should (theoretically) be okay.
+However, you need to make sure that you are able to complete the steps described in <a class="reference external" href="#checking-your-install">checking your install</a> without issue.</p>
+<ul>
+<li><p>For example, having multiple different <code class="docutils literal notranslate"><span class="pre">Python</span></code> installations on your computer can lead to incredibly frustrating issues that are very difficult to debug.
+As such, if you have already installed <code class="docutils literal notranslate"><span class="pre">Python</span></code> via some other application (not <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code>/<code class="docutils literal notranslate"><span class="pre">Anaconda</span></code>), it’s strongly encouraged to uninstall it before following the instructions below.
+You <em>must</em> have <code class="docutils literal notranslate"><span class="pre">Python</span></code> installed via <code class="docutils literal notranslate"><span class="pre">Miniconda</span></code> for this course.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="os-specific-installation-instructions">
+<h3>OS-specific installation instructions<a class="headerlink" href="#os-specific-installation-instructions" title="Permalink to this headline">#</a></h3>
+<p>Select the tab that corresponds to your operating system and follow the instructions therein.</p>
+<p><strong>Note</strong>: If the instructions aren’t working and you have spent more than 15-20 minutes troubleshooting on your own, reach out on the #help-installation channel on the Discord channel with the exact problems you’re having.
+One of the instructors will try and get back to you quickly to help resolve the situation.
+If they’re unable to help via <code class="docutils literal notranslate"><span class="pre">Discord</span></code>, you may be directed to attend one of the installation office hours.</p>
+</section>
+<section id="github-account">
+<h3>GitHub account<a class="headerlink" href="#github-account" title="Permalink to this headline">#</a></h3>
+<p>Go to <a class="reference external" href="https://github.com/join/">https://github.com/join/</a> and follow the on-screen instructions to create an account.
+It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the <a class="reference external" href="https://education.github.com/pack">GitHub Student Developer Pack</a> which comes with some nice free bonuses.</p>
+</section>
+</section>
+<section id="getting-the-course-content">
+<h2>Getting the course content<a class="headerlink" href="#getting-the-course-content" title="Permalink to this headline">#</a></h2>
+<p>Now that you have installed the required software (or not) to follow the course, it’s time to gather the respective materials.</p>
+</section>
+<section id="enter-the-matrix">
+<h2>Enter the matrix<a class="headerlink" href="#enter-the-matrix" title="Permalink to this headline">#</a></h2>
+<p>Once you reached this point, you should be ready the enter the matrix and follow the course in your preferred way. Congrats, fantastic work!</p>
+<p><img alt="logo" src="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236" /><br />
+<sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236">https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</a></sup></sub></sup></sub></p>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
