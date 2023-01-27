@@ -5,10 +5,6 @@ format: jb-book
 root: intro
 chapters:
 - file: intro/whyjb
-- file: intro/demo
-  sections:
-  - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
-  - url: https://peerherholz.github.io/EXPRA_Winter2021/
 - file: setup
 #  sections:
 #  - file: setup/install
@@ -32,11 +28,15 @@ chapters:
   - file: tutorialcontent/publishing/repo
   - file: tutorialcontent/publishing/gh-pages
 - file: tutorialcontent/troubleshooting
-- file: tutorialcontent/nbgrader
+- file: intro/demo
+  sections:
+  - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
+  - url: https://peerherholz.github.io/EXPRA_Winter2021/
+# - file: tutorialcontent/nbgrader
 - file: ressources/info
   sections:
   - file: ressources/CoC
   - file: ressources/dei
 #  - file: ressources/questionnaires
 - file: openscience/openscience
-- file: add/add
+# - file: add/add
