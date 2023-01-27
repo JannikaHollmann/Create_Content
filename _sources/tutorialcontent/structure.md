@@ -55,8 +55,7 @@ ___
 ## Autogenerate the Table of Contents from a list of files
 Instead of configuring the ToC yourself, Jupyter Book also has a built-in function that generates the Table of Content based on filenames of your content using the following command:
 
-<code>jupyter-book toc from-project path/to/book -f [jb-book/jb-article]
-<code>
+`jupyter-book toc from-project path/to/book -f [jb-book/jb-article]`
 
 ```{note} Note
 To use this command, open your OS-respective Terminal, and copy the path to where your files are as an argument (here displayed as "path/to/book")
