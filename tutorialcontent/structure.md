@@ -16,13 +16,18 @@ Below you'll find a short desription of the regarding key:
 
 `format:`
 *Format* defines how the ToC will be interpreted. For many cases, `jb-book` will be the appropiate option. (other options and their usecases will be  described later.)
+
 `root:`
 *Root* defines the landing (aka first) page of your book. Paths that you define will be relative to the root.
+
 `chapters:`
 Contains a list of files.
+
 `file:`
 Path to the files that you want to include in your book. All the paths are relative to the root.
+
 Can also be a url. 
+
 `sections:`
 Defines sections of a chapter.
 ___
