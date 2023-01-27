@@ -49,11 +49,14 @@ Parts can further subdivide and group chapters and, thus, consist of a list of c
 ___
 ## Autogenerate the Table of Contents from a list of files
 Instead of configuring the ToC yourself, Jupyter Book also has a built-in function that generates the Table of Content based on filenames of your content using the following command:
+
 <code>jupyter-book toc from-project path/to/book -f [jb-book/jb-article]
+<code>
 
 ```{note} Note
 To use this command, open your OS-respective Terminal, and copy the path to where your files are as an argument (here displayed as "path/to/book")
 ```
+
 This function will search your respective path for content files and generate the `_toc.yml` based on the content files. Keep in mind, that:
 * Each sub-folder must have at least one content file inside it
 * The ordering of files in _toc.yml will depend on the alphanumeric order of the filenames (e.g., folder_01 comes before folder_02, and apage comes before b_page)
