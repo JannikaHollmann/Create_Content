@@ -4,15 +4,15 @@ Fortunately and unfortunately comitting to open source projects usually requires
 
 To replicate the showcased websites here we'll therefore be using some tools that you might not be familliar with. The following section will illustrate exatly what we need, how to install the necessary tools and where to go for further information.
 
-- We'll need the following
+**We'll need the following:**
 
-- [conda](https://conda-forge.org/)
-- [Git](https://git-scm.com)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Jupyter](https://jupyter.org/)
-- a [Github](https://github.com/) account
-- [Jupyter book](https://jupyterbook.org/en/stable/intro.html)
-- [nbgrader](https://nbgrader.readthedocs.io/en/stable/)
+- [**Conda**](https://conda-forge.org/) (For managing environments)
+- [**Git**](https://git-scm.com) (Version Control)
+- [**Visual Studio Code**](https://code.visualstudio.com/) (Text-based Editor)
+- [**Jupyter**](https://jupyter.org/) (Foundation for mixed Code/ Markdown documents)
+- a [**Github**](https://github.com/) account (Hosting courses)
+- [**Jupyter book**](https://jupyterbook.org/en/stable/intro.html) (Foundation creating content)
+- [**nbgrader**](https://nbgrader.readthedocs.io/en/stable/) (automated grading)
 
 
 helpful tools that are not strictly necessary but can be quite useful or make your life easier:
@@ -47,7 +47,7 @@ Select the tab that corresponds to your operating system and follow the instruct
 
 ````{tab} Windows
 
-**Conda*
+**Conda**
 
 1. Download and execute the .exe file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
 2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
@@ -86,7 +86,7 @@ As Git can be quite confusing for new users you may also want to additional inst
 
 ````{tab} Linux
 
-**Conda*
+**Conda**
 
 1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
 2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
@@ -140,7 +140,7 @@ If you are prompted to install it follow the instructions on-screen to do so.
 
 ````{tab} MacOS
 
-**Conda*
+**Conda**
 
 1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
 2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.

@@ -13,7 +13,7 @@ chapters:
 #  - file: setup/github
 #  - file: setup/bash
 - file: tutorialcontent/create
-- file: tutorialcontent/aufbau
+- file: tutorialcontent/structure
 - file: tutorialcontent/build
 - file: tutorialcontent/writing/writing
   sections:
