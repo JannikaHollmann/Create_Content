@@ -6,6 +6,9 @@ root: intro
 chapters:
 - file: intro/whyjb
 - file: intro/demo
+  sections:
+  - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
+  - url: https://peerherholz.github.io/EXPRA_Winter2021/
 - file: setup
 #  sections:
 #  - file: setup/install
