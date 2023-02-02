@@ -466,12 +466,43 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#first-things-first">
+   First things first
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iypbn-vs-md-when-to-use-what">
+     .iypbn vs .md - When to use what?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -483,6 +514,26 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#first-things-first">
+   First things first
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iypbn-vs-md-when-to-use-what">
+     .iypbn vs .md - When to use what?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -493,6 +544,25 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="create-content">
 <h1>Create Content<a class="headerlink" href="#create-content" title="Permalink to this headline">#</a></h1>
 <p><strong>Jupyter Book</strong> allows for the integration of various markup languages and formats, including Markdown files, Jupyter notebooks, MyST Markdown notebooks, reStructured Text and more.</p>
+<p>MyST is a markup language that draws inspiration from RMarkdown, and is fully integrated for the use with Jupyter Book. It allows for more advanced formatting options and the ability to include interactive elements, such as widgets and code snippets, within your content. Jupyter Book is able to parse MyST in both .ipybn and .md files, allowing for flexible content creation.</p>
+<p>Here, we present only a short overview of the features of MyST, however, there is much more documentation on <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-core">the MyST website.</a></p>
+<section id="first-things-first">
+<h2>First things first<a class="headerlink" href="#first-things-first" title="Permalink to this headline">#</a></h2>
+<p>Open up Visual Studio Code (or Jupyter Lab if you prefer using that). Create a new file, by clicking on “File” and then on “New File”. Here, you can choose which file format you want to choose. Choose .iypbn for interactive Files or create a new .md (Markdown) file in the folder for your project.</p>
+<section id="iypbn-vs-md-when-to-use-what">
+<h3>.iypbn vs .md - When to use what?<a class="headerlink" href="#iypbn-vs-md-when-to-use-what" title="Permalink to this headline">#</a></h3>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">.ipynb</label><div class="tab-content docutils">
+<p><code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> files are Jupyter Notebook files and are primarily used for interactive data science and scientific computing. They allow for the combination of code, text, and visualizations all in one place, making it easy to document and share code-driven projects. They are often used by data scientists and researchers to share their work with others, and can be easily converted to other formats like .html or .pdf for sharing.</p>
+<p><strong>.ipynb files are best for interactive, code-driven projects</strong></p>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">.md (Markdown)</label><div class="tab-content docutils">
+<p><code class="docutils literal notranslate"><span class="pre">.md</span></code> files are Markdown files, which are primarily used for creating simple, easy-to-read documents. They use a simple syntax for formatting text and are often used for documentation, READMEs, and other types of text-based content. They are also commonly used in conjunction with version control systems like Git and can be easily rendered in various platforms.</p>
+<p><strong>.md files are best for documentation, READMEs, and other types of text-based content</strong></p>
+</div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
