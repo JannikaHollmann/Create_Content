@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Cells: Types and Usages &#8212; Creating educational content with Jupyter Books</title>
+    <title>Cells in Jupyter Notebooks: Types and Usages &#8212; Creating educational content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -154,7 +154,7 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Cells: Types and Usages
+     Cells in Jupyter Notebooks: Types and Usages
     </a>
    </li>
    <li class="toctree-l2">
@@ -316,6 +316,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/writing/cells.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -449,7 +478,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Cells: Types and Usages</h1>
+                <h1>Cells in Jupyter Notebooks: Types and Usages</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -461,8 +490,22 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="cells-types-and-usages">
-<h1>Cells: Types and Usages<a class="headerlink" href="#cells-types-and-usages" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="cells-in-jupyter-notebooks-types-and-usages">
+<h1>Cells in Jupyter Notebooks: Types and Usages<a class="headerlink" href="#cells-in-jupyter-notebooks-types-and-usages" title="Permalink to this headline">#</a></h1>
+<p>As outlined previously, Jupyter Book allows for the integration of .ipybn files (better known as Jupyter Notebooks), which are a flexible solution for writing both <em>code</em> (Julia, Python and R) or in <em>Markdown</em> (MyST) in one document.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the name <strong>Jupyter</strong>  references the three programming languages supported by Jupyter: <strong>Julia, Python and R</strong></p>
+</div>
+<p>Jupyter Notebooks are organized in a sequence of “cells”, each cell can consist of multi-line content. Depending on the type of cell, the behavior changes if the cell type is changed. There are three types of cells: <strong>code cells, markdown cells, and raw cells</strong> (raw cells probably won’t be of high significance for building courses). Every cell starts off as a code cell, but can be changed depending on the program you are using:</p>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Visual Studio Code (recommended)</label><div class="tab-content docutils">
+<p>To change the cell state, either click on the current cell type on the lower right cell corner. To add a new cell, move your cursor below an existing cell, where you can choose, whether you want to add a new Code or Markdown cell.</p>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Jupyter Notebook/ Jupyter Lab (also great!)</label><div class="tab-content docutils">
+<p>lorem ipsum</p>
+</div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
