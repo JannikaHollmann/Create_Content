@@ -34,11 +34,8 @@ You can use the following links to navigate through the content of the course:
     - [writing content](link-to-experiments/experiments.html#)
 
     - [Interactive content: Jupyter notebooks](link-to-experiments/experiments.html#)
-        - research practices centered around digital systems
 
     - [Style](link-to-experiments/experiments.html#)
-        - adopt and use digital tools/services
-        - basic coding skills: Python
         
     - [Embedding Media: Images, Videos and more](link-to-experiments/experiments.html#)
 
