@@ -53,6 +53,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Links" href="links.html" />
@@ -311,6 +313,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/writing/styling.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -432,12 +463,60 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-basics">
+   Markdown basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#embedded-code">
+     Embedded code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-html">
+     General HTML
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-latex">
+   Writing latex
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-in-the-notebook">
+     Plotting in the notebook
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -449,6 +528,43 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-basics">
+   Markdown basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#embedded-code">
+     Embedded code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-html">
+     General HTML
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-latex">
+   Writing latex
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-in-the-notebook">
+     Plotting in the notebook
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -458,6 +574,171 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="styling-the-look-and-feel">
 <h1>Styling: The Look and Feel<a class="headerlink" href="#styling-the-look-and-feel" title="Permalink to this headline">#</a></h1>
+<section id="markdown-basics">
+<h2>Markdown basics<a class="headerlink" href="#markdown-basics" title="Permalink to this headline">#</a></h2>
+<p>You can make text <em>italic</em> or <strong>bold</strong>.</p>
+<hr class="docutils" />
+<p>You can build nested itemized or enumerated lists:</p>
+<ul class="simple">
+<li><p>One</p>
+<ul>
+<li><p>Sublist</p>
+<ul>
+<li><p>This</p></li>
+</ul>
+</li>
+<li><p>Sublist
+- That
+- The other thing</p></li>
+</ul>
+</li>
+<li><p>Two</p>
+<ul>
+<li><p>Sublist</p></li>
+</ul>
+</li>
+<li><p>Three</p>
+<ul>
+<li><p>Sublist</p></li>
+</ul>
+</li>
+</ul>
+<p>Now another list:</p>
+<ol class="simple">
+<li><p>Here we go</p>
+<ol class="simple">
+<li><p>Sublist</p></li>
+<li><p>Sublist</p></li>
+</ol>
+</li>
+<li><p>There we go</p></li>
+<li><p>Now this</p></li>
+</ol>
+<p>You can add horizontal rules:</p>
+<hr class="docutils" />
+<p>Here is a blockquote:</p>
+<blockquote>
+<div><p>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren’t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one– and preferably only one –obvious way to do it.
+Although that way may not be obvious at first unless you’re Dutch.
+Now is better than never.
+Although never is often better than <em>right</em> now.
+If the implementation is hard to explain, it’s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea – let’s do more of those!</p>
+</div></blockquote>
+<p>You can add headings using Markdown’s syntax:</p>
+<pre>
+# Heading 1
+
+# Heading 2
+
+## Heading 2.1
+
+## Heading 2.2
+</pre><section id="embedded-code">
+<h3>Embedded code<a class="headerlink" href="#embedded-code" title="Permalink to this headline">#</a></h3>
+<p>You can embed code meant for illustration instead of execution in Python:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>def f(x):
+    &quot;&quot;&quot;a docstring&quot;&quot;&quot;
+    return x**2
+</pre></div>
+</div>
+<p>or other languages:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if (i=0; i&lt;n; i++) {
+  printf(&quot;hello %d\n&quot;, i);
+  x += 4;
+}
+</pre></div>
+</div>
+</section>
+<section id="general-html">
+<h3>General HTML<a class="headerlink" href="#general-html" title="Permalink to this headline">#</a></h3>
+<p>Because <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> is a <code class="docutils literal notranslate"><span class="pre">superset</span> <span class="pre">of</span> <span class="pre">HTML</span></code> you can even add things like <code class="docutils literal notranslate"><span class="pre">HTML</span> <span class="pre">tables</span></code>:</p>
+<table>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table></section>
+</section>
+<section id="writing-latex">
+<h2>Writing latex<a class="headerlink" href="#writing-latex" title="Permalink to this headline">#</a></h2>
+<p>Let’s use <code class="docutils literal notranslate"><span class="pre">%%latex</span></code> to render a block of <code class="docutils literal notranslate"><span class="pre">latex</span></code>:</p>
+<div class="math notranslate nohighlight">
+\[F(k) = \int_{-\infty}^{\infty} f(x) e^{2\pi i k} \mathrm{d} x\]</div>
+<section id="plotting-in-the-notebook">
+<h3>Plotting in the notebook<a class="headerlink" href="#plotting-in-the-notebook" title="Permalink to this headline">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Notebooks</span></code> support a variety of fantastic <code class="docutils literal notranslate"><span class="pre">plotting</span> <span class="pre">options</span></code>, including <code class="docutils literal notranslate"><span class="pre">static</span></code> and <code class="docutils literal notranslate"><span class="pre">interactive</span></code> graphics. This <code class="docutils literal notranslate"><span class="pre">magic</span></code> configures <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> to <code class="docutils literal notranslate"><span class="pre">render</span></code> its <code class="docutils literal notranslate"><span class="pre">figures</span></code> <code class="docutils literal notranslate"><span class="pre">inline</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;A little chirp&quot;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span>  <span class="c1"># let&#39;s keep the figure object around for later...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.figure_factory</span> <span class="k">as</span> <span class="nn">ff</span>
+
+<span class="c1"># Add histogram data</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<span class="n">x3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="n">x4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span>
+
+<span class="c1"># Group data together</span>
+<span class="n">hist_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="n">x4</span><span class="p">]</span>
+
+<span class="n">group_labels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Group 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Group 4&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create distplot with custom bin_size</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">ff</span><span class="o">.</span><span class="n">create_distplot</span><span class="p">(</span><span class="n">hist_data</span><span class="p">,</span> <span class="n">group_labels</span><span class="p">,</span> <span class="n">bin_size</span><span class="o">=</span><span class="mf">.2</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
