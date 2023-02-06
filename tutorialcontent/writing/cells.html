@@ -484,6 +484,11 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iypbn-vs-md-when-to-use-what">
+   .iypbn vs .md - When to use what?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#markdown-cells">
    Markdown Cells
   </a>
@@ -538,6 +543,11 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iypbn-vs-md-when-to-use-what">
+   .iypbn vs .md - When to use what?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#markdown-cells">
    Markdown Cells
   </a>
@@ -590,14 +600,9 @@ title="Print to PDF"
 <p>the name <strong>Jupyter</strong>  references the three programming languages supported by Jupyter: <strong>Julia, Python and R</strong></p>
 </div>
 <p>Jupyter Notebooks are organized in a sequence of “cells”, each cell can consist of multi-line content. Depending on the type of cell, the behavior changes if the cell type is changed. There are three types of cells: <strong>code cells, markdown cells, and raw cells</strong> (raw cells probably won’t be of high significance for building courses). Every cell starts off as a code cell, but can be changed depending on the program you are using:</p>
-<div class="tab-set docutils">
-<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">Visual Studio Code (recommended)</label><div class="tab-content docutils">
-<p>To change the cell state, either click on the current cell type on the lower right cell corner. To add a new cell, move your cursor below an existing cell, where you can choose, whether you want to add a new Code or Markdown cell.</p>
-</div>
-<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Jupyter Notebook/ Jupyter Lab (also great!)</label><div class="tab-content docutils">
-<p>lorem ipsum</p>
-</div>
-</div>
+<section id="iypbn-vs-md-when-to-use-what">
+<h2>.iypbn vs .md - When to use what?<a class="headerlink" href="#iypbn-vs-md-when-to-use-what" title="Permalink to this headline">#</a></h2>
+</section>
 <section id="markdown-cells">
 <h2>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this headline">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Text</span></code> can be added to <code class="docutils literal notranslate"><span class="pre">IPython</span> <span class="pre">Notebooks</span></code> using <code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code>. <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> is a popular <code class="docutils literal notranslate"><span class="pre">markup</span> <span class="pre">language</span></code> that is a <code class="docutils literal notranslate"><span class="pre">superset</span> <span class="pre">of</span> <span class="pre">HTML</span></code>. Its specification can be found here:</p>
@@ -607,32 +612,42 @@ title="Print to PDF"
 <section id="markdown-basics">
 <h2>Markdown basics<a class="headerlink" href="#markdown-basics" title="Permalink to this headline">#</a></h2>
 <p>You can make text <em>italic</em> or <strong>bold</strong>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">can</span> <span class="n">build</span> <span class="n">nested</span> <span class="n">itemized</span> <span class="ow">or</span> <span class="n">enumerated</span> <span class="n">lists</span><span class="p">:</span>
-
-<span class="o">*</span> <span class="n">One</span>
-    <span class="o">-</span> <span class="n">Sublist</span>
-        <span class="o">-</span> <span class="n">This</span>
-  <span class="o">-</span> <span class="n">Sublist</span>
-        <span class="o">-</span> <span class="n">That</span>
-        <span class="o">-</span> <span class="n">The</span> <span class="n">other</span> <span class="n">thing</span>
-<span class="o">*</span> <span class="n">Two</span>
-  <span class="o">-</span> <span class="n">Sublist</span>
-<span class="o">*</span> <span class="n">Three</span>
-  <span class="o">-</span> <span class="n">Sublist</span>
-
-<span class="n">Now</span> <span class="n">another</span> <span class="nb">list</span><span class="p">:</span>
-
-<span class="mf">1.</span> <span class="n">Here</span> <span class="n">we</span> <span class="n">go</span>
-    <span class="mf">1.</span> <span class="n">Sublist</span>
-    <span class="mf">2.</span> <span class="n">Sublist</span>
-<span class="mf">2.</span> <span class="n">There</span> <span class="n">we</span> <span class="n">go</span>
-<span class="mf">3.</span> <span class="n">Now</span> <span class="n">this</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>You can build nested itemized or enumerated lists:</p>
+<ul class="simple">
+<li><p>One</p>
+<ul>
+<li><p>Sublist</p>
+<ul>
+<li><p>This</p></li>
+</ul>
+</li>
+<li><p>Sublist
+- That
+- The other thing</p></li>
+</ul>
+</li>
+<li><p>Two</p>
+<ul>
+<li><p>Sublist</p></li>
+</ul>
+</li>
+<li><p>Three</p>
+<ul>
+<li><p>Sublist</p></li>
+</ul>
+</li>
+</ul>
+<p>Now another list:</p>
+<ol class="simple">
+<li><p>Here we go</p>
+<ol class="simple">
+<li><p>Sublist</p></li>
+<li><p>Sublist</p></li>
+</ol>
+</li>
+<li><p>There we go</p></li>
+<li><p>Now this</p></li>
+</ol>
 <p>You can add horizontal rules:</p>
 <hr class="docutils" />
 <p>Here is a blockquote:</p>
@@ -721,8 +736,15 @@ Namespaces are one honking great idea – let’s do more of those!</p>
 <section id="code-cells">
 <h2>Code cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h2>
 <p>When executing code in <code class="docutils literal notranslate"><span class="pre">IPython</span></code>, all valid <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">syntax</span></code> works as-is, but <code class="docutils literal notranslate"><span class="pre">IPython</span></code> provides a number of <code class="docutils literal notranslate"><span class="pre">features</span></code> designed to make the <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">experience</span></code> more <code class="docutils literal notranslate"><span class="pre">fluid</span></code> and <code class="docutils literal notranslate"><span class="pre">efficient</span></code>. First, we need to explain how to run <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Try to run the <code class="docutils literal notranslate"><span class="pre">cell</span></code> below!</p>
-<p>import pandas as pd</p>
-<p>print(“Hi! This is a cell. Click on it and press the ▶ button above to run it”)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi! This is a cell. Click on it and press the ▶ button above to run it&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 <p>You can also run a cell with <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code> or <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. Experiment a bit with that.</p>
 </section>
 </section>
