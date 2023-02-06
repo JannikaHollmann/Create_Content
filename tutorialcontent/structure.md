@@ -1,4 +1,4 @@
-# Structuring Content using the Table of Contents
+# **Structuring Content using the Table of Contents**
 
 The structure of your book is based on a `YAML` file called `_toc.yml`, which defines the Table of Contents.
 In the simplest form, the _toc.yml looks like this:

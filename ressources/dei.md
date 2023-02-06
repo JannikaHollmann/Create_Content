@@ -1,4 +1,4 @@
-# Diversity, Equity and Inclusion
+# **Diversity, Equity and Inclusion**
 
 Let's rip one band-aid off right away: the current scientific and academic system is incredibly flawed and tremendously biased. Unfortunately, most students are not brought into contact with the respective issues during their studies and thus quite often perceive the present inequalities as "normal" and a given. This lead to the proliferation of exceptionally unfair "standards" and practices towards minorities and underrepresented groups. What's needed to combat these things are Universities, Departments, Lecturers, etc. that address these issues, as well as inform and enable students to actively engage in the process towards increasing [Diversity, Equity and Inclusion](https://en.wikipedia.org/wiki/Diversity_(business)) ([#DEI](https://twitter.com/hashtag/DEI?src=hashtag_click)) at all levels. 
 
