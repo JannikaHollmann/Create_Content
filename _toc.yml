@@ -5,24 +5,21 @@ format: jb-book
 root: intro
 chapters:
 - file: overview.md
-- file: intro/whyjb
 - file: setup
+- file: intro/whyjb
 #  sections:
 #  - file: setup/install
 #  - file: setup/miniconda
 #  - file: setup/github
 #  - file: setup/bash
-- file: tutorialcontent/create
-- file: tutorialcontent/structure
-- file: tutorialcontent/build
 - file: tutorialcontent/writing/writing
   sections:
   - file: tutorialcontent/writing/cells
   - file: tutorialcontent/writing/styling
-  - file: tutorialcontent/writing/links
   - file: tutorialcontent/writing/media
   - file: tutorialcontent/writing/material
-  - file: tutorialcontent/writing/example
+- file: tutorialcontent/structure
+#- file: tutorialcontent/build
 - file: tutorialcontent/publishing/publishing
   sections:
   - file: tutorialcontent/publishing/account
@@ -30,7 +27,7 @@ chapters:
 - file: intro/demo
   sections:
   - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
-  - url: https://peerherholz.github.io/EXPRA_Winter2021/
+  - url: https://peerherholz.github.io/Python_for_Psychologists_Winter2021
 # - file: tutorialcontent/nbgrader
 - file: ressources/info
   sections:

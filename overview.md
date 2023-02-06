@@ -118,12 +118,12 @@ He/Him. When contacting me, please refrain from using honoraries and formal lang
 However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
 ```
 
-[Felix Körber](x)
+[Felix Körber]([x](https://github.com/felixkoerber/j))
 
-- E-mail: `e@psych.uni-frankfurt.de`
+- E-mail: `koerber@psych.uni-frankfurt.de`
 
 ```{admonition} How to address one another?
 :class: dropdown
-He/Him. When contacting me, please refrain from using honoraries and formal language, "Michael" or "you" is fine as long as the content is respectful, fair and constructive (I aim for the same when I reply).
+He/Him. If you want to reach out, skip the formalities and just use "Felix" or "you", as long as the content is respectful, fair and constructive (I aim for the same when I reply).
 However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
 ```
