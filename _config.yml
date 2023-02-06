@@ -62,7 +62,7 @@ html:
 sphinx:
   extra_extensions:
   - sphinx_inline_tabs
-  - myst_nb",
+  - myst_nb
   - sphinx_togglebutton
   - sphinx_copybutton
   - sphinx.ext.intersphinx
