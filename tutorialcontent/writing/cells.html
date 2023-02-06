@@ -461,12 +461,66 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-cells">
+   Markdown Cells
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-basics">
+   Markdown basics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#embedded-code">
+   Embedded code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-html">
+   General HTML
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-files">
+   Local files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-of-local-files">
+   Security of local files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-cells">
+   Code cells
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -478,6 +532,49 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-cells">
+   Markdown Cells
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-basics">
+   Markdown basics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#embedded-code">
+   Embedded code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-html">
+   General HTML
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-files">
+   Local files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#security-of-local-files">
+   Security of local files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-cells">
+   Code cells
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -501,6 +598,133 @@ title="Print to PDF"
 <p>lorem ipsum</p>
 </div>
 </div>
+<section id="markdown-cells">
+<h2>Markdown Cells<a class="headerlink" href="#markdown-cells" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Text</span></code> can be added to <code class="docutils literal notranslate"><span class="pre">IPython</span> <span class="pre">Notebooks</span></code> using <code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code>. <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> is a popular <code class="docutils literal notranslate"><span class="pre">markup</span> <span class="pre">language</span></code> that is a <code class="docutils literal notranslate"><span class="pre">superset</span> <span class="pre">of</span> <span class="pre">HTML</span></code>. Its specification can be found here:</p>
+<p><a class="reference external" href="http://daringfireball.net/projects/markdown/">http://daringfireball.net/projects/markdown/</a></p>
+<p>You can view the <code class="docutils literal notranslate"><span class="pre">source</span></code> of a <code class="docutils literal notranslate"><span class="pre">cell</span></code> by <code class="docutils literal notranslate"><span class="pre">double</span> <span class="pre">clicking</span></code> on it, or while the <code class="docutils literal notranslate"><span class="pre">cell</span></code> is selected in <code class="docutils literal notranslate"><span class="pre">command</span> <span class="pre">mode</span></code>, press <code class="docutils literal notranslate"><span class="pre">Enter</span></code> to edit it. Once a <code class="docutils literal notranslate"><span class="pre">cell</span></code> has been <code class="docutils literal notranslate"><span class="pre">edited</span></code>, use <code class="docutils literal notranslate"><span class="pre">Shift-Enter</span></code> to <code class="docutils literal notranslate"><span class="pre">re-render</span></code> it.</p>
+</section>
+<section id="markdown-basics">
+<h2>Markdown basics<a class="headerlink" href="#markdown-basics" title="Permalink to this headline">#</a></h2>
+<p>You can make text <em>italic</em> or <strong>bold</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">You</span> <span class="n">can</span> <span class="n">build</span> <span class="n">nested</span> <span class="n">itemized</span> <span class="ow">or</span> <span class="n">enumerated</span> <span class="n">lists</span><span class="p">:</span>
+
+<span class="o">*</span> <span class="n">One</span>
+    <span class="o">-</span> <span class="n">Sublist</span>
+        <span class="o">-</span> <span class="n">This</span>
+  <span class="o">-</span> <span class="n">Sublist</span>
+        <span class="o">-</span> <span class="n">That</span>
+        <span class="o">-</span> <span class="n">The</span> <span class="n">other</span> <span class="n">thing</span>
+<span class="o">*</span> <span class="n">Two</span>
+  <span class="o">-</span> <span class="n">Sublist</span>
+<span class="o">*</span> <span class="n">Three</span>
+  <span class="o">-</span> <span class="n">Sublist</span>
+
+<span class="n">Now</span> <span class="n">another</span> <span class="nb">list</span><span class="p">:</span>
+
+<span class="mf">1.</span> <span class="n">Here</span> <span class="n">we</span> <span class="n">go</span>
+    <span class="mf">1.</span> <span class="n">Sublist</span>
+    <span class="mf">2.</span> <span class="n">Sublist</span>
+<span class="mf">2.</span> <span class="n">There</span> <span class="n">we</span> <span class="n">go</span>
+<span class="mf">3.</span> <span class="n">Now</span> <span class="n">this</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can add horizontal rules:</p>
+<hr class="docutils" />
+<p>Here is a blockquote:</p>
+<blockquote>
+<div><p>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren’t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one– and preferably only one –obvious way to do it.
+Although that way may not be obvious at first unless you’re Dutch.
+Now is better than never.
+Although never is often better than <em>right</em> now.
+If the implementation is hard to explain, it’s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea – let’s do more of those!</p>
+</div></blockquote>
+<p>You can add headings using Markdown’s syntax:</p>
+<pre>
+# Heading 1
+
+# Heading 2
+
+## Heading 2.1
+
+## Heading 2.2
+</pre></section>
+<section id="embedded-code">
+<h2>Embedded code<a class="headerlink" href="#embedded-code" title="Permalink to this headline">#</a></h2>
+<p>You can embed code meant for illustration instead of execution in Python:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>def f(x):
+    &quot;&quot;&quot;a docstring&quot;&quot;&quot;
+    return x**2
+</pre></div>
+</div>
+<p>or other languages:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if (i=0; i&lt;n; i++) {
+  printf(&quot;hello %d\n&quot;, i);
+  x += 4;
+}
+</pre></div>
+</div>
+</section>
+<section id="general-html">
+<h2>General HTML<a class="headerlink" href="#general-html" title="Permalink to this headline">#</a></h2>
+<p>Because <code class="docutils literal notranslate"><span class="pre">Markdown</span></code> is a <code class="docutils literal notranslate"><span class="pre">superset</span> <span class="pre">of</span> <span class="pre">HTML</span></code> you can even add things like <code class="docutils literal notranslate"><span class="pre">HTML</span> <span class="pre">tables</span></code>:</p>
+<table>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table></section>
+<section id="local-files">
+<h2>Local files<a class="headerlink" href="#local-files" title="Permalink to this headline">#</a></h2>
+<p>If you have <code class="docutils literal notranslate"><span class="pre">local</span> <span class="pre">files</span></code> in your <code class="docutils literal notranslate"><span class="pre">Notebook</span> <span class="pre">directory</span></code>, you can refer to these <code class="docutils literal notranslate"><span class="pre">files</span></code> in <code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code> directly:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[subdirectory/]&lt;filename&gt;
+</pre></div>
+</div>
+<p>For example, in the <code class="docutils literal notranslate"><span class="pre">static</span> <span class="pre">folder</span></code>, we have the <code class="docutils literal notranslate"><span class="pre">logo</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;img src=&quot;static/logo.png&quot; /&gt;
+</pre></div>
+</div>
+<img src="https://raw.githubusercontent.com/felixkoerber/DiLER/main/logo.png?token=GHSAT0AAAAAAB5F5K47KHDZYVJ6AMMHOEIUY7BIDNA" width=300 />
+<p>These do not <code class="docutils literal notranslate"><span class="pre">embed</span></code> the data into the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">file</span></code>, and require that the <code class="docutils literal notranslate"><span class="pre">files</span></code> exist when you are viewing the <code class="docutils literal notranslate"><span class="pre">notebook</span></code>.</p>
+</section>
+<section id="security-of-local-files">
+<h2>Security of local files<a class="headerlink" href="#security-of-local-files" title="Permalink to this headline">#</a></h2>
+<p>Note that this means that the <code class="docutils literal notranslate"><span class="pre">IPython</span> <span class="pre">notebook</span> <span class="pre">server</span></code> also acts as a <code class="docutils literal notranslate"><span class="pre">generic</span> <span class="pre">file</span> <span class="pre">server</span></code> for <code class="docutils literal notranslate"><span class="pre">files</span></code> inside the same <code class="docutils literal notranslate"><span class="pre">tree</span></code> as your <code class="docutils literal notranslate"><span class="pre">notebooks</span></code>. Access is not granted outside the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> folder so you have strict control over what <code class="docutils literal notranslate"><span class="pre">files</span></code> are <code class="docutils literal notranslate"><span class="pre">visible</span></code>, but for this reason <strong>it is highly recommended that you do not run the notebook server with a notebook directory at a high level in your filesystem (e.g. your home directory)</strong>.</p>
+<p>When you run the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> in a <code class="docutils literal notranslate"><span class="pre">password-protected</span></code> manner, <code class="docutils literal notranslate"><span class="pre">local</span> <span class="pre">file</span></code> access is <code class="docutils literal notranslate"><span class="pre">restricted</span></code> to <code class="docutils literal notranslate"><span class="pre">authenticated</span> <span class="pre">users</span></code> unless <code class="docutils literal notranslate"><span class="pre">read-only</span> <span class="pre">views</span></code> are active.</p>
+</section>
+<section id="code-cells">
+<h2>Code cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h2>
+<p>When executing code in <code class="docutils literal notranslate"><span class="pre">IPython</span></code>, all valid <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">syntax</span></code> works as-is, but <code class="docutils literal notranslate"><span class="pre">IPython</span></code> provides a number of <code class="docutils literal notranslate"><span class="pre">features</span></code> designed to make the <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">experience</span></code> more <code class="docutils literal notranslate"><span class="pre">fluid</span></code> and <code class="docutils literal notranslate"><span class="pre">efficient</span></code>. First, we need to explain how to run <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Try to run the <code class="docutils literal notranslate"><span class="pre">cell</span></code> below!</p>
+<p>import pandas as pd</p>
+<p>print(“Hi! This is a cell. Click on it and press the ▶ button above to run it”)</p>
+<p>You can also run a cell with <code class="docutils literal notranslate"><span class="pre">Ctrl+Enter</span></code> or <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. Experiment a bit with that.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
