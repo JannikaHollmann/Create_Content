@@ -26,8 +26,6 @@ chapters:
 - file: tutorialcontent/publishing/publishing
   sections:
   - file: tutorialcontent/publishing/account
-  - file: tutorialcontent/publishing/repo
-  - file: tutorialcontent/publishing/gh-pages
 - file: tutorialcontent/troubleshooting
 - file: intro/demo
   sections:
