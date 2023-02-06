@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cells in Jupyter Notebooks: Types and Usages" href="cells.html" />
-    <link rel="prev" title="Build your Book" href="../build.html" />
+    <link rel="prev" title="Why should you use Jupyter Books?" href="../../intro/whyjb.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -123,28 +123,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../intro/whyjb.html">
-   Why should you use Jupyter Books?
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../../setup.html">
    Setup: Before Creating Content
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../create.html">
-   Create Content
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../structure.html">
-   Structuring Content using the Table of Contents
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../build.html">
-   Build your Book
+  <a class="reference internal" href="../../intro/whyjb.html">
+   Why should you use Jupyter Books?
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -168,11 +153,6 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="links.html">
-     Links
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="media.html">
      Media: Images, Videos &amp; More
     </a>
@@ -182,12 +162,12 @@ const thebe_selector_output = ".output, .cell_output"
      Additional Material
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="example.html">
-     Quick Example
-    </a>
-   </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../structure.html">
+   Structuring Content using the Table of Contents
+  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../publishing/publishing.html">
@@ -227,8 +207,8 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference external" href="https://peerherholz.github.io/EXPRA_Winter2021/">
-     https://peerherholz.github.io/EXPRA_Winter2021/
+    <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021">
+     https://peerherholz.github.io/Python_for_Psychologists_Winter2021
     </a>
    </li>
   </ul>
@@ -484,8 +464,8 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#before-we-get-started-1">
-   Before we get started 1…
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -635,8 +615,8 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#before-we-get-started-1">
-   Before we get started 1…
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -778,13 +758,14 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="writing-content">
 <h1>Writing Content<a class="headerlink" href="#writing-content" title="Permalink to this headline">#</a></h1>
+<p><strong>Jupyter Book</strong> allows for the integration of various markup languages and formats, including Markdown files, Jupyter notebooks, MyST Markdown notebooks, reStructured Text and more.</p>
 <p>MyST is a markup language that draws inspiration from RMarkdown, and is fully integrated for the use with Jupyter Book. It allows for more advanced formatting options and the ability to include interactive elements, such as widgets and code snippets, within your content. Jupyter Book is able to parse MyST in both .ipybn and .md files, allowing for flexible content creation.</p>
 <p>Here, we present only a short overview of the features of MyST, however, there is much more documentation on <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-core">the MyST website.</a></p>
-<section id="before-we-get-started-1">
-<h2>Before we get started 1…<a class="headerlink" href="#before-we-get-started-1" title="Permalink to this headline">#</a></h2>
+<section id="before-we-get-started">
+<h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this headline">#</a></h2>
 <br>
 <ul class="simple">
-<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter and Peer Herholz and further adapted for this course by Peer Herholz</p></li>
+<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter and Peer Herholz and further adapted for this course by Michael Ernst and Felix Körber</p></li>
 <li><p>based on Tal Yarkoni’s <a class="reference external" href="https://neurohackademy.org/course/introduction-to-python-2/">“Introduction to Python” lecture at Neurohackademy 2019</a></p></li>
 <li><p>based on <a class="reference external" href="http://github.com/jrjohansson/scientific-python-lectures">IPython notebooks from J. R. Johansson</a></p></li>
 <li><p>based on <a class="reference external" href="http://www.stavros.io/tutorials/python/">http://www.stavros.io/tutorials/python/</a> &amp; <a class="reference external" href="http://www.swaroopch.com/notes/python">http://www.swaroopch.com/notes/python</a></p></li>
@@ -1620,11 +1601,11 @@ if this is the most recent Jupyter kernel you have started.
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../build.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../../intro/whyjb.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Build your Book</p>
+            <p class="prev-next-title">Why should you use Jupyter Books?</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="cells.html" title="next page">
