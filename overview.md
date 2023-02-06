@@ -1,4 +1,4 @@
-# Course overview & procedure
+# **Course overview & procedure**
 
 Now that you've got an idea what this course is about, let's discuss how we'll hopefully get your course up and running. The following document will therefore clarify the structure and general setup of this course.
 
