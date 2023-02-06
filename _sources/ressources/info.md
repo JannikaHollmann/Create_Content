@@ -1,4 +1,4 @@
-# Ressources
+# **Ressources**
 
 
 The following sections will provide free ressources centered around the creation and online materials for higher education.
