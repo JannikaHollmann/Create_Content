@@ -12,6 +12,7 @@ chapters:
 #  - file: setup/miniconda
 #  - file: setup/github
 #  - file: setup/bash
+- file: 10min
 - file: tutorialcontent/writing/writing
   sections:
   - file: tutorialcontent/writing/cells
