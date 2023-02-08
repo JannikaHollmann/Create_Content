@@ -446,12 +446,87 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
+   1.
+   <strong>
+    Make sure you have all the prerequisites installed
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
+   2.
+   <strong>
+    Create a fresh Git Repository for your project:
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-our-course-template">
+   3.
+   <strong>
+    Copy our course template
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-content">
+   4.
+   <strong>
+    Create Content
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents-and-config">
+   5.
+   <strong>
+    Table of Contents and config
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#share-it-online">
+   6.
+   <strong>
+    Share it online
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-the-pages">
+   7.
+   <strong>
+    Add the pages
+   </strong>
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -463,6 +538,70 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
+   1.
+   <strong>
+    Make sure you have all the prerequisites installed
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
+   2.
+   <strong>
+    Create a fresh Git Repository for your project:
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-our-course-template">
+   3.
+   <strong>
+    Copy our course template
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-content">
+   4.
+   <strong>
+    Create Content
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents-and-config">
+   5.
+   <strong>
+    Table of Contents and config
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#share-it-online">
+   6.
+   <strong>
+    Share it online
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-the-pages">
+   7.
+   <strong>
+    Add the pages
+   </strong>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -472,19 +611,18 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github">
 <h1>Quick Setup Guide for Deploying Courses using Jupyter Book on Github<a class="headerlink" href="#quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github" title="Permalink to this headline">#</a></h1>
-<ol class="simple">
-<li><p><strong>Make sure you have all the prerequisites installed</strong>
-Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p></li>
-</ol>
+<section id="make-sure-you-have-all-the-prerequisites-installed">
+<h2>1. <strong>Make sure you have all the prerequisites installed</strong><a class="headerlink" href="#make-sure-you-have-all-the-prerequisites-installed" title="Permalink to this headline">#</a></h2>
+<p>Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p>
 <ul class="simple">
 <li><p><strong>Git</strong>: A version control system that helps you keep track of your code changes.</p></li>
 <li><p><strong>Jupyter Book</strong>: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.</p></li>
 <li><p>A <strong>text editor of your choice</strong>: You can use any text editor, such as Visual Studio Code, Sublime Text, or Atom, to create and edit your content.
 Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Create a fresh Git Repository for your project:</strong></p></li>
-</ol>
+</section>
+<section id="create-a-fresh-git-repository-for-your-project">
+<h2>2. <strong>Create a fresh Git Repository for your project:</strong><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.</p></li>
 <li><p>Create a new repository for your course by giving it a name and a description.</p></li>
@@ -494,48 +632,49 @@ Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li
 <li><p>Open up a terminal window and navigate to the location where you want to store your local course copy.</p></li>
 <li><p>Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/">https://github.com/</a><yourprojectname>.</p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Copy our course template</strong></p></li>
-</ol>
+</section>
+<section id="copy-our-course-template">
+<h2>3. <strong>Copy our course template</strong><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
 <li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em></p></li>
 <li><p>Extract the contents of the ZIP file in the folder linked to your GitHub repository.</p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Create Content</strong></p></li>
-</ol>
+</section>
+<section id="create-content">
+<h2>4. <strong>Create Content</strong><a class="headerlink" href="#create-content" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.</p></li>
 <li><p>Make sure to give each file a meaningful name and add a title to each page.</p></li>
 <li><p>You can use the provided style guide as a reference to see how to effectively implement MyST Markdown.</p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Table of Contents and config</strong></p></li>
-</ol>
+</section>
+<section id="table-of-contents-and-config">
+<h2>5. <strong>Table of Contents and config</strong><a class="headerlink" href="#table-of-contents-and-config" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Once you’ve created files, open the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
 <li><p>add your newly created files in the sequence of your choice according to our template</p></li>
 <li><p>open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
 <li><p>Change the title, author, and the location of your GitHub repository.</p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Share it online</strong></p></li>
-</ol>
+</section>
+<section id="share-it-online">
+<h2>6. <strong>Share it online</strong><a class="headerlink" href="#share-it-online" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>In your terminal, type the following commands:</p></li>
 <li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
 <li><p>b. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;my</span> <span class="pre">first</span> <span class="pre">commit</span></code></p></li>
 <li><p>c. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
 </ul>
-<ol class="simple">
-<li><p><strong>Add the pages</strong></p></li>
-</ol>
+</section>
+<section id="add-the-pages">
+<h2>7. <strong>Add the pages</strong><a class="headerlink" href="#add-the-pages" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>On Github, navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
 </ul>
 <p>You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
