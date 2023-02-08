@@ -6,55 +6,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Interactive Jupyter Notebooks via MyBinder &#8212; Creating educational content with Jupyter Books</title>
+    <title>Quick Setup Guide for Deploying Courses using Jupyter Book on Github &#8212; Creating educational content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script src="../../_static/tabs.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/tabs.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Writing Content" href="tutorialcontent/writing/writing.html" />
+    <link rel="prev" title="Why should you use Jupyter Books?" href="intro/whyjb.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,19 +91,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+    <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../../_static/logo.png" class="logo" alt="logo">
+      <img src="_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Creating educational content with Jupyter Books</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -109,34 +111,34 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
+                <a class="reference internal" href="intro.html">
                     Welcome!
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../overview.html">
+  <a class="reference internal" href="overview.html">
    Course overview &amp; procedure
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../setup.html">
+  <a class="reference internal" href="setup.html">
    Setup: Before Creating Content
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../intro/whyjb.html">
+  <a class="reference internal" href="intro/whyjb.html">
    Why should you use Jupyter Books?
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../10min.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Quick Setup Guide for Deploying Courses using Jupyter Book on Github
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../writing/writing.html">
+  <a class="reference internal" href="tutorialcontent/writing/writing.html">
    Writing Content
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -146,34 +148,34 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing/cells.html">
+    <a class="reference internal" href="tutorialcontent/writing/cells.html">
      Cells in Jupyter Notebooks: Types and Usages
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing/styling.html">
+    <a class="reference internal" href="tutorialcontent/writing/styling.html">
      Styling: The Look and Feel
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing/media.html">
+    <a class="reference internal" href="tutorialcontent/writing/media.html">
      Media: Images, Videos &amp; More
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../writing/material.html">
+    <a class="reference internal" href="tutorialcontent/writing/material.html">
      Additional Material
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../structure.html">
+  <a class="reference internal" href="tutorialcontent/structure.html">
    Structuring Content using the Table of Contents
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="publishing.html">
+  <a class="reference internal" href="tutorialcontent/publishing/publishing.html">
    Publishing: Getting the word out
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -183,19 +185,19 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="account.html">
+    <a class="reference internal" href="tutorialcontent/publishing/account.html">
      Git, GitHub and hosting websites using GitHub Pages
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../troubleshooting.html">
+  <a class="reference internal" href="tutorialcontent/troubleshooting.html">
    Troubleshooting
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../intro/demo.html">
+  <a class="reference internal" href="intro/demo.html">
    Further Resources under the DiLER Project
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -217,7 +219,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ressources/info.html">
+  <a class="reference internal" href="ressources/info.html">
    Ressources
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -227,19 +229,19 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ressources/CoC.html">
+    <a class="reference internal" href="ressources/CoC.html">
      Code of Conduct
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ressources/dei.html">
+    <a class="reference internal" href="ressources/dei.html">
      Diversity, Equity and Inclusion
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../openscience/openscience.html">
+  <a class="reference internal" href="openscience/openscience.html">
    Open-Science
   </a>
  </li>
@@ -302,7 +304,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/publishing/mybinder.ipynb"
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/10min.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -312,7 +314,7 @@ title="Launch on Binder"
 
 <span class="headerbtn__icon-container">
   
-    <img src="../../_static/images/logo_binder.svg">
+    <img src="_static/images/logo_binder.svg">
   </span>
 <span class="headerbtn__text-container">Binder</span>
 </a>
@@ -362,7 +364,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/publishing/mybinder.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2F10min.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -379,7 +381,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/publishing/mybinder.ipynb"
+        <a href="https://github.com/felixkoerber/jb/edit/master/docs/10min.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -407,7 +409,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/tutorialcontent/publishing/mybinder.ipynb"
+        <a href="_sources/10min.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -456,7 +458,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Interactive Jupyter Notebooks via MyBinder</h1>
+                <h1>Quick Setup Guide for Deploying Courses using Jupyter Book on Github</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -468,9 +470,72 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="interactive-jupyter-notebooks-via-mybinder">
-<h1>Interactive Jupyter Notebooks via MyBinder<a class="headerlink" href="#interactive-jupyter-notebooks-via-mybinder" title="Permalink to this headline">#</a></h1>
-<p><a class="reference external" href="https://mybinder.org/">https://mybinder.org/</a></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github">
+<h1>Quick Setup Guide for Deploying Courses using Jupyter Book on Github<a class="headerlink" href="#quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github" title="Permalink to this headline">#</a></h1>
+<ol class="simple">
+<li><p><strong>Make sure you have all the prerequisites installed</strong>
+Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p></li>
+</ol>
+<ul class="simple">
+<li><p><strong>Git</strong>: A version control system that helps you keep track of your code changes.</p></li>
+<li><p><strong>Jupyter Book</strong>: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.</p></li>
+<li><p>A <strong>text editor of your choice</strong>: You can use any text editor, such as Visual Studio Code, Sublime Text, or Atom, to create and edit your content.
+Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Create a fresh Git Repository for your project:</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.</p></li>
+<li><p>Create a new repository for your course by giving it a name and a description.</p></li>
+<li><p>On GitHub, open up the empty project in your browser.</p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">actions</span></code>, then <code class="docutils literal notranslate"><span class="pre">general</span></code> to change <strong>Workflow permissions</strong> to <strong>Read and Write Permission</strong> to change the Workflow permissions to Read and Write Permission. This will allow you to push changes to the repository from your local machine.</p></li>
+<li><p>Save your changes.</p></li>
+<li><p>Open up a terminal window and navigate to the location where you want to store your local course copy.</p></li>
+<li><p>Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/">https://github.com/</a><yourprojectname>.</p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Copy our course template</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
+<li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em></p></li>
+<li><p>Extract the contents of the ZIP file in the folder linked to your GitHub repository.</p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Create Content</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.</p></li>
+<li><p>Make sure to give each file a meaningful name and add a title to each page.</p></li>
+<li><p>You can use the provided style guide as a reference to see how to effectively implement MyST Markdown.</p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Table of Contents and config</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>Once you’ve created files, open the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
+<li><p>add your newly created files in the sequence of your choice according to our template</p></li>
+<li><p>open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
+<li><p>Change the title, author, and the location of your GitHub repository.</p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Share it online</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>In your terminal, type the following commands:</p></li>
+<li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
+<li><p>b. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;my</span> <span class="pre">first</span> <span class="pre">commit</span></code></p></li>
+<li><p>c. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
+</ul>
+<ol class="simple">
+<li><p><strong>Add the pages</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p>On Github, navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
+</ul>
+<p>You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -486,7 +551,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             name: "python3",
-            path: "./tutorialcontent/publishing"
+            path: "./."
         },
         predefinedOutput: true
     }
@@ -500,6 +565,20 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro/whyjb.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Why should you use Jupyter Books?</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tutorialcontent/writing/writing.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Writing Content</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>
@@ -521,7 +600,7 @@ title="Print to PDF"
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>
