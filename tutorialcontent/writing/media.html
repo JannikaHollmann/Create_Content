@@ -296,6 +296,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/writing/media.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -417,12 +446,53 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gifs">
+   GIFs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-slides">
+   Google Slides
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css">
+     css
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -434,6 +504,36 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#images">
+   Images
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gifs">
+   GIFs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#google-slides">
+   Google Slides
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#css">
+     css
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -443,6 +543,57 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="media-images-videos-more">
 <h1>Media: Images, Videos &amp; More<a class="headerlink" href="#media-images-videos-more" title="Permalink to this headline">#</a></h1>
+<section id="images">
+<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">#</a></h2>
+<p>In MyST, there few different ways to include images. Here we will highlight the way that is most optimal for hosting the Book with our provided gh-actions script.</p>
+<p>The easiest way is to add the images to your projects in the static folder of your project. Once you push/ upload the project to your GitHub you essentially are hosting the images through their services.</p>
+<p>To add images in your Jupyter Book, use the following line of Markdown in a markdown cell:</p>
+<p><code class="docutils literal notranslate"><span class="pre">![alternative_imagetext](https://YOURGITHUBNAME.github.io/PROJECTNAME/_static/FILENAME.png)</span></code>
+Resulting, for example, in:
+<img alt="alternative_imagetext" src="https://felixkoerber.github.io/jb/_static/logo.png" /></p>
+<p>As you are able to use essentially any imagelink, you can add images that are hosted through other websites, too!</p>
+<p>If you want more control about the size, orientation and more, you can also use HTML following line of code:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;(https://YOURGITHUBNAME.github.io/PROJECTNAME/_static/FILENAME.png&quot;</span> <span class="pre">alt=&quot;alternative_imagetext&quot;</span> <span class="pre">class=&quot;bg-primary</span> <span class="pre">mb-1&quot;</span> <span class="pre">width=&quot;200px&quot;&gt;</span></code></p>
+<p>Since we have adjusted the image width, this results in a smaller image:</p>
+<img src="https://felixkoerber.github.io/jb/_static/logo.png" alt="logo" class="bg-primary mb-1" width="200px">
+</section>
+<section id="gifs">
+<h2>GIFs<a class="headerlink" href="#gifs" title="Permalink to this headline">#</a></h2>
+<p>To implement GIFs in Jupyter Books, you can use the Markdown syntax for images and include the link to the GIF file. Here’s an example:</p>
+<p><img alt="Alt Text" src="tutorialcontent/writing/link/to/your/gif/file.gif" /></p>
+<p>Replace “Alt Text” with a description of your GIF and “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
+<p>You can also use HTML to embed a GIF in Jupyter Books. Here’s an example:</p>
+<img src="link/to/your/gif/file.gif"/>
+<p>Again, replace “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
+<p>Note that if you’re using a local file path, the path should be relative to the location of the notebook or Markdown file that you’re embedding the GIF in. If you’re using a URL, it should be a direct link to the GIF file.</p>
+<p>Additionally, make sure that the GIF file is in a compatible format (e.g., .gif) and that it’s located in a location that’s accessible to your Jupyter Notebook or Jupyter Book.</p>
+</section>
+<section id="google-slides">
+<h2>Google Slides<a class="headerlink" href="#google-slides" title="Permalink to this headline">#</a></h2>
+<p>To embed Google Slides in Jupyter Book, you can use an HTML iframe. Here’s how:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Go to your Google Slides presentation and click on the &quot;Share&quot; button in the top-right corner of the screen.
+
+Click on the &quot;Advanced&quot; link in the bottom-right corner of the sharing settings.
+
+In the &quot;Who has access&quot; section, click on the drop-down menu and select &quot;On - Anyone with the link.&quot;
+
+Copy the link that&#39;s provided.
+
+Open your Jupyter Book and create a new Markdown cell where you want to embed the Google Slides presentation.
+
+In the Markdown cell, create an HTML iframe with the following code:
+</pre></div>
+</div>
+<section id="css">
+<h3>css<a class="headerlink" href="#css" title="Permalink to this headline">#</a></h3>
+<iframe src="your-google-slides-link" width="100%" height="400px"></iframe>
+<p>Replace “your-google-slides-link” with the link you copied in step 4.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Save the Markdown cell and preview your Jupyter Book. You should now see the embedded Google Slides presentation.
+</pre></div>
+</div>
+<p>Note that the width and height of the iframe can be adjusted to fit your specific use case. You may also want to adjust the styling of the iframe to better match your Jupyter Book’s visual design.</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

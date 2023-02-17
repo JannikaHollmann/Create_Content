@@ -1,13 +1,15 @@
 # Course overview & procedure
 
-Now that you've got an idea what this course is about, let's discuss how we'll hopefully get your course up and running. The following document will therefore clarify the structure and general setup of this course.
+Now that you've got an idea what this website is about, let's discuss how we'll hopefully get your course up and running. The following document will therefore clarify the structure and general setup of this course.
 
 ### What you'll be learning
 
 **At the end of the course, you will be able to:**
 
-* E.g
-* E.g.
+* Create Content with Jupyter Notebooks and MyST Markdown
+* Understand the value of `open education`
+* Create Websites and Courses using Jupyter Book
+* Host Courses using GitHub Pages
 
 ### Course structure
 
@@ -17,53 +19,46 @@ The course is divided into several modules, each covering a step in the creation
 
 You can use the following links to navigate through the content of the course:
 
-* [Overview & procedure ](link-to-overview.html)
+* [Overview & procedure ](./overview.md)
 
-   What's this course all about? How are things implemented and supposed to work?
+   What's this course all about? How are things implemented and supposed to work? (you are already here)
 
-* [Setup](link-to-setup.html)
+* [Setup](./setup/setup.ipynb)
 
    We'll need to get some software to start off with this course! 
 
-* [Introduction/Why JB-Notebooks](link-to-introduction/introduction.html)
+* [Introduction/Why JB-Notebooks](./intro/whyjb.ipynb)
 
    All things gotta start somewhere, but how and why?
 
-* [Content creation](link-to-experiments/experiments.html#)
 
-    - [writing content](link-to-experiments/experiments.html#)
+* [Content creation](./tutorialcontent/writing.ipynb)
 
-    - [Interactive content: Jupyter notebooks](link-to-experiments/experiments.html#)
+    - [What are cells?](.tutorialcontent/writing/cells)
 
-    - [Style](link-to-experiments/experiments.html#)
+    - [Styling: The Look and Feel](./tutorialcontent/writing/styling)
         
-    - [Embedding Media: Images, Videos and more](link-to-experiments/experiments.html#)
+    - [Embedding Media: Images, Videos and more](./tutorialcontent/writing/media)
 
 
-* [Structuring content](link-to-experiments/experiments.html#)
+* [Structuring content](./tutorialcontent/structure)
 
 
-* [Publishing](link-to-projects.html)
+* [Publishing](./tutorialcontent/publishing/publishing)
 
-    - [Build your book](link-to-experiments/experiments.html#)
+    - [Build your book](./tutorialcontent/publishing/account)
 
-    - [Setting up Github](link-to-experiments/experiments.html#)
-
-    - [Creating a Github repository](link-to-experiments/experiments.html#)
-
-    - [Hosting a Website: Gh-pages](link-to-experiments/experiments.html#)
-
-    - [Licenses](link-to-experiments/experiments.html#)
-
-* [Troubleshooting](link-to-projects.html)
+* [Troubleshooting](./tutorialcontent/troubleshooting)
 
     - Encounter any problems? Check-out common sources of errors and their possible solution.
 
-* [Example Courses](link-to-projects.html)
+* [Example Courses](./intro/demo)
 
-* [Quick Setup](link-to-projects.html)
+* [Quick Set-Up](./10min.ipynb)
+  
+  If you already know some basics and want a refresher on how to quickly write, build and host a course. 
 
-* [Ressources](link-to-projects.html)
+* [Ressources](./ressources/info)
 
     - [Diversity, Equity, Inclusion](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/questionnaires.html)
 
@@ -77,7 +72,7 @@ You can use the following links to navigate through the content of the course:
 
             Necessities for creating an open, fair, safe and inclusive learning experience.
 
-* [Open Science statement](link-to-projects.html)
+* [Open Science statement](./openscience/openscience)
 
 
 #### How do I get all the software and do I have to apply for a loan to get it?
@@ -118,7 +113,7 @@ He/Him. When contacting me, please refrain from using honoraries and formal lang
 However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
 ```
 
-[Felix Körber]([x](https://github.com/felixkoerber/j))
+[Felix Körber](https://github.com/felixkoerber)
 
 - E-mail: `koerber@psych.uni-frankfurt.de`
 
