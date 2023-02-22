@@ -15,7 +15,6 @@ Now that you've got an idea what this website is about, let's discuss how we'll 
 
 The course is divided into several modules, each covering a step in the creation of your course. The modules include content creation, how to structure your course "book", as well as how to host your course website using github. The following section will illustrate the structure of the contents contained.
 
--------------------------------------- adapt ----------------------------
 
 You can use the following links to navigate through the content of the course:
 
