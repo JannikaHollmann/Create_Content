@@ -611,6 +611,7 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github">
 <h1>Quick Setup Guide for Deploying Courses using Jupyter Book on Github<a class="headerlink" href="#quick-setup-guide-for-deploying-courses-using-jupyter-book-on-github" title="Permalink to this headline">#</a></h1>
+<p>You have some experience in setting up or just want the quickest way to a finished Jupyter Book? This is the page for you. While we can’t give you a lot of information in 10 steps, this page condenses the creation and hosting process of Jupyter Books.</p>
 <section id="make-sure-you-have-all-the-prerequisites-installed">
 <h2>1. <strong>Make sure you have all the prerequisites installed</strong><a class="headerlink" href="#make-sure-you-have-all-the-prerequisites-installed" title="Permalink to this headline">#</a></h2>
 <p>Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p>
@@ -624,10 +625,13 @@ Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li
 <section id="create-a-fresh-git-repository-for-your-project">
 <h2>2. <strong>Create a fresh Git Repository for your project:</strong><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.</p></li>
-<li><p>Create a new repository for your course by giving it a name and a description.</p></li>
+<li><p>Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.
+<img alt="GHNewRepo" src="https://felixkoerber.github.io/jb/_static/New_repo.jpg" /></p></li>
+<li><p>Create a new repository for your course by giving it a name and a description.
+<img alt="GHNewRepo_Description" src="https://felixkoerber.github.io/jb/_static/new_repo_example.png" /></p></li>
 <li><p>On GitHub, open up the empty project in your browser.</p></li>
-<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">actions</span></code>, then <code class="docutils literal notranslate"><span class="pre">general</span></code> to change <strong>Workflow permissions</strong> to <strong>Read and Write Permission</strong> to change the Workflow permissions to Read and Write Permission. This will allow you to push changes to the repository from your local machine.</p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">actions</span></code>, then <code class="docutils literal notranslate"><span class="pre">general</span></code> to change <strong>Workflow permissions</strong> to <strong>Read and Write Permission</strong> to change the Workflow permissions to Read and Write Permission. This will allow you to push changes to the repository from your local machine.
+<img alt="Workflow_Permissions" src="https://felixkoerber.github.io/jb/_static/Workflow_permission.jpg" /></p></li>
 <li><p>Save your changes.</p></li>
 <li><p>Open up a terminal window and navigate to the location where you want to store your local course copy.</p></li>
 <li><p>Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/">https://github.com/</a><yourprojectname>.</p></li>
@@ -637,7 +641,8 @@ Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li
 <h2>3. <strong>Copy our course template</strong><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
-<li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em></p></li>
+<li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em>
+<img alt="Download_template" src="https://felixkoerber.github.io/jb/_static/Download_template.jpg" /></p></li>
 <li><p>Extract the contents of the ZIP file in the folder linked to your GitHub repository.</p></li>
 </ul>
 </section>
@@ -661,7 +666,7 @@ Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li
 <section id="share-it-online">
 <h2>6. <strong>Share it online</strong><a class="headerlink" href="#share-it-online" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>In your terminal, type the following commands:</p></li>
+<li><p>In your terminal, navigate to the location of your project and type the following commands:</p></li>
 <li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
 <li><p>b. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;my</span> <span class="pre">first</span> <span class="pre">commit</span></code></p></li>
 <li><p>c. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
@@ -671,9 +676,10 @@ Need a fresh up? No problem, check <span class="xref myst">here</span> )</p></li
 <h2>7. <strong>Add the pages</strong><a class="headerlink" href="#add-the-pages" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>On Github, navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>
+<img alt="Set-Up_Pages" src="https://felixkoerber.github.io/jb/_static/Set_Up_Pages.jpg" />
+You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p></li>
 </ul>
-<p>You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p>
 </section>
 </section>
 
