@@ -484,20 +484,14 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#css">
-     css
+    <a class="reference internal nav-link" href="#videos">
+     Videos
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
+    <a class="reference internal nav-link" href="#gifs">
+     GIFs
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#presentations">
-       Presentations
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -536,20 +530,14 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#css">
-     css
+    <a class="reference internal nav-link" href="#videos">
+     Videos
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
+    <a class="reference internal nav-link" href="#gifs">
+     GIFs
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#presentations">
-       Presentations
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
  </li>
@@ -596,42 +584,41 @@ title="Print to PDF"
 <section id="google-slides">
 <h2>Google Slides<a class="headerlink" href="#google-slides" title="Permalink to this headline">#</a></h2>
 <p>To embed Google Slides in Jupyter Book, you can use an HTML iframe. Here’s how:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Go to your Google Slides presentation and click on the &quot;Share&quot; button in the top-right corner of the screen.
-
-Click on the &quot;Advanced&quot; link in the bottom-right corner of the sharing settings.
-
-In the &quot;Who has access&quot; section, click on the drop-down menu and select &quot;On - Anyone with the link.&quot;
-
-Copy the link that&#39;s provided.
-
-Open your Jupyter Book and create a new Markdown cell where you want to embed the Google Slides presentation.
-
-In the Markdown cell, create an HTML iframe with the following code:
-</pre></div>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;your-google-slides-link&quot;</span> <span class="pre">width=&quot;100%&quot;</span> <span class="pre">height=&quot;400px&quot;&gt;&lt;/iframe&gt;</span></code></p>
+<ul class="simple">
+<li><p>Go to your Google Slides presentation and click on the “Share” button in the top-right corner of the screen.</p></li>
+<li><p>Click on the “Advanced” link in the bottom-right corner of the sharing settings.</p></li>
+<li><p>In the “Who has access” section, click on the drop-down menu and select “On - Anyone with the link.”</p></li>
+<li><p>Copy the link that’s provided.</p></li>
+<li><p>Open your Jupyter Book and create a new Markdown cell where you want to embed the Google Slides presentation.</p></li>
+<li><p>In the Markdown cell, create an HTML iframe with the following code:
+<code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;your-google-slides-link&quot;</span> <span class="pre">width=&quot;100%&quot;</span> <span class="pre">height=&quot;400px&quot;&gt;&lt;/iframe&gt;</span></code></p></li>
+</ul>
 <p>Which could result in something like this:</p>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;https://docs.google.com/presentation/d/1GzgJIF8vbXauhIagFWZwnmLEIuFKcJGzZk7eQRBs57M/edit?usp=sharing&quot;</span> <span class="pre">width=&quot;100%&quot;</span> <span class="pre">height=&quot;400px&quot;&gt;&lt;/iframe&gt;</span></code></p>
-<section id="css">
-<h3>css<a class="headerlink" href="#css" title="Permalink to this headline">#</a></h3>
-<p>Replace “your-google-slides-link” with the link you copied in step 4.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Save the Markdown cell and preview your Jupyter Book. You should now see the embedded Google Slides presentation.
-</pre></div>
-</div>
+<iframe src="https://docs.google.com/presentation/d/1GzgJIF8vbXauhIagFWZwnmLEIuFKcJGzZk7eQRBs57M/edit?usp=sharing" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <p>Note that the width and height of the iframe can be adjusted to fit your specific use case. You may also want to adjust the styling of the iframe to better match your Jupyter Book’s visual design.</p>
-</section>
-<section id="id1">
-<h3><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<section id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Permalink to this headline">#</a></h3>
+<p>To add videos, you need to add the “embed”-URL of the video.
+This URL is formatted like this:
+<code class="docutils literal notranslate"><span class="pre">http://www.youtube.com/embed/VIDEO_ID</span></code></p>
+<p>Thus, <code class="docutils literal notranslate"><span class="pre">https://www.youtube.com/watch?v=c-bemNZ-IqA</span></code> would become <code class="docutils literal notranslate"><span class="pre">https://www.youtube.com/embed/c-bemNZ-IqA</span></code>.</p>
+<p>Added in iframes, it looks this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;https://www.youtube.com/embed/c-bemNZ-IqA&quot;</span> <span class="pre">style=&quot;border:0px</span> <span class="pre">#ffffff</span> <span class="pre">none;&quot;</span> <span class="pre">name=&quot;Open</span> <span class="pre">Science</span> <span class="pre">Video&quot;</span> <span class="pre">scrolling=&quot;no&quot;</span> <span class="pre">frameborder=&quot;1&quot;</span> <span class="pre">marginheight=&quot;0px&quot;</span> <span class="pre">marginwidth=&quot;0px&quot;</span> <span class="pre">height=&quot;400px&quot;</span> <span class="pre">width=&quot;600px&quot;</span> <span class="pre">allowfullscreen&gt;&lt;/iframe&gt;</span></code></p>
+<p>Turning into:</p>
+<iframe src="https://www.youtube.com/embed/c-bemNZ-IqA" style="border:0px #ffffff none;" name="Open Science Video" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe></section>
+<section id="gifs">
+<h3>GIFs<a class="headerlink" href="#gifs" title="Permalink to this headline">#</a></h3>
 <p>To implement GIFs in Jupyter Books, you can also use HTML to embed a GIF in Jupyter Books. Here’s an example:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;link/to/your/gif/file.gif&quot;</span> <span class="pre">width=&quot;240&quot;</span> <span class="pre">height=&quot;200&quot;</span> <span class="pre">frameBorder=&quot;0&quot;</span> <span class="pre">class=&quot;giphy-embed&quot;</span> <span class="pre">allowFullScreen&gt;&lt;/iframe&gt;'</span></code></p>
 <p>Again, replace “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
 <p>This could result in:</p>
 <iframe src="https://giphy.com/embed/l5s71uAp3CzKwxwkoZ" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Note that if you’re using a local file path, the path should be relative to the location of the notebook or Markdown file that you’re embedding the GIF in. If you’re using a URL, it should be a direct link to the GIF file.</p>
-<p>Additionally, make sure that the GIF file is in a compatible format (e.g., .gif) and that it’s located in a location that’s accessible to your Jupyter Notebook or Jupyter Book.</p>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/bBNj5h8xIrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <section id="presentations">
-<h4>Presentations<a class="headerlink" href="#presentations" title="Permalink to this headline">#</a></h4>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbsPLTpS0KCLjw4NjVAfxT0Q0GNWr50J2ap5yQEOk0T9DTqskfOkh_YN79HjXlcwQP2DaTssiZYvF1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> </section>
+</div>
+<hr class="docutils" />
+<p>There are plenty of other datatypes you can add! This section is only a short introduction to the embedding of media.</p>
 </section>
 </section>
 </section>
