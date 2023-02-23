@@ -474,8 +474,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#gifs">
-   GIFs
+  <a class="reference internal nav-link" href="#videos-presentations-gifs-and-more-iframes">
+   Videos, Presentations, GIFs, and more: iframes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -487,6 +487,17 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#css">
      css
     </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#presentations">
+       Presentations
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -515,8 +526,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#gifs">
-   GIFs
+  <a class="reference internal nav-link" href="#videos-presentations-gifs-and-more-iframes">
+   Videos, Presentations, GIFs, and more: iframes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -528,6 +539,17 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#css">
      css
     </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#presentations">
+       Presentations
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -548,26 +570,29 @@ title="Print to PDF"
 <p>In MyST, there few different ways to include images. Here we will highlight the way that is most optimal for hosting the Book with our provided gh-actions script.</p>
 <p>The easiest way is to add the images to your projects in the static folder of your project. Once you push/ upload the project to your GitHub you essentially are hosting the images through their services.</p>
 <p>To add images in your Jupyter Book, use the following line of Markdown in a markdown cell:</p>
-<p><code class="docutils literal notranslate"><span class="pre">![alternative_imagetext](https://YOURGITHUBNAME.github.io/PROJECTNAME/_static/FILENAME.png)</span></code>
-Resulting, for example, in:
-<img alt="alternative_imagetext" src="https://felixkoerber.github.io/jb/_static/logo.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">![alternative_imagetext](https://YOURGITHUBNAME.github.io/PROJECTNAME/_static/FILENAME.png)</span></code></p>
+<p>Resulting, for example, in:</p>
+<p><img alt="alternative_imagetext" src="https://felixkoerber.github.io/jb/_static/logo.png" /></p>
 <p>As you are able to use essentially any imagelink, you can add images that are hosted through other websites, too!</p>
 <p>If you want more control about the size, orientation and more, you can also use HTML following line of code:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;(https://YOURGITHUBNAME.github.io/PROJECTNAME/_static/FILENAME.png&quot;</span> <span class="pre">alt=&quot;alternative_imagetext&quot;</span> <span class="pre">class=&quot;bg-primary</span> <span class="pre">mb-1&quot;</span> <span class="pre">width=&quot;200px&quot;&gt;</span></code></p>
 <p>Since we have adjusted the image width, this results in a smaller image:</p>
 <img src="https://felixkoerber.github.io/jb/_static/logo.png" alt="logo" class="bg-primary mb-1" width="200px">
 </section>
-<section id="gifs">
-<h2>GIFs<a class="headerlink" href="#gifs" title="Permalink to this headline">#</a></h2>
-<p>To implement GIFs in Jupyter Books, you can use the Markdown syntax for images and include the link to the GIF file. Here’s an example:</p>
-<p><img alt="Alt Text" src="tutorialcontent/writing/link/to/your/gif/file.gif" /></p>
-<p>Replace “Alt Text” with a description of your GIF and “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
-<p>You can also use HTML to embed a GIF in Jupyter Books. Here’s an example:</p>
-<img src="link/to/your/gif/file.gif"/>
-<p>Again, replace “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
-<p>Note that if you’re using a local file path, the path should be relative to the location of the notebook or Markdown file that you’re embedding the GIF in. If you’re using a URL, it should be a direct link to the GIF file.</p>
-<p>Additionally, make sure that the GIF file is in a compatible format (e.g., .gif) and that it’s located in a location that’s accessible to your Jupyter Notebook or Jupyter Book.</p>
+<section id="videos-presentations-gifs-and-more-iframes">
+<h2>Videos, Presentations, GIFs, and more: iframes<a class="headerlink" href="#videos-presentations-gifs-and-more-iframes" title="Permalink to this headline">#</a></h2>
+<p>Jupyter Book enables you to implement <code class="docutils literal notranslate"><span class="pre">html</span></code> into your books, which allows for the integration of almost every type of media, including - but not limited to - <code class="docutils literal notranslate"><span class="pre">Videos,</span> <span class="pre">Presentations,</span> <span class="pre">GIFs,</span> <span class="pre">Maps</span></code> and <code class="docutils literal notranslate"><span class="pre">Images</span></code> via <code class="docutils literal notranslate"><span class="pre">iframes</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">iframes</span></code> or <em>inlineframes</em> are HTML-elements, that can be used to embed content from different websites.</p>
+</div>
+<p>Inlineframes are structured are implemented like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;http://www.example.com/&quot;</span> <span class="pre">height=&quot;100&quot;</span> <span class="pre">width=&quot;200&quot;</span> <span class="pre">name=&quot;iframename&quot;&gt;Alternative</span> <span class="pre">title&lt;/iframe&gt;</span></code></p>
+<p>Thus, they essentially follow the same structuring like the html-image integration.</p>
+<p>To quickly generate this code for the media of your choice, you can use tool like the <a class="reference external" href="https://www.iframe-generator.com/">iframe-generator</a>, where you add the media url, can change various settings and can then generate the iframe code.</p>
+<p>Let’s go over different types of media embeddings:</p>
 </section>
+<hr class="docutils" />
 <section id="google-slides">
 <h2>Google Slides<a class="headerlink" href="#google-slides" title="Permalink to this headline">#</a></h2>
 <p>To embed Google Slides in Jupyter Book, you can use an HTML iframe. Here’s how:</p>
@@ -584,14 +609,29 @@ Open your Jupyter Book and create a new Markdown cell where you want to embed th
 In the Markdown cell, create an HTML iframe with the following code:
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;your-google-slides-link&quot;</span> <span class="pre">width=&quot;100%&quot;</span> <span class="pre">height=&quot;400px&quot;&gt;&lt;/iframe&gt;</span></code></p>
+<p>Which could result in something like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;https://docs.google.com/presentation/d/1GzgJIF8vbXauhIagFWZwnmLEIuFKcJGzZk7eQRBs57M/edit?usp=sharing&quot;</span> <span class="pre">width=&quot;100%&quot;</span> <span class="pre">height=&quot;400px&quot;&gt;&lt;/iframe&gt;</span></code></p>
 <section id="css">
 <h3>css<a class="headerlink" href="#css" title="Permalink to this headline">#</a></h3>
-<iframe src="your-google-slides-link" width="100%" height="400px"></iframe>
 <p>Replace “your-google-slides-link” with the link you copied in step 4.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Save the Markdown cell and preview your Jupyter Book. You should now see the embedded Google Slides presentation.
 </pre></div>
 </div>
 <p>Note that the width and height of the iframe can be adjusted to fit your specific use case. You may also want to adjust the styling of the iframe to better match your Jupyter Book’s visual design.</p>
+</section>
+<section id="id1">
+<h3><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>To implement GIFs in Jupyter Books, you can also use HTML to embed a GIF in Jupyter Books. Here’s an example:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;link/to/your/gif/file.gif&quot;</span> <span class="pre">width=&quot;240&quot;</span> <span class="pre">height=&quot;200&quot;</span> <span class="pre">frameBorder=&quot;0&quot;</span> <span class="pre">class=&quot;giphy-embed&quot;</span> <span class="pre">allowFullScreen&gt;&lt;/iframe&gt;'</span></code></p>
+<p>Again, replace “link/to/your/gif/file.gif” with the URL or file path to your GIF.</p>
+<p>This could result in:</p>
+<iframe src="https://giphy.com/embed/l5s71uAp3CzKwxwkoZ" width="240" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<p>Note that if you’re using a local file path, the path should be relative to the location of the notebook or Markdown file that you’re embedding the GIF in. If you’re using a URL, it should be a direct link to the GIF file.</p>
+<p>Additionally, make sure that the GIF file is in a compatible format (e.g., .gif) and that it’s located in a location that’s accessible to your Jupyter Notebook or Jupyter Book.</p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/bBNj5h8xIrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <section id="presentations">
+<h4>Presentations<a class="headerlink" href="#presentations" title="Permalink to this headline">#</a></h4>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSbsPLTpS0KCLjw4NjVAfxT0Q0GNWr50J2ap5yQEOk0T9DTqskfOkh_YN79HjXlcwQP2DaTssiZYvF1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="370" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> </section>
 </section>
 </section>
 </section>
