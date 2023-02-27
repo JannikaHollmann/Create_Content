@@ -435,11 +435,6 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organizing-chapters-into-parts">
-   Organizing chapters into parts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#autogenerate-the-table-of-contents-from-a-list-of-files">
    Autogenerate the Table of Contents from a list of files
   </a>
@@ -464,11 +459,6 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#organizing-chapters-into-parts">
-   Organizing chapters into parts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#autogenerate-the-table-of-contents-from-a-list-of-files">
    Autogenerate the Table of Contents from a list of files
   </a>
@@ -485,8 +475,14 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="structuring-content-using-the-table-of-contents">
 <h1>Structuring Content using the Table of Contents<a class="headerlink" href="#structuring-content-using-the-table-of-contents" title="Permalink to this headline">#</a></h1>
-<p>The structure of your book is based on a <code class="docutils literal notranslate"><span class="pre">YAML</span></code> file called <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, which defines the Table of Contents.
-In the simplest form, the _toc.yml looks like this:</p>
+<p>In order to build your book, Jupyter Book needs to know how you want to structure the content which you have created, that is:</p>
+<ul class="simple">
+<li><p><strong>Which files should be displayed on your website?</strong></p></li>
+<li><p><strong>In which order should the pages appear?</strong></p></li>
+<li><p><strong>In what form should the content be displayed?</strong></p></li>
+</ul>
+<p>The answer to these questions are written in a <code class="docutils literal notranslate"><span class="pre">YAML</span></code> file called <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, which defines the <code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Contents</span></code>, as well as the formatting of your book.
+In the simplest form, the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> looks like this:</p>
 <div class="highlight-format: notranslate"><div class="highlight"><pre><span></span>root: index`
 chapters:
 - file: path/to/chapter1
@@ -495,22 +491,32 @@ chapters:
   - file: path/to/chapter2/section1
 </pre></div>
 </div>
-<hr class="docutils" />
-<p>Below you’ll find a short desription of the regarding key:</p>
-<p><code class="docutils literal notranslate"><span class="pre">format:</span></code>
-<em>Format</em> defines how the ToC will be interpreted. For many cases, <code class="docutils literal notranslate"><span class="pre">jb-book</span></code> will be the appropiate option. (other options and their usecases will be  described later.)</p>
-<p><code class="docutils literal notranslate"><span class="pre">root:</span></code>
-<em>Root</em> defines the landing (aka first) page of your book. Paths that you define will be relative to the root.</p>
-<p><code class="docutils literal notranslate"><span class="pre">chapters:</span></code>
-Contains a list of files.</p>
-<p><code class="docutils literal notranslate"><span class="pre">file:</span></code>
-Path to the files that you want to include in your book. All the paths are relative to the root.</p>
-<p>Can also be a url.</p>
-<p><code class="docutils literal notranslate"><span class="pre">sections:</span></code>
-Defines sections of a chapter.</p>
-<hr class="docutils" />
-<section id="organizing-chapters-into-parts">
-<h2>Organizing chapters into parts<a class="headerlink" href="#organizing-chapters-into-parts" title="Permalink to this headline">#</a></h2>
+<p>While this might seem overwhelming at first, it is actually really simple. Below you’ll find a short description of the keys. Keys are words, helping Jupyter Book to understand what you are expressing in the ToC.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">format:</span></code></p></td>
+<td><p><em>Format</em> defines how the ToC will be interpreted. For our purposes, <code class="docutils literal notranslate"><span class="pre">jb-book</span></code> will be the appropiate option.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">root:</span></code></p></td>
+<td><p><em>Root</em> defines the landing (aka first) page of your book. Paths that you define will be relative to the root.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">chapters:</span></code></p></td>
+<td><p>Contains a list of files. No argument is needed here</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">file:</span></code></p></td>
+<td><p>Path to the files that you want to include in your book. All the paths are relative to the root.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sections:</span></code></p></td>
+<td><p>Defines sections of a chapter.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Furthermore, you can also <strong>chapters into parts</strong> using the <code class="docutils literal notranslate"><span class="pre">parts:</span></code> argument:</p>
 <div class="highlight-format: notranslate"><div class="highlight"><pre><span></span>root: index
 parts:
   - caption: Name of Part 1
@@ -527,13 +533,28 @@ parts:
       - file: path/to/part2/chapter2/section1
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">parts:</span></code>
-Parts can further subdivide and group chapters and, thus, consist of a list of chapters.</p>
-</section>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Key</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">parts:</span></code></p></td>
+<td><p>Parts can further subdivide and group chapters and, thus, consist of a list of chapters.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note
+The chapter names displayed on your website are defined by the top-level heading of the respective document. For instance, for this page, the top-level header looks like this: <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Structuring</span> <span class="pre">Content</span> <span class="pre">using</span> <span class="pre">the</span> <span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Contents</span></code></p>
+</div>
 <hr class="docutils" />
 <section id="autogenerate-the-table-of-contents-from-a-list-of-files">
 <h2>Autogenerate the Table of Contents from a list of files<a class="headerlink" href="#autogenerate-the-table-of-contents-from-a-list-of-files" title="Permalink to this headline">#</a></h2>
-<p>Instead of configuring the ToC yourself, Jupyter Book also has a built-in function that generates the Table of Content based on filenames of your content using the following command:</p>
+<p>While we generally recommend customizing the ToC yourself using the template we provide, Jupyter Book also offers a built-in function that generates the Table of Content based on filenames of your content.</p>
+<p>To use this, enter the following code into the terminal of your liking:</p>
 <p><code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">toc</span> <span class="pre">from-project</span> <span class="pre">path/to/book</span> <span class="pre">-f</span> <span class="pre">[jb-book/jb-article]</span></code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -543,8 +564,8 @@ To use this command, open your OS-respective Terminal, and copy the path to wher
 <p>This function will search your respective path for content files and generate the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> based on the content files. Keep in mind, that:</p>
 <ul class="simple">
 <li><p>Each sub-folder must have at least one content file inside it</p></li>
-<li><p>The ordering of files in _toc.yml will depend on the alphanumeric order of the filenames (e.g., folder_01 comes before folder_02, and apage comes before b_page)</p></li>
-<li><p>If there is a file called <a class="reference external" href="http://index.md">index.md</a> in any folder, it will be listed first.</p></li>
+<li><p>The ordering of files in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> will depend on the alphanumeric order of the filenames (e.g., <code class="docutils literal notranslate"><span class="pre">folder_01</span></code> comes before <code class="docutils literal notranslate"><span class="pre">folder_02</span></code>, and <code class="docutils literal notranslate"><span class="pre">apage</span></code> comes before <code class="docutils literal notranslate"><span class="pre">b_page</span></code>)</p></li>
+<li><p>If there is a file called <code class="docutils literal notranslate"><span class="pre">index.md</span></code> in any folder, it will be listed first.</p></li>
 </ul>
 <p>In addition to that, there are a few arguments you can add to the command to control the generation, that are outlined below:</p>
 <div class="highlight-Usage: notranslate"><div class="highlight"><pre><span></span>
@@ -563,6 +584,7 @@ Options:
   -h, --help                      Show this message and exit.
 </pre></div>
 </div>
+<p>While this should cover the basics, feel free to check out <a class="reference external" href="https://jupyterbook.org/en/stable/structure/toc.html">Jupyter Book’s Manual</a> for further information.</p>
 </section>
 </section>
 
