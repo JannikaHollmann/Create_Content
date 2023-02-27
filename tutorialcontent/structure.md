@@ -1,7 +1,14 @@
 # Structuring Content using the Table of Contents
 
-The structure of your book is based on a `YAML` file called `_toc.yml`, which defines the Table of Contents.
-In the simplest form, the _toc.yml looks like this:
+In order to build your book, Jupyter Book needs to know how you want to structure the content which you have created, that is: 
+
+* **Which files should be displayed on your website?**
+* **In which order should the pages appear?**
+* **In what form should the content be displayed?**
+
+
+The answer to these questions are written in a `YAML` file called `_toc.yml`, which defines the `Table of Contents`, as well as the formatting of your book.
+In the simplest form, the `_toc.yml` looks like this:
 
 ```format: jb-book
 root: index`
@@ -11,27 +18,18 @@ chapters:
   sections:
   - file: path/to/chapter2/section1
 ```
-___
-Below you'll find a short desription of the regarding key:
 
-`format:`
-*Format* defines how the ToC will be interpreted. For many cases, `jb-book` will be the appropiate option. (other options and their usecases will be  described later.)
+While this might seem overwhelming at first, it is actually really simple. Below you'll find a short description of the keys. Keys are words, helping Jupyter Book to understand what you are expressing in the ToC.
 
-`root:`
-*Root* defines the landing (aka first) page of your book. Paths that you define will be relative to the root.
+|Key|Description|
+|---|---|
+|`format:`|*Format* defines how the ToC will be interpreted. For our purposes, `jb-book` will be the appropiate option.|
+|`root:`|*Root* defines the landing (aka first) page of your book. Paths that you define will be relative to the root.|
+|`chapters:`|Contains a list of files. No argument is needed here|
+|`file:`|Path to the files that you want to include in your book. All the paths are relative to the root.|
+|`sections:`|Defines sections of a chapter.|
 
-`chapters:`
-Contains a list of files.
-
-`file:`
-Path to the files that you want to include in your book. All the paths are relative to the root.
-
-Can also be a url. 
-
-`sections:`
-Defines sections of a chapter.
-___
-## Organizing chapters into parts
+Furthermore, you can also **chapters into parts** using the `parts:` argument:
 
 ```format: jb-book
 root: index
@@ -49,11 +47,21 @@ parts:
       sections:
       - file: path/to/part2/chapter2/section1
 ```
-`parts:`
-Parts can further subdivide and group chapters and, thus, consist of a list of chapters. 
+|Key|Description|
+|---|---|
+|`parts:`|Parts can further subdivide and group chapters and, thus, consist of a list of chapters.|
+
+
+```{note} Note
+The chapter names displayed on your website are defined by the top-level heading of the respective document. For instance, for this page, the top-level header looks like this: `# Structuring Content using the Table of Contents` 
+```
+
 ___
-## Autogenerate the Table of Contents from a list of files
-Instead of configuring the ToC yourself, Jupyter Book also has a built-in function that generates the Table of Content based on filenames of your content using the following command:
+#### Autogenerate the Table of Contents from a list of files
+
+While we generally recommend customizing the ToC yourself using the template we provide, Jupyter Book also offers a built-in function that generates the Table of Content based on filenames of your content. 
+
+To use this, enter the following code into the terminal of your liking:
 
 `jupyter-book toc from-project path/to/book -f [jb-book/jb-article]`
 
@@ -63,8 +71,8 @@ To use this command, open your OS-respective Terminal, and copy the path to wher
 
 This function will search your respective path for content files and generate the `_toc.yml` based on the content files. Keep in mind, that:
 * Each sub-folder must have at least one content file inside it
-* The ordering of files in _toc.yml will depend on the alphanumeric order of the filenames (e.g., folder_01 comes before folder_02, and apage comes before b_page)
-* If there is a file called index.md in any folder, it will be listed first.
+* The ordering of files in `_toc.yml` will depend on the alphanumeric order of the filenames (e.g., `folder_01` comes before `folder_02`, and `apage` comes before `b_page`)
+* If there is a file called `index.md` in any folder, it will be listed first.
 
 In addition to that, there are a few arguments you can add to the command to control the generation, that are outlined below:
 
@@ -84,3 +92,6 @@ Options:
                                   The key-mappings to use.  [default: default]
   -h, --help                      Show this message and exit.
   ````
+
+
+While this should cover the basics, feel free to check out [Jupyter Book's Manual](https://jupyterbook.org/en/stable/structure/toc.html) for further information.
