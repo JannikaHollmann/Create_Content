@@ -13,6 +13,7 @@ chapters:
   - file: tutorialcontent/writing/cells
   - file: tutorialcontent/writing/styling
   - file: tutorialcontent/writing/media
+  - file: tutorialcontent/writing/nbgrader
 - file: tutorialcontent/structure
 - file: tutorialcontent/publishing/publishing
   sections:
