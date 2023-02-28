@@ -85,9 +85,11 @@ This template is supposed to be used as a starting point to generate your own co
 
 If you have:
 
-**Questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so you could use the [hypothes.is](https://web.hypothes.is/) plugin, on the right-hand side of this website (overlayed over the scroll bar, you'll find some [symbols looking like this]() [embedd png]()) to annotate and highlight relevant information of this website Feel free to use this tool to discuss, annotate or ask questions regarding the sites content there!
+**Questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so you could use the [hypothes.is](https://web.hypothes.is/) plugin, on the right-hand side of this website (overlayed over the scroll bar, you'll find buttons/functionality to annotate and highlight relevant information of this website. Feel free to use this tool to discuss, annotate or ask questions regarding the sites content there!
 
-Otherwise feel free to [Open an issue]() on the Github repository and someone will try and get back to you as soon as possible or simply shoot us an e-mail!
+<img src="https://github.com/felixkoerber/jb/blob/main/static/hypothesis.png?raw=true" alt="depicting the hypothesis buttons" class="bg-primary" width="300px">
+
+Otherwise feel free to [Open an issue](https://github.com/felixkoerber/jb/issues) on the Github repository and someone will try and get back to you as soon as possible or simply shoot us an e-mail!
 
 The contact information of the instructors are as follows:
 
