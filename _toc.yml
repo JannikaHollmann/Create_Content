@@ -7,19 +7,13 @@ chapters:
 - file: overview.md
 - file: setup
 - file: intro/whyjb
-#  sections:
-#  - file: setup/install
-#  - file: setup/miniconda
-#  - file: setup/github
-#  - file: setup/bash
+- file: 10min
 - file: tutorialcontent/writing/writing
   sections:
   - file: tutorialcontent/writing/cells
   - file: tutorialcontent/writing/styling
   - file: tutorialcontent/writing/media
-  - file: tutorialcontent/writing/material
 - file: tutorialcontent/structure
-#- file: tutorialcontent/build
 - file: tutorialcontent/publishing/publishing
   sections:
   - file: tutorialcontent/publishing/account
@@ -28,11 +22,10 @@ chapters:
   sections:
   - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
   - url: https://peerherholz.github.io/Python_for_Psychologists_Winter2021
-# - file: tutorialcontent/nbgrader
 - file: ressources/info
   sections:
   - file: ressources/CoC
   - file: ressources/dei
 #  - file: ressources/questionnaires
 - file: openscience/openscience
-# - file: add/add
+
