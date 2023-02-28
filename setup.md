@@ -112,29 +112,6 @@ If you are prompted to install it follow the instructions on-screen to do so.
       - Python (n.b., you will need to reload VSCode after installing this)
       - Jupyter
 
-**Python**
-
-1. Open a new terminal and type the following lines (separately) into the terminal, pressing `Enter` after each one:
-
-        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-        bash Miniconda3-latest-Linux-x86_64.sh
-
-
-1. A license agreement will be displayed and the bottom of the terminal will read `--More--`.
-   Press `Enter` or the space bar until you are prompted with "Do you accept the license terms? [yes|no]."
-   Type `yes` and then press `Enter`
-1. The installation script will inform you that it is going to install into a default directory (e.g., `/home/$USER/miniconda3`).
-   Leave this default and press `Enter`.
-1. When you are asked "Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no]," type `yes` and press `Enter`.
-   Exit the terminal once the installation has finished.
-1. Re-open a new terminal.
-   Type `which python` into the terminal and it should return a path (e.g., `/home/$USER/miniconda3/bin/python`).
-   - If you do not see a path like this then please try typing `conda init`, closing your terminal, and repeating this step.
-     If your issue is still not resolved skip the following step and contact an instructor on the #help-installation channel of the BHS Slack.
-1. Type the following to remove the installation script that was downloaded:
-
-        rm ./Miniconda3-latest-Linux-x86_64.sh
-
 
 ````
 
@@ -174,30 +151,6 @@ If you do not see something like “git version X.XX.X” printed out, then foll
       - Jupyter
 
 
-**Python**
-
-1. Open a new terminal and type the following lines (separately) into the terminal, pressing `Enter` after each one:
-
-        curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-        bash Miniconda3-latest-MacOSX-x86_64.sh
-
-
-1. A license agreement will be displayed and the bottom of the terminal will read `--More--`.
-   Press `Enter` or the space bar until you are prompted with "Do you accept the license terms? [yes|no]."
-   Type `yes` and then press `Enter`
-1. The installation script will inform you that it is going to install into a default directory (e.g., `/home/$USER/miniconda3`).
-   Leave this default and press `Enter`.
-1. When you are asked "Do you wish the installer to initialize Miniconda3 by running conda init? [yes|no]," type `yes` and press `Enter`.
-   Exit the terminal once the installation has finished.
-1. Re-open a terminal.
-   Type `which python` into the terminal and it should return a path (e.g., `/home/$USER/miniconda3/bin/python`).
-   - If you do not see a path like this then please try typing `conda init`, closing your terminal, and repeating this step.
-     If your issue is still not resolved skip the following step and contact an instructor on the #help-installation channel of the BHS Slack.
-1. Type the following to remove the installation script that was downloaded:
-
-        rm ./Miniconda3-latest-MacOSX-x86_64.sh
-
-
 
 ````
 
@@ -212,37 +165,6 @@ It is a good idea to associate this with your university e-mail (if you have one
 
 
 
-## Getting the course content
-
-Now that you have installed the required software (or not) to follow the course, it's time to gather the respective materials.
-
-````{tab} Local
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg" alt="conda logo" width="300"/>\
-<sub><sup><sub><sup>https://upload.wikimedia.org/wikipedia/commons/e/ea/Conda_logo.svg</sup></sub></sup></sub>
-
-By installing `Python` on your system (i.e. specifically `Conda`) and setting up the appropriate environment, you will be able to open all the `Jupyter Notebooks` and go through the whole content of the course locally.
-
-To get things up and running, please follow these steps:
-
-1. Download the [`environment.yml`](environment.yml) file (e.g. with right mouse click -> Save As). Make sure that the file ends with `.yml` and not `.txt`.
-2. Open up a conda terminal (or a VSCode python terminal), and create a new conda environment with the following command: `conda env create -f /path/to/file/environment.yml` - For example ``conda env create -f ~/Downloads/environment.yml`
-3. Download the notebooks in this repository via [this link](main.zip) and unzip them to your preferred location, e.g. `Desktop/digital_literacy_Winter2022`.
-4. Next, open up a `conda terminal` (or any other `terminal`), activate the `conda environment` with `conda activate x` (or on older `conda environment` with `source activate x` for `mac` and `linux` and `activate x` for `windows`).
-5. Finally, via the `terminal`, move to the folder where you've put all the unzipped content of this workshop, e.g. with the command `cd ~/Desktop/x` and run the command `jupyter notebook`. If the `notebook server` isn't automatically opened in a new browser window, please copy-paste either the `http://127.0.0.1:8888/...` or the `http://localhost:8888/...` path into a new browser window and press `Enter`. You should now see the `jupyter notebook server` (looking like a file browser and displaying the content of the directory). 
-````
-
-````{tab} Cloud via Mybinder
-
-<img src="https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b" alt="binder logo" width="300"/>\
-<sub><sup><sub><sup>https://mybinder.org/static/logo.svg?v=fe52c40adc69454ba7536393f76ebd715e5fb75f5feafe16a27c47483eabf3311c14ed9fda905c49915d6dbf369ae68fb855a40dd05489a7b9542a9ee532e92b</sup></sub></sup></sub>
-
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD)
-
-[MyBinder.org](https://mybinder.org/) is a great service that allows you to run Jupyter notebooks in a Docker or Python environment, directly online and for free. However, this service comes of course with a restricted computational environment (1-2GB of RAM). This means, many notebooks might be very slow and some might even crash, due to not enough memory.
-
-You can use this approach to run and test most of the notebooks and to explore the slides. To access the MyBinder instance, use [this link](https://mybinder.org/v2/gh/peerherholz/Python_for_Psychologists_Winter2021/HEAD).
-````
 
 ## Enter the matrix
 
