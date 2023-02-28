@@ -233,12 +233,12 @@ const thebe_selector_output = ".output, .cell_output"
      Diversity, Equity and Inclusion
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ressources/open_science.html">
+     Open Science
+    </a>
+   </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="openscience/openscience.html">
-   Open-Science
-  </a>
  </li>
 </ul>
 
@@ -454,11 +454,16 @@ title="Print to PDF"
      GitHub account
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enter-the-matrix">
+     Enter the matrix
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#enter-the-matrix">
-   Enter the matrix
+  <a class="reference internal nav-link" href="#next-section">
+   Next Section:
   </a>
  </li>
 </ul>
@@ -500,11 +505,16 @@ title="Print to PDF"
      GitHub account
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enter-the-matrix">
+     Enter the matrix
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#enter-the-matrix">
-   Enter the matrix
+  <a class="reference internal nav-link" href="#next-section">
+   Next Section:
   </a>
  </li>
 </ul>
@@ -531,13 +541,13 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://jupyterbook.org/en/stable/intro.html"><strong>Jupyter book</strong></a> (Foundation creating content)</p></li>
 <li><p><a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/"><strong>nbgrader</strong></a> (automated grading)</p></li>
 </ul>
-<p>helpful tools that are not strictly necessary but can be quite useful or make your life easier:</p>
+<p>Helpful tools that are not strictly necessary but can be quite useful or make your life easier:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.gitkraken.com/">GitKraken</a></p></li>
+<li><p><a class="reference external" href="https://www.gitkraken.com/">GitKraken</a> (A Graphical User-Interface for the Git-version control system; Simplye downlowad and install the <a class="reference external" href="https://help.gitkraken.com/gitkraken-client/how-to-install/">Gitkraken client</a> and <a class="reference external" href="https://www.youtube.com/watch?v=5nhNfMcczlQ">conncet it to your online Github profile</a>.)</p></li>
 </ul>
-<p>if you want to provide interactive content:</p>
+<p>If you want to provide interactive online content you may use:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://mybinder.org/">https://mybinder.org/</a></p></li>
+<li><p><a class="reference external" href="https://mybinder.org/">MyBinder</a> (Find more info in the section: <span class="xref myst">Creating interactive content</span>)</p></li>
 </ul>
 <section id="general-things">
 <h2>General things<a class="headerlink" href="#general-things" title="Permalink to this headline">#</a></h2>
@@ -570,10 +580,11 @@ As such, if you have already installed <code class="docutils literal notranslate
 <li><p>Download and execute the .exe file from the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">official website</a></p></li>
 <li><p>An installation window will pop up, go ahead and click through it and install into the suggested default directory.</p></li>
 </ol>
+<p>Or follow the official <a class="reference external" href="https://conda.io/projects/conda/en/stable/user-guide/install/windows.html">installation guide</a></p>
 <p><strong>Jupyter, Jupyter Book and nbgrader</strong></p>
 <ol class="simple">
 <li><p>Press “Windows” and Search for “Anaconda Powershell Prompt”</p></li>
-<li><p>Paste the following commands:</p></li>
+<li><p>Paste the following commands into the opened terminal:</p></li>
 </ol>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyter-book</span></code></p></li>
@@ -609,11 +620,21 @@ Search for each of the following extensions and press <code class="docutils lite
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Linux</label><div class="tab-content docutils">
 <p><strong>Conda</strong></p>
 <ol class="simple">
-<li><p>Download and execute the appropriate file from the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">official website</a></p></li>
-<li><p>An installation window will pop up, go ahead and click through it and install into the suggested default directory.</p></li>
+<li><p>You most likely already have a working setup, but feel free to download the appropriate file for your system from the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">official website</a> and follow the <a class="reference external" href="https://conda.io/projects/conda/en/stable/user-guide/install/linux.html">installation instrcutions</a>
+.</p></li>
 </ol>
+<p><strong>Jupyter, Jupyter Book and nbgrader</strong></p>
+<ol class="simple">
+<li><p>Open a terminal</p></li>
+<li><p>Paste the following commands into the opened terminal:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyter-book</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">nbgrader</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">jupyter</span></code></p></li>
+</ul>
 <p><strong>Git</strong></p>
-<p>You may already have it; try typing <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">git</span></code> (Ubuntu, Debian) or <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">git</span></code> (Fedora) inside the terminal.
+<p>You may already have it; try opening a terminal and typing <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">git</span></code> (Ubuntu, Debian) or <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">git</span></code> (Fedora) inside the terminal.
 If you are prompted to install it follow the instructions on-screen to do so.</p>
 <p><strong>VSCode</strong></p>
 <ol class="simple">
@@ -639,8 +660,19 @@ Search for each of the following extensions and press <code class="docutils lite
 <p><strong>Conda</strong></p>
 <ol class="simple">
 <li><p>Download and execute the appropriate file from the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">official website</a></p></li>
-<li><p>An installation window will pop up, go ahead and click through it and install into the suggested default directory.</p></li>
+<li><p>Open a terminal at the location of the downloaded file and run: <code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">Miniconda3-latest-MacOSX-x86_64.sh</span></code></p></li>
 </ol>
+<p>Or follow the official <a class="reference external" href="https://conda.io/projects/conda/en/stable/user-guide/install/windows.html">installation guide</a></p>
+<p><strong>Jupyter, Jupyter Book and nbgrader</strong></p>
+<ol class="simple">
+<li><p>Open a terminal</p></li>
+<li><p>Paste the following commands into the opened terminal:</p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyter-book</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">nbgrader</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">jupyter</span></code></p></li>
+</ul>
 <p><strong>Git</strong></p>
 <p>You may already have it!
 Try opening a terminal and typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code>.
@@ -682,12 +714,17 @@ If they’re unable to help via <code class="docutils literal notranslate"><span
 <p>Go to <a class="reference external" href="https://github.com/join/">https://github.com/join/</a> and follow the on-screen instructions to create an account.
 It is a good idea to associate this with your university e-mail (if you have one) as this will entitle you to sign up for the <a class="reference external" href="https://education.github.com/pack">GitHub Student Developer Pack</a> which comes with some nice free bonuses.</p>
 </section>
-</section>
 <section id="enter-the-matrix">
-<h2>Enter the matrix<a class="headerlink" href="#enter-the-matrix" title="Permalink to this headline">#</a></h2>
+<h3>Enter the matrix<a class="headerlink" href="#enter-the-matrix" title="Permalink to this headline">#</a></h3>
 <p>Once you reached this point, you should be ready the enter the matrix and follow the course in your preferred way. Congrats, fantastic work!</p>
 <p><img alt="logo" src="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236" /><br />
 <sub><sup><sub><sup><a class="reference external" href="https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236">https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</a></sup></sub></sup></sub></p>
+</section>
+</section>
+<section id="next-section">
+<h2>Next Section:<a class="headerlink" href="#next-section" title="Permalink to this headline">#</a></h2>
+<p><a class="reference internal" href="intro/whyjb.html"><span class="doc std std-doc">Introduction/Why JB-Notebooks</span></a>
+All things gotta start somewhere, but how and why?</p>
 </section>
 </section>
 
