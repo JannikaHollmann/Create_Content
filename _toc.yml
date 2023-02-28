@@ -26,6 +26,5 @@ chapters:
   sections:
   - file: ressources/CoC
   - file: ressources/dei
-#  - file: ressources/questionnaires
-- file: openscience/openscience
+  - file: ressources/open_science
 

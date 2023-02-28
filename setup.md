@@ -15,11 +15,11 @@ To replicate the showcased websites here we'll therefore be using some tools tha
 - [**nbgrader**](https://nbgrader.readthedocs.io/en/stable/) (automated grading)
 
 
-helpful tools that are not strictly necessary but can be quite useful or make your life easier:
-- [GitKraken](https://www.gitkraken.com/)
+Helpful tools that are not strictly necessary but can be quite useful or make your life easier:
+- [GitKraken](https://www.gitkraken.com/) (A Graphical User-Interface for the Git-version control system; Simplye downlowad and install the [Gitkraken client](https://help.gitkraken.com/gitkraken-client/how-to-install/) and [conncet it to your online Github profile](https://www.youtube.com/watch?v=5nhNfMcczlQ).)
 
-if you want to provide interactive content:
-- https://mybinder.org/
+If you want to provide interactive online content you may use:
+- [MyBinder](https://mybinder.org/) (Find more info in the section: [Creating interactive content]())
 
 
 ## General things
@@ -52,11 +52,12 @@ Select the tab that corresponds to your operating system and follow the instruct
 1. Download and execute the .exe file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
 2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
 
+Or follow the official [installation guide](https://conda.io/projects/conda/en/stable/user-guide/install/windows.html)
 
 **Jupyter, Jupyter Book and nbgrader**
 
 1. Press "Windows" and Search for "Anaconda Powershell Prompt"
-2. Paste the following commands:
+2. Paste the following commands into the opened terminal:
 - `conda install -c conda-forge jupyter-book`
 - `conda install conda install -c conda-forge nbgrader`
 - `conda install jupyter`
@@ -88,12 +89,21 @@ As Git can be quite confusing for new users you may also want to additional inst
 
 **Conda**
 
-1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
-2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
+1. You most likely already have a working setup, but feel free to download the appropriate file for your system from the [official website](https://docs.conda.io/en/latest/miniconda.html) and follow the [installation instrcutions](https://conda.io/projects/conda/en/stable/user-guide/install/linux.html)
+.
+
+**Jupyter, Jupyter Book and nbgrader**
+
+1. Open a terminal
+2. Paste the following commands into the opened terminal:
+- `conda install -c conda-forge jupyter-book`
+- `conda install conda install -c conda-forge nbgrader`
+- `conda install jupyter`
+
 
 **Git**
 
-You may already have it; try typing `sudo apt-get install git` (Ubuntu, Debian) or `sudo yum install git` (Fedora) inside the terminal.
+You may already have it; try opening a terminal and typing `sudo apt-get install git` (Ubuntu, Debian) or `sudo yum install git` (Fedora) inside the terminal.
 If you are prompted to install it follow the instructions on-screen to do so.
 
 **VSCode**
@@ -120,7 +130,17 @@ If you are prompted to install it follow the instructions on-screen to do so.
 **Conda**
 
 1. Download and execute the appropriate file from the [official website](https://docs.conda.io/en/latest/miniconda.html)
-2. An installation window will pop up, go ahead and click through it and install into the suggested default directory.
+2. Open a terminal at the location of the downloaded file and run: `bash Miniconda3-latest-MacOSX-x86_64.sh`
+
+Or follow the official [installation guide](https://conda.io/projects/conda/en/stable/user-guide/install/windows.html)
+
+**Jupyter, Jupyter Book and nbgrader**
+
+1. Open a terminal
+2. Paste the following commands into the opened terminal:
+- `conda install -c conda-forge jupyter-book`
+- `conda install conda install -c conda-forge nbgrader`
+- `conda install jupyter`
 
 **Git**
 
@@ -165,10 +185,15 @@ It is a good idea to associate this with your university e-mail (if you have one
 
 
 
-
-## Enter the matrix
+### Enter the matrix
 
 Once you reached this point, you should be ready the enter the matrix and follow the course in your preferred way. Congrats, fantastic work!
 
 ![logo](https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236)\
 <sub><sup><sub><sup>https://media1.tenor.com/images/e5c21d98f56c4af119b4e14b6a9df893/tenor.gif?itemid=4011236</sup></sub></sup></sub>
+
+
+## Next Section: 
+
+[Introduction/Why JB-Notebooks](./intro/whyjb.ipynb)
+All things gotta start somewhere, but how and why?
