@@ -95,9 +95,3 @@ Options:
 
 
 While this should cover the basics, feel free to check out [Jupyter Book's Manual](https://jupyterbook.org/en/stable/structure/toc.html) for further information.
-
-
-### Next section
-
-[Publishing](./tutorialcontent/publishing/publishing)
-- [Build and publish your course](./tutorialcontent/publishing/account)
