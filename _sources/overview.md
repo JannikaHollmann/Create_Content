@@ -32,6 +32,7 @@ Here you'll learn how to create and style content, such as the pages displayed o
 - [What's a Jupyter Notebook?](.tutorialcontent/writing/cells)
 - [Styling: The Look and Feel](./tutorialcontent/writing/styling)
 - [Embedding Media: Images, Videos and more](./tutorialcontent/writing/media)
+- [Creating automatically gradable coding assignments](./tutorialcontent/writing/nbgrader)
 
 [Structuring content](./tutorialcontent/structure)
 

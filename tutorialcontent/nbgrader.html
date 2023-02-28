@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>nb Grader &#8212; Creating educational content with Jupyter Books</title>
+    <title>Creating automatically gradable coding assignments using nbgrader &#8212; Creating educational content with Jupyter Books</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -213,7 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ressources/info.html">
-   Ressources
+   Resources
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -289,6 +289,35 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/nbgrader.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -422,7 +451,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>nb Grader</h1>
+                <h1>Creating automatically gradable coding assignments using nbgrader</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -434,8 +463,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="nb-grader">
-<h1>nb Grader<a class="headerlink" href="#nb-grader" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="creating-automatically-gradable-coding-assignments-using-nbgrader">
+<h1>Creating automatically gradable coding assignments using nbgrader<a class="headerlink" href="#creating-automatically-gradable-coding-assignments-using-nbgrader" title="Permalink to this headline">#</a></h1>
+<p>Grading assignments can feel like a time-comsuming chore. This is where automatic grading programns come in handy, although most grading solutions are constrained to a certain data format or costly.</p>
+<p>One free solution to this is <a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/">nbgrader</a>, a tool to tool for creating and grading assignments in Jupyter notebooks.
+Nbgrader allows instructors to create assignments with coding exercises, written responses, and other types of questions, but mainly is focuesd on automatic grading of programming tasks. Written or free text responses will still have to be evaluated by hand. Nbgrader is therefore particularly useful for courses in statistics or data science.
+Unfortunately there is also no way of integrating nbgrader into this online course structure. If you plan on using nbgrader, you’d therefore need to send out and collect the assignments from your students via e-mail, discord etc.</p>
+<p><strong>For an introduction and demonstration of nbgrader’s core functionality, check out the Scipy 2017 talk by <a class="reference external" href="http://www.jesshamrick.com/">Jessica Hamrick</a></strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;iframe</span> <span class="pre">src=&quot;https://www.youtube.com/embed/v=5WUm0QuJdFw&quot;</span> <span class="pre">style=&quot;border:0px</span> <span class="pre">#ffffff</span> <span class="pre">none;&quot;</span> <span class="pre">name=&quot;Nbgrader</span> <span class="pre">youtube</span> <span class="pre">talk=&quot;no&quot;</span> <span class="pre">frameborder=&quot;1&quot;</span> <span class="pre">marginheight=&quot;0px&quot;</span> <span class="pre">marginwidth=&quot;0px&quot;</span> <span class="pre">height=&quot;400px&quot;</span> <span class="pre">width=&quot;600px&quot;</span> <span class="pre">allowfullscreen&gt;&lt;/iframe&gt;</span></code></p>
+<p>There are two great <strong>in-depth tutorials on how to create and grade assignments using nbgrader</strong> out there. Do check them and their piloshopy out if you want to implement this approach in your work:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://doc.cocalc.com/teaching-nbgrader.html">Teaching with nbgrader (Collaborative Calculation and Data Science; cocalc)</a></p></li>
+<li><p><a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/index.html">Nbgrader Docs</a></p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
