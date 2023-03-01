@@ -30,9 +30,9 @@ latex:
 #######################################################################################
 # Launch button settings
 launch_buttons:
-  notebook_interface        : "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
+  notebook_interface        : "jupyterlab"  # The interface interactive links will activate ["classic", "jupyterlab"]
   binderhub_url             : "https://mybinder.org"  # The URL of the BinderHub (e.g., https://mybinder.org); needs to be adapted
-  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+  thebe                     : True  # Add a thebe button to pages (requires the repository to run on Binder)
 
 # Information about where the book exists on the web
 # See also https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
