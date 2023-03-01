@@ -1,51 +1,59 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Git, GitHub and hosting websites using GitHub Pages &#8212; Creating educational content with Jupyter Books</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
 
-    
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
     <script src="../../_static/tabs.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -53,61 +61,368 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorialcontent/publishing/account';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Troubleshooting" href="../troubleshooting.html" />
     <link rel="prev" title="Publishing: Getting the word out" href="publishing.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="light">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
         
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview.html">
+                        Course overview & procedure
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../setup.html">
+                        Setup: Before Creating Content
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../intro/whyjb.html">
+                        Why should you use Jupyter Books?
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../10min.html">
+                        Quick Setup Guide for Deploying Courses using Jupyter Book on Github
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../writing/writing.html">
+                        Writing Content
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../structure.html">
+                        Structuring Content using the Table of Contents
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="publishing.html">
+                        Publishing: Getting the word out
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../troubleshooting.html">
+                        Troubleshooting
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../intro/demo.html">
+                        Further resources under the DiLER project
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../ressources/info.html">
+                        Resources
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
       
       
-      <img src="../../_static/logo.png" class="logo" alt="logo">
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
       
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
       
-      <h1 class="site-logo" id="site-title">Creating educational content with Jupyter Books</h1>
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview.html">
+                        Course overview & procedure
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../setup.html">
+                        Setup: Before Creating Content
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../intro/whyjb.html">
+                        Why should you use Jupyter Books?
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../10min.html">
+                        Quick Setup Guide for Deploying Courses using Jupyter Book on Github
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../writing/writing.html">
+                        Writing Content
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../structure.html">
+                        Structuring Content using the Table of Contents
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="publishing.html">
+                        Publishing: Getting the word out
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../troubleshooting.html">
+                        Troubleshooting
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../intro/demo.html">
+                        Further resources under the DiLER project
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../ressources/info.html">
+                        Resources
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+  
+
+
+<a class="navbar-brand logo" href="../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    </div>
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -117,727 +432,426 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../overview.html">
-   Course overview &amp; procedure
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../setup.html">
-   Setup: Before Creating Content
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../intro/whyjb.html">
-   Why should you use Jupyter Books?
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../10min.html">
-   Quick Setup Guide for Deploying Courses using Jupyter Book on Github
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../writing/writing.html">
-   Writing Content
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../writing/cells.html">
-     Cells in Jupyter Notebooks: Types and Usages
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../writing/styling.html">
-     Styling: The Look and Feel
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../writing/media.html">
-     Media: Images, Videos &amp; More
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../structure.html">
-   Structuring Content using the Table of Contents
-  </a>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="publishing.html">
-   Publishing: Getting the word out
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Git, GitHub and hosting websites using GitHub Pages
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../troubleshooting.html">
-   Troubleshooting
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../intro/demo.html">
-   Further resources under the DiLER project
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference external" href="https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/">
-     https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021">
-     https://peerherholz.github.io/Python_for_Psychologists_Winter2021
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../ressources/info.html">
-   Resources
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ressources/CoC.html">
-     Code of Conduct
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ressources/dei.html">
-     Diversity, Equity and Inclusion
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ressources/open_science.html">
-     Open Science
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Course overview &amp; procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup.html">Setup: Before Creating Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/whyjb.html">Why should you use Jupyter Books?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../10min.html">Quick Setup Guide for Deploying Courses using Jupyter Book on Github</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../writing/writing.html">Writing Content</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../writing/cells.html">Cells in Jupyter Notebooks: Types and Usages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing/styling.html">Styling: The Look and Feel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing/media.html">Media: Images, Videos &amp; More</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../structure.html">Structuring Content using the Table of Contents</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="publishing.html">Publishing: Getting the word out</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Git, GitHub and hosting websites using GitHub Pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../intro/demo.html">Further resources under the DiLER project</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference external" href="https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/">https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021">https://peerherholz.github.io/Python_for_Psychologists_Winter2021</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../ressources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ressources/CoC.html">Code of Conduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ressources/dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ressources/open_science.html">Open Science</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
+</nav>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  </div>
+  
 
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
 
-          
+  
+  <div id="rtd-footer-container"></div>
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
+      </div>
+      <main id="main-content" class="bd-main">
         
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
 
 
 
 <div class="col py-1 d-flex header-article-main">
     <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+        <label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" data-toggle="tooltip" data-placement="right" title="Toggle primary sidebar">
+            <span class="fa-solid fa-bars"></span>
+        </label>
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=tree/docs/tutorialcontent/publishing/account.ipynb"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=lab/tree/docs/tutorialcontent/publishing/account.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Launch on Binder"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../../_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</a>
+      
+  </ul>
 </div>
 
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
+  class="btn btn-sm"
   data-toggle="tooltip"
 data-placement="bottom"
 title="Fullscreen mode"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+
+<div class="dropdown dropdown-repository-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/felixkoerber/jb/"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="https://github.com/felixkoerber/jb/" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Source repository"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fab fa-github"></i>
   </span>
-<span class="headerbtn__text-container">repository</span>
+<span class="btn__text-container">repository</span>
 </a>
-
-      </li>
+</a>
       
-      <li>
-        <a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/publishing/account.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
+      <li><a href="https://github.com/felixkoerber/jb//issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/publishing/account.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Open an issue"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-lightbulb"></i>
   </span>
-<span class="headerbtn__text-container">open issue</span>
+<span class="btn__text-container">open issue</span>
 </a>
-
-      </li>
+</a>
       
-      <li>
-        <a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/publishing/account.ipynb"
-   class="headerbtn"
+      <li><a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/publishing/account.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Edit this page"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-pencil-alt"></i>
   </span>
-<span class="headerbtn__text-container">suggest edit</span>
+<span class="btn__text-container">suggest edit</span>
 </a>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/tutorialcontent/publishing/account.ipynb"
-   class="headerbtn"
+  <ul class="dropdown-menu">
+      <li><a href="../../_sources/tutorialcontent/publishing/account.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
 title="Download source file"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
-
-      </li>
+</a>
       
       <li>
-        
 <button onclick="printPdf(this)"
-  class="headerbtn"
+  class="btn btn-sm dropdown-item"
   data-toggle="tooltip"
 data-placement="left"
 title="Print to PDF"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-file-pdf"></i>
   </span>
-<span class="headerbtn__text-container">.pdf</span>
+<span class="btn__text-container">.pdf</span>
 </button>
-
-      </li>
+</a>
       
-    </ul>
-  </div>
+  </ul>
 </div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#before-we-get-started">
-   Before we get started…
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
-     What’s a “Github” and why should we use it?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
-       Version control and collaborative work
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#roadmap">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-a-github-account">
-     Setting up a Github account
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
-     Start a project/setup a public repository
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setup">
-   Setup
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Roadmap
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started">
-   Getting started
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-operations">
-     Git operations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-workflow">
-     Git Workflow
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-the-course-template">
-   Working with the course template
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fork-the-course-template">
-     1. Fork the course template:
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clone-the-repository">
-     2. Clone the repository
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-changes">
-     3. Make changes
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-readme">
-       The README
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-license">
-       THE LICENSE
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#commit-changes">
-     4. Commit changes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#push-changes">
-     5. Push changes
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
-   Hosting a website using Github pages
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-your-website">
-     Setting up your website
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#checking-your-workflow">
-     Checking your workflow
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-your-link">
-     Getting your Link
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#troubleshooting">
-     Troubleshooting
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-ressources">
-   Additional ressources
-  </a>
- </li>
-</ul>
-
-    </nav>
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Git, GitHub and hosting websites using GitHub Pages</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#before-we-get-started">
-   Before we get started…
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goals">
-   Goals
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
-     What’s a “Github” and why should we use it?
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
-       Version control and collaborative work
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#roadmap">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-a-github-account">
-     Setting up a Github account
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
-     Start a project/setup a public repository
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#setup">
-   Setup
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Roadmap
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started">
-   Getting started
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-operations">
-     Git operations
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#git-workflow">
-     Git Workflow
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-the-course-template">
-   Working with the course template
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#fork-the-course-template">
-     1. Fork the course template:
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#clone-the-repository">
-     2. Clone the repository
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-changes">
-     3. Make changes
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-readme">
-       The README
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#the-license">
-       THE LICENSE
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#commit-changes">
-     4. Commit changes
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#push-changes">
-     5. Push changes
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Roadmap
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
-   Hosting a website using Github pages
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#setting-up-your-website">
-     Setting up your website
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#checking-your-workflow">
-     Checking your workflow
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-your-link">
-     Getting your Link
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#troubleshooting">
-     Troubleshooting
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-ressources">
-   Additional ressources
-  </a>
- </li>
-</ul>
-
-                        </nav>
-                    </div>
-                </div>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
+            
+            
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Git, GitHub and hosting websites using GitHub Pages</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
+     What’s a “Github” and why should we use it?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
+       Version control and collaborative work
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#roadmap">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-a-github-account">
+     Setting up a Github account
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
+     Start a project/setup a public repository
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Roadmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-operations">
+     Git operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-workflow">
+     Git Workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-the-course-template">
+   Working with the course template
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fork-the-course-template">
+     1. Fork the course template:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-the-repository">
+     2. Clone the repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-changes">
+     3. Make changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-readme">
+       The README
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-license">
+       THE LICENSE
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commit-changes">
+     4. Commit changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#push-changes">
+     5. Push changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
+   Hosting a website using Github pages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-website">
+     Setting up your website
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checking-your-workflow">
+     Checking your workflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-your-link">
+     Getting your Link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-ressources">
+   Additional ressources
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+            <article class="bd-article" role="main">
+              
   <section class="tex2jax_ignore mathjax_ignore" id="git-github-and-hosting-websites-using-github-pages">
-<h1>Git, GitHub and hosting websites using GitHub Pages<a class="headerlink" href="#git-github-and-hosting-websites-using-github-pages" title="Permalink to this headline">#</a></h1>
+<h1>Git, GitHub and hosting websites using GitHub Pages<a class="headerlink" href="#git-github-and-hosting-websites-using-github-pages" title="Permalink to this heading">#</a></h1>
 <p><strong>To publish your course/website we will be relying on Github, a web-based platform that provides hosting and storage services for software and data</strong>.</p>
 <p>Github, or the underlying version control system “Git”, is basically used in every large software project that you can think of. A Github server may be setup on a local machine or network, if the access to the hosted software or data should be restricted, but we’ll be using the public Github server, i.e. the <a class="reference external" href="https://github.com">web-based version of Github</a>.
 In essence, this allows us to openly share and for other people to make copies or download our projects, e.g. for collaborative development or issue tracking, it further allows for feedback on our courses or the reporting of possible errors people may have encountered.</p>
@@ -849,12 +863,12 @@ In essence, this allows us to openly share and for other people to make copies o
 <li><p>how to use the version control software “Git” to manage your projects and how to “push” your local course materials to your online repository and how to host your course website using Github pages.</p></li>
 </ul>
 <section id="before-we-get-started">
-<h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this headline">#</a></h2>
+<h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this heading">#</a></h2>
 <br></section>
 <section id="goals">
-<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">#</a></h2>
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this heading">#</a></h2>
 <p>This chapter aims to include the following goals. Do check back here later and you feel like the lesson addressed the stated goals appropriately!</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Understand the benefits of using Github</p></li>
 <li><p>Learn how to setup your Github account</p></li>
 <li><p>Learn how to record changes via git</p></li>
@@ -873,21 +887,21 @@ In essence, this allows us to openly share and for other people to make copies o
 <li><p>Hosting a website using Github pages</p></li>
 </ul>
 <section id="what-s-a-github-and-why-should-we-use-it">
-<h3>What’s a “Github” and why should we use it?<a class="headerlink" href="#what-s-a-github-and-why-should-we-use-it" title="Permalink to this headline">#</a></h3>
+<h3>What’s a “Github” and why should we use it?<a class="headerlink" href="#what-s-a-github-and-why-should-we-use-it" title="Permalink to this heading">#</a></h3>
 <p>As already mentioned, Github is a web-based plattform for store, organize, and managing projects.</p>
 <p>Content is mainly organized in repositories (or “repos” for short), these repos can be viewed as being equivalent to a normal directory, that you have on your local machine for e.g. storing data, pictures.
 They may contain a variety of file-types and nested directories, and will be used as a place to store and organize your project files, including code, assets and documentation</p>
 <p>Here you see the repository for the course template that you’ll be working with. Don’t worry if that’s still confusing to you, learning how to work with Github is best done using a “learning-bydoing” approach.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/template.png?raw=true" alt="png depicting the file structure of the course template repository" class="bg-primary" width="500px">
 <section id="version-control-and-collaborative-work">
-<h4>Version control and collaborative work<a class="headerlink" href="#version-control-and-collaborative-work" title="Permalink to this headline">#</a></h4>
+<h4>Version control and collaborative work<a class="headerlink" href="#version-control-and-collaborative-work" title="Permalink to this heading">#</a></h4>
 <p>I’m sure we’ve all lost important document, code or progress while working in academia. If you’ve been doing programming work, you might also have encountered that fixing a bug may lead to othe substantial bugs down the line.
 So people generally tend to come up with their on solution for “project managment”, e.g. by maintaining multiple files, e.g. project_working_copy_1.txt, project_notes.txt,  project_final_draft_3 or at times by making a mess of our documents by storing cut or to be implemented content in it’s own sub-section at the end of project_draft_4.txt.</p>
 <p>Github alleviates that problem by making use of “Git” a distributed version control system, which logs each time a change is made to a file. Via the commit system we can not only maintain different versions of the same file on e.g. your local system and the connected public repository, but also revert changes that had negative consequences or recover information lost on your system.</p>
 <p>Git further makes it easy to work with multiple users on the same project, as each user can maintain their local versions and submit their changes to the public directory, that can then be reviewed by the team on quality and compatibility and subsequently be incorporated into the online project.</p>
 </section>
 <section id="roadmap">
-<h4>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">#</a></h4>
+<h4>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p><strong>Setting up a Github account</strong></p></li>
@@ -900,7 +914,7 @@ So people generally tend to come up with their on solution for “project managm
 </section>
 </section>
 <section id="setting-up-a-github-account">
-<h3>Setting up a Github account<a class="headerlink" href="#setting-up-a-github-account" title="Permalink to this headline">#</a></h3>
+<h3>Setting up a Github account<a class="headerlink" href="#setting-up-a-github-account" title="Permalink to this heading">#</a></h3>
 <p>First things, first let’s setup a GitHub Account.</p>
 <p><strong>1. Go to the GitHub website</strong>: Open a web browser and navigate to the <a class="reference external" href="https://github.com/">github.com</a>.</p>
 <p>**2. Click on the “Sign up” button located in the upper-right corner.</p>
@@ -911,7 +925,7 @@ So people generally tend to come up with their on solution for “project managm
 <p><strong>And that’s it!</strong>
 You can now use your new GitHub account store your code online or collaborate and share your projects with the world!</p>
 <section id="id1">
-<h4>Roadmap<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<h4>Roadmap<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p>Setting up a Github account</p></li>
@@ -924,16 +938,16 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="start-a-project-setup-a-public-repository">
-<h3>Start a project/setup a public repository<a class="headerlink" href="#start-a-project-setup-a-public-repository" title="Permalink to this headline">#</a></h3>
+<h3>Start a project/setup a public repository<a class="headerlink" href="#start-a-project-setup-a-public-repository" title="Permalink to this heading">#</a></h3>
 <p>Let’s put that new account to use, by creating a new online repository, often referred to as a “remote repo”!</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Open Github in your browser</p></li>
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> sign in the top right corner and click “New repository”</p></li>
 <li><p>Fill out the repository details: Give your repository a name, description, and check the box next to “public” to make sure others can find your directory.</p></li>
 </ol>
 <p>This could look something like this:</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/new_repo_example.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
-<ol class="simple">
+<ol class="arabic simple" start="4">
 <li><p>Check the box “Add a README file”, this will initiate your repository with a file that can later be used to display basic information to others viewing your repo.</p></li>
 <li><p>Choose a license! You can start out with “None” as this repo is just for testing, but if you plan to use Github for your projects it’s imperative to include one to prevent misuse. Find more info <span class="xref myst">here</span>.</p></li>
 <li><p>Click on the “Create repository” button to create your new repository.</p></li>
@@ -941,7 +955,7 @@ You can now use your new GitHub account store your code online or collaborate an
 </ol>
 <p>Congratulations! You are now the proud owner of a Github repository. In the following parts we’ll be diving a bit deeper into the specifics of how a standard Github-Workflow might look like, how to connect your local system to your online repos (“cloning”).</p>
 <section id="id2">
-<h4>Roadmap<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
+<h4>Roadmap<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p>Setting up a Github account</p></li>
@@ -955,7 +969,7 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h2>
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this heading">#</a></h2>
 <p>To use Git on your local machine to log any changes you make to your project and submit your changes to the internet, you’ll be needing the following:</p>
 <ul class="simple">
 <li><p>a GitHub account</p></li>
@@ -976,7 +990,7 @@ You can now use your new GitHub account store your code online or collaborate an
 <li><p>B.) Open Gitkraken and create a new repository (called intiating a new repository, under “Start a local project”)</p></li>
 </ul>
 <section id="id3">
-<h3>Roadmap<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h3>Roadmap<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p>Setting up a Github account</p></li>
@@ -989,7 +1003,7 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="getting-started">
-<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h2>
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h2>
 <p>Now getting started with Github may feel overwhelming, but for this course we’ll be learning just the bare minimum.</p>
 <p>If you’re confused about the language used or want to understand things in greater detail, there are great ressources ou there for you to explore:</p>
 <ul class="simple">
@@ -1000,7 +1014,7 @@ You can now use your new GitHub account store your code online or collaborate an
 </br>
 </br>
 <section id="git-operations">
-<h3>Git operations<a class="headerlink" href="#git-operations" title="Permalink to this headline">#</a></h3>
+<h3>Git operations<a class="headerlink" href="#git-operations" title="Permalink to this heading">#</a></h3>
 <p>Git can be quite complex, but <strong>we’ll only be using the following operations</strong>, for in-depth explanations in video form click the contaned links:</p>
 <p><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"><strong>Forking</strong></a>: Creating a copy of someones repository, that you want to work with. Forks let you make changes to a project without affecting the original repository. I.e. you’ll create an online copy of anothers repository under your github account.</p>
 <p><a class="reference external" href="https://www.gitkraken.com/learn/git/tutorials/what-is-git-remote"><strong>Cloning</strong></a>: Meaning to create a local copy of an online repository (called “remote”s on your system.</p>
@@ -1012,7 +1026,7 @@ You can now use your new GitHub account store your code online or collaborate an
 </br>
 </section>
 <section id="git-workflow">
-<h3>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">#</a></h3>
+<h3>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this heading">#</a></h3>
 <p><strong>A standard Git workflow may be looking something like this:</strong></p>
 <p><strong>1. Create a repository</strong>: Create an online repository by clicking on the “New repository” button on the GitHub website. Give your repository a name, a description, and select it the “public” option.</p>
 <p><strong>2. Clone the repository</strong>: To start working with your repository, you’ll need to “clone” it to your local computer. This will create a copy of the repository on your computer that you can work with. To clone a repository, click on the “Clone or download” button and copy the URL.</p>
@@ -1027,7 +1041,7 @@ You can now use your new GitHub account store your code online or collaborate an
 <p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: To push your changes, run the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Hit the “Push” button on the upper center of the window.</p>
 <section id="id4">
-<h4>Roadmap<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
+<h4>Roadmap<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p>Setting up a Github account</p></li>
@@ -1041,11 +1055,11 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="working-with-the-course-template">
-<h2>Working with the course template<a class="headerlink" href="#working-with-the-course-template" title="Permalink to this headline">#</a></h2>
+<h2>Working with the course template<a class="headerlink" href="#working-with-the-course-template" title="Permalink to this heading">#</a></h2>
 <p>To work with our materials we have to add a minor step, as you don’t want to push your changes to our onlince repository containing the coures template.</p>
 <p>Instead we’ll add the step of “forking” the course template repository to your account:</p>
 <section id="fork-the-course-template">
-<h3>1. Fork the course template:<a class="headerlink" href="#fork-the-course-template" title="Permalink to this headline">#</a></h3>
+<h3>1. Fork the course template:<a class="headerlink" href="#fork-the-course-template" title="Permalink to this heading">#</a></h3>
 <p>Head over to the <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repo</a> and on the upper right hand side click “fork”.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/fork_buttton.png?raw=true" alt="depicting positon an look of the fork button on a github repository" class="bg-primary" width="500px">
 <p>You’ll be asked to create a new fork, simply add a new repository name, provide a short description or keep the exiting one, check the box “Copy the main branch only” and click the “create fork” button.</p>
@@ -1053,13 +1067,13 @@ You can now use your new GitHub account store your code online or collaborate an
 <p>Now we’ll simply proceed as above:</p>
 </section>
 <section id="clone-the-repository">
-<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">#</a></h3>
+<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this heading">#</a></h3>
 <p>To start working with your repository, you’ll need to “clone” it to your local computer. This will create a copy of the repository on your computer that you can work with. To clone a repository, click on the “Clone or download” button and copy the URL you’ve used for your foked repo.</p>
 <p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: Open a terminal or command prompt and input the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/username/repositoryname.</span></code>Where username is your user name and repositoryname is the name of your of the repository.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">clone</span> <span class="pre">repo</span></code> and input where the repo should be stored on your system as well as the URl to the repo, i.e. <code class="docutils literal notranslate"><span class="pre">https://github.com/username/repositoryname.</span></code></p>
 </section>
 <section id="make-changes">
-<h3>3. Make changes<a class="headerlink" href="#make-changes" title="Permalink to this headline">#</a></h3>
+<h3>3. Make changes<a class="headerlink" href="#make-changes" title="Permalink to this heading">#</a></h3>
 <p><strong>The template structure</strong></p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/repo.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
 <p>Where our</p>
@@ -1083,7 +1097,7 @@ You can now use your new GitHub account store your code online or collaborate an
 <li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Structuring content</a></p></li>
 </ul>
 <section id="the-readme">
-<h4>The README<a class="headerlink" href="#the-readme" title="Permalink to this headline">#</a></h4>
+<h4>The README<a class="headerlink" href="#the-readme" title="Permalink to this heading">#</a></h4>
 <p>To actually display the purpose and e.g. acknowledgments of your course you’ll have to adapt the “<a class="reference external" href="http://README.md">README.md</a>” file on your public repo. In the template this looks like this</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/readme.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
 <p>and translates to this view at the bottom of your public remote repo</p>
@@ -1091,7 +1105,7 @@ You can now use your new GitHub account store your code online or collaborate an
 <p>So simply add the name and explanation of your course, your credentials, and e.g. how others may get in contact with you to the <a class="reference external" href="http://README.md">README.md</a>. Please do keep the included credit to our original G0RELLA template lectures.</p>
 </section>
 <section id="the-license">
-<h4>THE LICENSE<a class="headerlink" href="#the-license" title="Permalink to this headline">#</a></h4>
+<h4>THE LICENSE<a class="headerlink" href="#the-license" title="Permalink to this heading">#</a></h4>
 <p>You may further change the contained LICENSE file to your liking, as long as you respect the stated stipulations.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/license.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
@@ -1112,19 +1126,19 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="commit-changes">
-<h3>4. Commit changes<a class="headerlink" href="#commit-changes" title="Permalink to this headline">#</a></h3>
+<h3>4. Commit changes<a class="headerlink" href="#commit-changes" title="Permalink to this heading">#</a></h3>
 <p>When you’re done making changes, you’ll need to “commit” them to the repository. Committing a change records it in the repository’s history and makes it part of the codebase.</p>
 <p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>:To commit a change, run the following commands in the terminal: git add ., git commit -m “Your commit message”. Replace “Your commit message” with a brief description of the changes you made.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>:  Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">repo</span></code> and select the repo containing your changes. On the left hand side you’ll see the “file” overview. Under unstaged files you can review your changes. Click the grenn “stage all changes” button or right click on inidvidual files/folders and select “stage”. The files will be added to the “staged” files windows. Following provide a name for your changes (commit) in the summary field below and add a short but meaningful description of your changes. Lastly, hit the green “Stage changes/changes to commit” button.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/stage_menu.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
 </section>
 <section id="push-changes">
-<h3>5. Push changes<a class="headerlink" href="#push-changes" title="Permalink to this headline">#</a></h3>
+<h3>5. Push changes<a class="headerlink" href="#push-changes" title="Permalink to this heading">#</a></h3>
 <p>Finally, you’ll need to “push” your changes to your remote repository on GitHub. This will upload your changes to the website so that others can see them.</p>
 <p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: To push your changes, run the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Hit the “Push” button on the upper center of the window.</p>
 <section id="id5">
-<h4>Roadmap<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
+<h4>Roadmap<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
 <ul class="simple">
 <li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
 <li><p>Setting up a Github account</p></li>
@@ -1138,14 +1152,14 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 </section>
 <section id="hosting-a-website-using-github-pages">
-<h2>Hosting a website using Github pages<a class="headerlink" href="#hosting-a-website-using-github-pages" title="Permalink to this headline">#</a></h2>
+<h2>Hosting a website using Github pages<a class="headerlink" href="#hosting-a-website-using-github-pages" title="Permalink to this heading">#</a></h2>
 <p>So to actually turn the course content that you pushed to your remote Github repo into a website we’ll be using <strong>Github Pages</strong>.</p>
 <p>GitHub Pages  allows users to host websites directly from their GitHub repositories, creating a website for your personal portfolio, project documentation, or in this case course content.
 The website is generated directly from the contents of your GitHub repository and is automatically updated whenever changes are pushed to the repository. The the chapter structure of your website is dependent on the contents of your _toc.yml, as shown in the <span class="xref myst">Structuring content</span> chapter.</p>
 <p>Normally, you’d have to setup a <a class="reference external" href="https://github.com/marketplace/actions/github-pages-action">“GitHub-pages-actions”</a> script for the website to be automatically build on push, but the course template already contains everything you need.</p>
 <p>If we take a closer look at the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> folder, we’ll find a file called <code class="docutils literal notranslate"><span class="pre">book.yml</span></code>. That already contains all the instructions necessary for GitHub to automatically build your book. All we need to do now is change a few of the settings of our online repo.</p>
 <section id="setting-up-your-website">
-<h3>Setting up your website<a class="headerlink" href="#setting-up-your-website" title="Permalink to this headline">#</a></h3>
+<h3>Setting up your website<a class="headerlink" href="#setting-up-your-website" title="Permalink to this heading">#</a></h3>
 <p><strong>1.Open your repo in your Browser and click “Settings”</strong></p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/settings.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="600px">
 <p><strong>2.Click on “Pages” under “Code and automation”</strong></p>
@@ -1157,19 +1171,19 @@ The website is generated directly from the contents of your GitHub repository an
 <p><strong>5.Push a new commit to your repo (e.g. add a line to your <a class="reference external" href="http://README.md">README.md</a>)</strong></p>
 </section>
 <section id="checking-your-workflow">
-<h3>Checking your workflow<a class="headerlink" href="#checking-your-workflow" title="Permalink to this headline">#</a></h3>
+<h3>Checking your workflow<a class="headerlink" href="#checking-your-workflow" title="Permalink to this heading">#</a></h3>
 <p>Following, if you now click on “Actions”, at the top of your repo, you should now see that a workflow called “pages and deployment” is running.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/actions_deployment.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
 </section>
 <section id="getting-your-link">
-<h3>Getting your Link<a class="headerlink" href="#getting-your-link" title="Permalink to this headline">#</a></h3>
+<h3>Getting your Link<a class="headerlink" href="#getting-your-link" title="Permalink to this heading">#</a></h3>
 <p>Once that process has completed, i.e. is marked with a green checkmark, head back over to to “settings” -&gt; “pages”. At the top under “GitHub pages” you should now find a field that looks like this</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/pages_link.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
 <p>Clicking on the displayed link, should lead you to your newly build content site. Now you can simply copy that link and add it to your repos <a class="reference external" href="http://README.md">README.md</a>, sop people can actually find your website.
 Done!</p>
 </section>
 <section id="troubleshooting">
-<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">#</a></h3>
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">#</a></h3>
 <p>If for whatever reason the “pages and deployment” workflow fails, it will be marked with a red x, instead of a green
 checkmark.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/failed_workflow.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
@@ -1179,7 +1193,7 @@ checkmark.</p>
 </section>
 </section>
 <section id="additional-ressources">
-<h2>Additional ressources<a class="headerlink" href="#additional-ressources" title="Permalink to this headline">#</a></h2>
+<h2>Additional ressources<a class="headerlink" href="#additional-ressources" title="Permalink to this heading">#</a></h2>
 <p>If you want to start building a website from scratch, change the site-theme or write your own pages-action script from scratch, checkout the <a class="reference external" href="https://docs.github.com/en/pages/quickstart">official GitHub pages tutorial</a>.</p>
 </section>
 </section>
@@ -1188,7 +1202,7 @@ checkmark.</p>
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "felixkoerber/jb",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -1204,50 +1218,272 @@ checkmark.</p>
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
-              
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
+            </article>
+            
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="publishing.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Publishing: Getting the word out</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../troubleshooting.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Troubleshooting</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+  <a class='left-prev' id="prev-link" href="publishing.html" title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Publishing: Getting the word out</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../troubleshooting.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Troubleshooting</p>
+  </div>
+  <i class="fa-solid fa-angle-right"></i>
+  </a>
 </div>
             </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
   
-    By Felix Körber, Michael Ernst, Peer Herholz<br/>
-  
-      &copy; Copyright 2023.<br/>
-</p>
-        </footer>
-    </div>
-    
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
+     What’s a “Github” and why should we use it?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
+       Version control and collaborative work
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#roadmap">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-a-github-account">
+     Setting up a Github account
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
+     Start a project/setup a public repository
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Roadmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-operations">
+     Git operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-workflow">
+     Git Workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-the-course-template">
+   Working with the course template
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fork-the-course-template">
+     1. Fork the course template:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-the-repository">
+     2. Clone the repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-changes">
+     3. Make changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-readme">
+       The README
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-license">
+       THE LICENSE
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commit-changes">
+     4. Commit changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#push-changes">
+     5. Push changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
+   Hosting a website using Github pages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-website">
+     Setting up your website
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checking-your-workflow">
+     Checking your workflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-your-link">
+     Getting your Link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-ressources">
+   Additional ressources
+  </a>
+ </li>
+</ul>
+
+</nav>
 </div>
 
-
-      </div>
-    </div>
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+<div class="bd-footer-content__inner container">
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Felix Körber, Michael Ernst, Peer Herholz
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2023.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+Last updated on None.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </div>
+        </footer>
+        
+
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
 
   </body>
 </html>
