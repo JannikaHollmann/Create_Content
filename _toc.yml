@@ -14,7 +14,7 @@ chapters:
   - file: tutorialcontent/writing/styling
   - file: tutorialcontent/writing/media
   - file: tutorialcontent/writing/interactive
-  - file: tutorialcontent/writing/nbgrader
+  - file: tutorialcontent/nbgrader
 - file: tutorialcontent/structure
 - file: tutorialcontent/publishing/publishing
   sections:
