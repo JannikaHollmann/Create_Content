@@ -676,6 +676,28 @@ title="Print to PDF"
    Objectives 📍
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-how-to">
+   The How-To
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up-your-config">
+     1. Set-Up your
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       config
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mybinder">
+     2. MyBinder
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -696,6 +718,34 @@ title="Print to PDF"
 <li><p>Learn how to make your code cells run interactively</p></li>
 <li><p>Learn how to embed interactive graphics in your book</p></li>
 </ul>
+</section>
+<section id="the-how-to">
+<h2>The How-To<a class="headerlink" href="#the-how-to" title="Permalink to this heading">#</a></h2>
+<p>Setting up your Juypter Book is fairly simple, just follow the steps below.</p>
+<section id="set-up-your-config">
+<h3>1. Set-Up your <code class="docutils literal notranslate"><span class="pre">config</span></code><a class="headerlink" href="#set-up-your-config" title="Permalink to this heading">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use the template we provide, you can skip to step two</p>
+</div>
+<ul class="simple">
+<li><p>In your project folder, open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
+<li><p>Copy the following code:
+<code>
+launch_buttons:
+notebook_interface        : “jupyterlab”  # The interface interactive links will activate [“classic”, “jupyterlab”]
+binderhub_url             : “<a class="reference external" href="https://mybinder.org">https://mybinder.org</a>”  # The URL of the BinderHub (e.g., <a class="reference external" href="https://mybinder.org">https://mybinder.org</a>); needs to be adapted
+thebe                     : True  # Add a thebe button to pages (requires the repository to run on Binder)
+</code></p></li>
+</ul>
+</section>
+<section id="mybinder">
+<h3>2. MyBinder<a class="headerlink" href="#mybinder" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>open <a class="reference external" href="https://mybinder.org">mybinder.org</a></p></li>
+<li></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -761,6 +811,28 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#objectives">
    Objectives 📍
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-how-to">
+   The How-To
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up-your-config">
+     1. Set-Up your
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       config
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mybinder">
+     2. MyBinder
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
