@@ -677,23 +677,28 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mybinder">
+   MyBinder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-how-to">
    The How-To
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#set-up-your-config">
-     1. Set-Up your
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       config
-      </span>
-     </code>
+    <a class="reference internal nav-link" href="#setting-up-the-mybinder-environment">
+     1. Setting up the MyBinder environment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mybinder">
-     2. MyBinder
+    <a class="reference internal nav-link" href="#changing-the-config-yml">
+     2. Changing the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       _config.yml
+      </span>
+     </code>
     </a>
    </li>
   </ul>
@@ -719,32 +724,34 @@ title="Print to PDF"
 <li><p>Learn how to embed interactive graphics in your book</p></li>
 </ul>
 </section>
+<section id="mybinder">
+<h2>MyBinder<a class="headerlink" href="#mybinder" title="Permalink to this heading">#</a></h2>
+<p>In today’s digital age, there are many tools available for interactive learning, and one of the most exciting ones is MyBinder. MyBinder is a free and open-source service that allows users to create custom computing environments for their projects, experiments, and interactive learning activities. It allows users to create and share executable versions of their code in a reproducible and accessible format, enabling interactive learning experiences for students, researchers, and developers.</p>
+<p>MyBinder is built on top of Jupyter, an open-source web-based computing environment that enables interactive data science and scientific computing. MyBinder allows users to create a customized version of Jupyter, including their choice of libraries, programming languages, and data sets. Users can then share a link to their Binder environment, allowing others to reproduce and interact with their work.</p>
+<p>One of the primary benefits of MyBinder is its ease of use. It requires no installation, configuration, or maintenance of software, making it accessible to users of all skill levels. Anyone with a web browser can access a MyBinder environment, making it an ideal platform for sharing interactive learning activities with a broader audience.</p>
+<p>Another significant advantage of MyBinder is its reproducibility. By sharing a Binder environment, users can ensure that their code, data, and results are all accessible and reproducible, even if they change or update their code in the future. This feature is especially important for researchers, who must ensure that their results are accurate and can be replicated by others.</p>
+<p>MyBinder is also an excellent tool for collaborative learning. It allows users to share their work with others, collaborate on projects, and learn from each other’s code. Additionally, MyBinder can be used to teach programming and data science concepts in a hands-on, interactive way. Teachers can create Binder environments that provide students with everything they need to get started, including tutorials, data sets, and code examples.</p>
+</section>
 <section id="the-how-to">
 <h2>The How-To<a class="headerlink" href="#the-how-to" title="Permalink to this heading">#</a></h2>
-<p>Setting up your Juypter Book is fairly simple, just follow the steps below.</p>
-<section id="set-up-your-config">
-<h3>1. Set-Up your <code class="docutils literal notranslate"><span class="pre">config</span></code><a class="headerlink" href="#set-up-your-config" title="Permalink to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you use the template we provide, you can skip to step two</p>
-</div>
-<ul class="simple">
-<li><p>In your project folder, open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
-<li><p>Copy the following code:
-<code>
-launch_buttons:
-notebook_interface        : “jupyterlab”  # The interface interactive links will activate [“classic”, “jupyterlab”]
-binderhub_url             : “<a class="reference external" href="https://mybinder.org">https://mybinder.org</a>”  # The URL of the BinderHub (e.g., <a class="reference external" href="https://mybinder.org">https://mybinder.org</a>); needs to be adapted
-thebe                     : True  # Add a thebe button to pages (requires the repository to run on Binder)
-</code></p></li>
-</ul>
+<p>One of the great things about Jupyter Book is that it allows users to integrate MyBinder environments directly into their books, allowing readers to interact with and run code directly from the book’s pages.</p>
+<section id="setting-up-the-mybinder-environment">
+<h3>1. Setting up the MyBinder environment<a class="headerlink" href="#setting-up-the-mybinder-environment" title="Permalink to this heading">#</a></h3>
+<p>To integrate MyBinder into a Jupyter Book, the first step is to create a Binder environment using the MyBinder website. Once the environment is set up, the next step is to add a MyBinder badge to the Jupyter Book’s repository. This badge is a clickable image that will launch the MyBinder environment when clicked.</p>
+<p>Visit <span class="xref myst">mybinder.org</span>, add the link to your GitHub-repository and click on <code class="docutils literal notranslate"><span class="pre">launch</span></code></p>
+<p><img alt="MyBinder Set-Up" src="https://raw.githubusercontent.com/felixkoerber/jb/main/static/mybinder.png" /></p>
 </section>
-<section id="mybinder">
-<h3>2. MyBinder<a class="headerlink" href="#mybinder" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>open <a class="reference external" href="https://mybinder.org">mybinder.org</a></p></li>
-<li></li>
-</ul>
+<section id="changing-the-config-yml">
+<h3>2. Changing the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code><a class="headerlink" href="#changing-the-config-yml" title="Permalink to this heading">#</a></h3>
+<p>In your <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>, add the following bit of code:</p>
+<div class="highlight-# notranslate"><div class="highlight"><pre><span></span>launch_buttons:
+  notebook_interface        : &quot;classic&quot;  # The interface interactive links will activate [&quot;classic&quot;, &quot;jupyterlab&quot;]
+  binderhub_url             : &quot;https://mybinder.org&quot;  # The URL of the BinderHub (e.g., https://mybinder.org)
+  thebe                     : true  # Add a thebe button to pages (requires the repository to run on Binder)
+</pre></div>
+</div>
+<p><img alt="Launch MyBinder" src="https://raw.githubusercontent.com/felixkoerber/jb/main/static/Launch_Binder.png" /></p>
+<p>Now, both the <code class="docutils literal notranslate"><span class="pre">Binder</span></code>- and <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code> Badge are displayed on your Book and you should be good to go!</p>
 </section>
 </section>
 </section>
@@ -813,23 +820,28 @@ thebe                     : True  # Add a thebe button to pages (requires the re
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mybinder">
+   MyBinder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-how-to">
    The How-To
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#set-up-your-config">
-     1. Set-Up your
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       config
-      </span>
-     </code>
+    <a class="reference internal nav-link" href="#setting-up-the-mybinder-environment">
+     1. Setting up the MyBinder environment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mybinder">
-     2. MyBinder
+    <a class="reference internal nav-link" href="#changing-the-config-yml">
+     2. Changing the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       _config.yml
+      </span>
+     </code>
     </a>
    </li>
   </ul>
