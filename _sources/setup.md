@@ -59,7 +59,7 @@ Or follow the official [installation guide](https://conda.io/projects/conda/en/s
 1. Press "Windows" and Search for "Anaconda Powershell Prompt"
 2. Paste the following commands into the opened terminal:
 - `conda install -c conda-forge jupyter-book`
-- `conda install conda install -c conda-forge nbgrader`
+- `conda install -c conda-forge nbgrader`
 - `conda install jupyter`
 
 
