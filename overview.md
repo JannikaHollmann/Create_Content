@@ -4,6 +4,9 @@ Now that you've got an idea what this website is about, let's discuss how we'll 
 
 The course is divided into several modules, each covering a step in the creation of your course. The modules include content creation, how to structure your course "book", as well as how to host your course website using github. You can simply start from the beginning and work your way down through all respective sections. If you're already familiar with the concepts of **GitHub**, and the **Jupyter Framework**, the [Quick Set-Up](./10min.ipynb) may also be a good place to start.
 The following section will illustrate the structure of the contents contained.
+
+This tutorial is further paired with a template course, that you can freely [download here](https://github.com/M-earnest/course_template_diler/archive/refs/heads/master.zip). We'll in essence teach you how to adapat this template to host your own online courses. An explanation of the template can be found in the respective chapter ["Course template"](https://felixkoerber.github.io/jb/course_template.html).
+
 ___
 #### Objectives 📍
 
@@ -33,6 +36,9 @@ Here you'll learn how to create and style content, such as the pages displayed o
 - [Styling: The Look and Feel](./tutorialcontent/writing/styling)
 - [Embedding Media: Images, Videos and more](./tutorialcontent/writing/media)
 - [Creating automatically gradable coding assignments](./tutorialcontent/writing/nbgrader)
+- [Make your course interactive](https://felixkoerber.github.io/jb/tutorialcontent/writing/interactive.html)
+
+
 
 [Structuring content](./tutorialcontent/structure)
 

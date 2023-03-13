@@ -7,6 +7,7 @@ chapters:
 - file: overview.md
 - file: setup
 - file: intro/whyjb
+- file: course_template
 - file: 10min
 - file: tutorialcontent/writing/writing
   sections:

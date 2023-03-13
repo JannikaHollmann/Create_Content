@@ -7,7 +7,8 @@ In order to build your book, Jupyter Book needs to know how you want to structur
 * **In what form should the content be displayed?**
 
 
-The answer to these questions are written in a `YAML` file called `_toc.yml`, which defines the `Table of Contents`, as well as the formatting of your book.
+The answer to these questions are written in a `YAML` file called `_toc.yml`, which defines the `Table of Contents`, as well as the formatting of your book. It can be found in e.g. the lecture folder of the [template](https://github.com/M-earnest/course_template_diler). The `_toc.yml` therefore defines the structure of your course website. 
+
 In the simplest form, the `_toc.yml` looks like this:
 
 ```format: jb-book
@@ -29,7 +30,8 @@ While this might seem overwhelming at first, it is actually really simple. Below
 |`file:`|Path to the files that you want to include in your book. All the paths are relative to the root.|
 |`sections:`|Defines sections of a chapter.|
 
-Furthermore, you can also **chapters into parts** using the `parts:` argument:
+
+Furthermore, you can also **subdivide chapters into parts** using the `parts:` argument:
 
 ```format: jb-book
 root: index
@@ -55,6 +57,28 @@ parts:
 ```{note} Note
 The chapter names displayed on your website are defined by the top-level heading of the respective document. For instance, for this page, the top-level header looks like this: `# Structuring Content using the Table of Contents` 
 ```
+
+#### Adapting the toc.yml/Table of Contents
+
+To add your course content simply provide the path to your newly created or adapted file including the respective filename to this document. For this you can simply copy-paste the existing lines of the provided "toc.yml" and exchange the example filenames with your filenames. It is further easiest if you simply adapt the `index.md` file provided with our template as the `"root"`, i.e. the landing page of a website.
+
+In practice the provided structure for our template looks like the following. 
+
+Where our ["toc.yml"](https://github.com/M-earnest/course_template_diler/blob/master/lecture/_toc.yml) looks like this:
+
+</br>
+
+<img src="https://github.com/felixkoerber/jb/blob/main/static/template_toc.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
+
+</br>
+
+and results in this site layout:
+
+</br>
+
+<img src="https://github.com/felixkoerber/jb/blob/main/static/template_layout.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
+
+
 
 ___
 #### Autogenerate the Table of Contents from a list of files
