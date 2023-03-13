@@ -163,6 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup: Before Creating Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../intro/whyjb.html">Why should you use Jupyter Books?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../course_template.html">The course template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../10min.html">Quick Setup Guide for Deploying Courses using Jupyter Book on Github</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="writing/writing.html">Creating Content</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="writing/cells.html">Cells in Jupyter Notebooks: Types and Usages</a></li>
@@ -399,6 +400,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapting-the-toc-yml-table-of-contents">Adapting the toc.yml/Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogenerate-the-table-of-contents-from-a-list-of-files">Autogenerate the Table of Contents from a list of files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-section">Next section</a></li>
 </ul>
@@ -420,8 +422,8 @@ document.write(`
 <li><p><strong>In which order should the pages appear?</strong></p></li>
 <li><p><strong>In what form should the content be displayed?</strong></p></li>
 </ul>
-<p>The answer to these questions are written in a <code class="docutils literal notranslate"><span class="pre">YAML</span></code> file called <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, which defines the <code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Contents</span></code>, as well as the formatting of your book.
-In the simplest form, the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> looks like this:</p>
+<p>The answer to these questions are written in a <code class="docutils literal notranslate"><span class="pre">YAML</span></code> file called <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code>, which defines the <code class="docutils literal notranslate"><span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Contents</span></code>, as well as the formatting of your book. It can be found in e.g. the lecture folder of the <a class="reference external" href="https://github.com/M-earnest/course_template_diler">template</a>. The <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> therefore defines the structure of your course website.</p>
+<p>In the simplest form, the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> looks like this:</p>
 <div class="highlight-format: notranslate"><div class="highlight"><pre><span></span>root: index`
 chapters:
 - file: path/to/chapter1
@@ -455,7 +457,7 @@ chapters:
 </tr>
 </tbody>
 </table>
-<p>Furthermore, you can also <strong>chapters into parts</strong> using the <code class="docutils literal notranslate"><span class="pre">parts:</span></code> argument:</p>
+<p>Furthermore, you can also <strong>subdivide chapters into parts</strong> using the <code class="docutils literal notranslate"><span class="pre">parts:</span></code> argument:</p>
 <div class="highlight-format: notranslate"><div class="highlight"><pre><span></span>root: index
 parts:
   - caption: Name of Part 1
@@ -489,7 +491,19 @@ parts:
 <p>Note
 The chapter names displayed on your website are defined by the top-level heading of the respective document. For instance, for this page, the top-level header looks like this: <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Structuring</span> <span class="pre">Content</span> <span class="pre">using</span> <span class="pre">the</span> <span class="pre">Table</span> <span class="pre">of</span> <span class="pre">Contents</span></code></p>
 </div>
+<section id="adapting-the-toc-yml-table-of-contents">
+<h2>Adapting the toc.yml/Table of Contents<a class="headerlink" href="#adapting-the-toc-yml-table-of-contents" title="Permalink to this heading">#</a></h2>
+<p>To add your course content simply provide the path to your newly created or adapted file including the respective filename to this document. For this you can simply copy-paste the existing lines of the provided “toc.yml” and exchange the example filenames with your filenames. It is further easiest if you simply adapt the <code class="docutils literal notranslate"><span class="pre">index.md</span></code> file provided with our template as the <code class="docutils literal notranslate"><span class="pre">&quot;root&quot;</span></code>, i.e. the landing page of a website.</p>
+<p>In practice the provided structure for our template looks like the following.</p>
+<p>Where our <a class="reference external" href="https://github.com/M-earnest/course_template_diler/blob/master/lecture/_toc.yml">“toc.yml”</a> looks like this:</p>
+</br>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/template_toc.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
+</br>
+<p>and results in this site layout:</p>
+</br>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/template_layout.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
 <hr class="docutils" />
+</section>
 <section id="autogenerate-the-table-of-contents-from-a-list-of-files">
 <h2>Autogenerate the Table of Contents from a list of files<a class="headerlink" href="#autogenerate-the-table-of-contents-from-a-list-of-files" title="Permalink to this heading">#</a></h2>
 <p>While we generally recommend customizing the ToC yourself using the template we provide, Jupyter Book also offers a built-in function that generates the Table of Content based on filenames of your content.</p>
@@ -595,6 +609,7 @@ Options:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adapting-the-toc-yml-table-of-contents">Adapting the toc.yml/Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#autogenerate-the-table-of-contents-from-a-list-of-files">Autogenerate the Table of Contents from a list of files</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-section">Next section</a></li>
 </ul>

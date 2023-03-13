@@ -163,6 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../../overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../setup.html">Setup: Before Creating Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../intro/whyjb.html">Why should you use Jupyter Books?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course_template.html">The course template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../10min.html">Quick Setup Guide for Deploying Courses using Jupyter Book on Github</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../writing/writing.html">Creating Content</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../writing/cells.html">Cells in Jupyter Notebooks: Types and Usages</a></li>
@@ -482,7 +483,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">2. Clone the repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-changes">3. Make changes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-readme">The README</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">THE LICENSE</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">The LICENSE</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-changes">4. Commit changes</a></li>
@@ -735,28 +736,46 @@ You can now use your new GitHub account store your code online or collaborate an
 </section>
 <section id="make-changes">
 <h3>3. Make changes<a class="headerlink" href="#make-changes" title="Permalink to this heading">#</a></h3>
-<p><strong>The template structure</strong></p>
+<p><strong>The course template is structured in the following way</strong></p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/repo.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
-<p>Where our</p>
+<p>Where:</p>
 <ul class="simple">
 <li><p>.github/workflows folder: contains the prewritten scripts to automatically create your website everytime new content is pushed online</p></li>
-<li><p>lecture: contains all our content files and directories, as well as the “toc.yml” file, which defines the strutcture of the websites</p></li>
+<li><p>lecture: contains all our content files and directories, as well as the “toc.yml” and the “config.yml” files, which defines the strutcture and functionality of the website</p></li>
 <li><p>README: a short explanation of your website/course</p></li>
 <li><p>LICENSE: self-explanatory, stating who and how are people allowed to use or reproduce the content of this repo</p></li>
 <li><p>requirements.txt: contains the necessary requirements for the automatic scripts building the website to run, no need to change anything here.</p></li>
 </ul>
-<p>Now most the things that you’ll be adapting are contained in the content folder “lecture”, feel free to check back with the the respective lessons on:</p>
+<p>Now most the things that you’ll be adapting are contained in the content folder “lecture”, which looks like this</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/lecture_folder.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
+<p>Where:</p>
+<ul class="simple">
+<li><p>content: contains files making up the main content of a course website</p></li>
+<li><p>general information: contains files providing information, such as the necessary setup, the outline of the course, a code of conduct etc.. The included “<a class="reference external" href="http://index.md">index.md</a>” file will be the landing point of the course website</p></li>
+<li><p>introduction: contains files making up the introdutory sessions of a course</p></li>
+<li><p>static: contains all the pictures and graphs contained in a course. It’s recommended that should you add new files. e.g. a course logo to this folder.</p></li>
+<li><p>config.yml: Contains the course title, authors and copyright notice at the footer of the website, which you should change before hosting your website. Further contains the specifics for the technical implementations of a course, e.g. whether jupyter notebooks should be re-run everytime the course website is created  by the github workflow or e.g. whether a course incoporated interactive elements.</p></li>
+<li><p>toc.yml: contains information on the structure of the course website. For an in-depth explanation, jump to the respective section under “creating content”</p></li>
+</ul>
+<p><strong>To get started exchange the information contained in the “<a class="reference external" href="http://index.md">index.md</a>” and the “config.yml” file with your course title, author’s names and affiliation and so on.</strong>
+Following you can add jupyter notebook or markdown files in e.g. the intorduction or content folder according to your needs or simply adapt the already existing files
+Feel free to check back with the the respective lessons on how to modify this template and add files according to your needs:</p>
 <ul class="simple">
 <li><p><strong>Content creation</strong></p>
 <ul>
-<li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">writing content</a></p></li>
+<li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">creating content</a></p></li>
 <li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/cells.html">Interactive content: Jupyter notebooks</a></p></li>
 <li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/styling.html">Style</a></p></li>
 <li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/media.html">Embedding Media: Images, Videos and more</a></p></li>
+<li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/interactive.html">Make your course interactive</a></p></li>
 </ul>
 </li>
+</ul>
+<p>Next you want to add all your new files to your “toc.yml” file, as described here:</p>
+<ul class="simple">
 <li><p><a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Structuring content</a></p></li>
 </ul>
+<p>It is further essesntial that you adapt the README and LICENSE files to your needs:</p>
 <section id="the-readme">
 <h4>The README<a class="headerlink" href="#the-readme" title="Permalink to this heading">#</a></h4>
 <p>To actually display the purpose and e.g. acknowledgments of your course you’ll have to adapt the “<a class="reference external" href="http://README.md">README.md</a>” file on your public repo. In the template this looks like this</p>
@@ -766,7 +785,7 @@ You can now use your new GitHub account store your code online or collaborate an
 <p>So simply add the name and explanation of your course, your credentials, and e.g. how others may get in contact with you to the <a class="reference external" href="http://README.md">README.md</a>. Please do keep the included credit to our original G0RELLA template lectures.</p>
 </section>
 <section id="the-license">
-<h4>THE LICENSE<a class="headerlink" href="#the-license" title="Permalink to this heading">#</a></h4>
+<h4>The LICENSE<a class="headerlink" href="#the-license" title="Permalink to this heading">#</a></h4>
 <p>You may further change the contained LICENSE file to your liking, as long as you respect the stated stipulations.</p>
 <img src="https://github.com/felixkoerber/jb/blob/main/static/license.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
@@ -954,7 +973,7 @@ checkmark.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone-the-repository">2. Clone the repository</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#make-changes">3. Make changes</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-readme">The README</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">THE LICENSE</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-license">The LICENSE</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-changes">4. Commit changes</a></li>
