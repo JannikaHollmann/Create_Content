@@ -28,7 +28,7 @@ latex:
 
 
 #######################################################################################
-# Launch button settings
+# Launch button settingss
 launch_buttons:
   notebook_interface        : "jupyterlab"  # The interface interactive links will activate ["classic", "jupyterlab"]
   binderhub_url             : "https://mybinder.org"  # The URL of the BinderHub (e.g., https://mybinder.org); needs to be adapted
@@ -45,7 +45,7 @@ repository:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : ""  # A path to a favicon image
+  favicon                   : "favicon.ico"  # A path to a favicon image
   use_edit_page_button      : True  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : True  # Whether to add a link to your repository button
   use_issues_button         : True  # Whether to add an "open an issue" button
