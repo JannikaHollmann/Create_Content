@@ -10,9 +10,11 @@ parts:
   - file: setup
   - file: intro/whyjb
 - caption: Quick Tutorial
+  chapters:
   - file: course_template
   - file: 10min
 - caption: In-depth Information
+  chapters:
   - file: tutorialcontent/writing/writing
     sections:
     - file: tutorialcontent/writing/cells
@@ -26,12 +28,14 @@ parts:
     - file: tutorialcontent/publishing/account
   - file: tutorialcontent/troubleshooting
 - caption: Miscellaneous 
+  chapters:
   - file: ressources/info
     sections:
     - file: ressources/CoC
     - file: ressources/dei
     - file: ressources/open_science
 - caption: Course Examples
+  chapters:
   - file: intro/demo
     sections:
     - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
