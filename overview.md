@@ -1,13 +1,15 @@
 # Course overview & procedure
 
-Now that you've got an idea what this website is about, let's discuss how we'll hopefully get your course up and running. The following document will therefore clarify the structure and general setup of this course.
+Now that you've got an idea of what this website is about, let's discuss how we'll hopefully get your course up and running. The following document will therefore clarify the structure and general setup of this course.
 
-The course is divided into several modules, each covering a step in the creation of your course. The modules include content creation, how to structure your course "book", as well as how to host your course website using github. You can simply start from the beginning and work your way down through all respective sections. If you're already familiar with the concepts of **GitHub**, and the **Jupyter Framework**, the [Quick Set-Up](./10min.ipynb) may also be a good place to start.
+The course is divided into several modules, each covering a step in the creation of your course. The modules include content creation, how to structure your course "book", as well as how to host your course website using GitHub. You can simply start from the beginning and work your way down through all respective sections. If you're already familiar with the concepts of **GitHub**, and the **Jupyter Framework**, the [Quick Set-Up](./10min.ipynb) may also be a good place to start.
 The following section will illustrate the structure of the contents contained.
 
-This tutorial is further paired with a template course, that you can freely [download here](https://github.com/M-earnest/course_template_diler/archive/refs/heads/master.zip). We'll in essence teach you how to adapat this template to host your own online courses. An explanation of the template can be found in the respective chapter ["Course template"](https://felixkoerber.github.io/jb/course_template.html).
+This tutorial is further paired with a template course, that you can freely [download here](https://github.com/M-earnest/course_template_diler/archive/refs/heads/master.zip). We'll in essence teach you how to adapt this template to host your own online courses. An explanation of the template can be found in the respective chapter ["Course template"](https://felixkoerber.github.io/jb/course_template.html).
 
 ___
+
+
 #### Objectives 📍
 
 **At the end of the course, you will be able to:**
@@ -71,18 +73,19 @@ ___
 #### How do I get all the software and do I have to apply for a loan to get it?
 
 Everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
-`*Why?*` Because teaching via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and doesn't align with our values (see our open science statement). We don't want we people to have to obtain licenses or be dependent on universitiy ressources or pay for software/hosting etc. oit of their own pocket. Additionally, [open-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested and documented, creating a fantastic sense of community. 
+`*Why?*` Because teaching via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and doesn't align with our values (see our open science statement). We don't want people to have to obtain licenses or be dependent on university resources or pay for software/hosting etc. out of their own pocket. Additionally, [open-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested, and documented, creating a fantastic sense of community. 
 
-In order to help you get all the software required for the course, a [comprehensive installation instruction](./setup/setup.ipynb) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur.
- **Please do not be discouraged! If any problems occur during the installation process, please feel free to contact us (or the google) and we'll get that sorted out**
+In order to help you get all the software required for the course, a [comprehensive installation instruction](./setup/setup.ipynb) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `MacOS`, and `Linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers daily, therefore errors and frustration may occur.
+ **Please do not be discouraged! If any problems occur during the installation process, please feel free to contact us (or google) and we'll get that sorted out**
+
 
 
 #### Where is everything?
 
-All course materials will be available on this very course website. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up ideally to end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this ressource as it is at the moment you're reading this, you can download the complete course from our github repo [here]. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.
+All course materials will be available on this very course website. Everything will be completely open and free to use, thus constituting an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources) you are **free to explore, enhance and share**. Thus, this website and all materials will also remain up ideally to the end of the internet, but will possibly be subject to changes and updates. If you feel the need to save this resource as it is at the moment, you're reading this, you can download the complete course from our GitHub repo [here]. The usage of this resource and the materials therein will be explained at the beginning and throughout the course.
 
-We will also be providing a [course template](https://github.com/M-earnest/course_template_diler) that will serve as a tool for our practical examples and can be downoladed [here](https://github.com/M-earnest/course_template_diler/archive/refs/heads/master.zip). The template contains a folder structure, some example content files, as well as a license, open science statement, an equity, diversity and inclusion statement, as well as a code of conduct for your course.
-This template is supposed to be used as a starting point to generate your own course. Simply add your content or adapt the preexisting ressources, adapt the structure to your liking, upload the whole thing into an online github repository and you're course website will be created automatically.
+We will also be providing a [course template](https://github.com/M-earnest/course_template_diler) that will serve as a tool for our practical examples and can be downloaded [here](https://github.com/M-earnest/course_template_diler/archive/refs/heads/master.zip). The template contains a folder structure, some example content files, as well as a license, open science statement, an equity, diversity, and inclusion statement, as well as a code of conduct for your course.
+This template is supposed to be used as a starting point to generate your own course. Simply add your content or adapt the preexisting resources, adapt the structure to your liking, and upload the whole thing into an online GitHub repository and your course website will be created automatically.
 
 
 
@@ -91,13 +94,14 @@ This template is supposed to be used as a starting point to generate your own co
 
 If you have:
 
-**Questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so you could use the [hypothes.is](https://web.hypothes.is/) plugin, on the right-hand side of this website (overlayed over the scroll bar, you'll find buttons/functionality to annotate and highlight relevant information of this website. Feel free to use this tool to discuss, annotate or ask questions regarding the sites content there!
+**Questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so you could use the [hypothes.is](https://web.hypothes.is/) plugin, on the right-hand side of this website (overlayed over the scroll bar, you'll find buttons/functionality to annotate and highlight relevant information about this website. Feel free to use this tool to discuss, annotate or ask questions regarding the content of the site there!
 
 <img src="https://github.com/felixkoerber/jb/blob/main/static/hypothesis.png?raw=true" alt="depicting the hypothesis buttons" class="bg-primary" width="300px">
 
-Otherwise feel free to [Open an issue](https://github.com/felixkoerber/jb/issues) on the Github repository and someone will try and get back to you as soon as possible or simply shoot us an e-mail!
+Otherwise, feel free to [Open an issue](https://github.com/felixkoerber/jb/issues) on the GitHub repository and someone will try and get back to you as soon as possible or simply shoot us an e-mail!
 
-The contact information of the instructors are as follows:
+The contact information of the instructors is as follows:
+
 
 [Michael Ernst](https://github.com/M-earnest)
 

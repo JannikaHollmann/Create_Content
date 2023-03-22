@@ -3,31 +3,37 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: overview.md
-- file: setup
-- file: intro/whyjb
-- file: course_template
-- file: 10min
-- file: tutorialcontent/writing/writing
-  sections:
-  - file: tutorialcontent/writing/cells
-  - file: tutorialcontent/writing/styling
-  - file: tutorialcontent/writing/media
-  - file: tutorialcontent/writing/interactive
-  - file: tutorialcontent/nbgrader
-- file: tutorialcontent/structure
-- file: tutorialcontent/publishing/publishing
-  sections:
-  - file: tutorialcontent/publishing/account
-- file: tutorialcontent/troubleshooting
-- file: ressources/info
-  sections:
-  - file: ressources/CoC
-  - file: ressources/dei
-  - file: ressources/open_science
-- file: intro/demo
-  sections:
-  - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
-  - url: https://peerherholz.github.io/Python_for_Psychologists_Winter2021
+parts:
+- caption: Getting Started
+  chapters:
+  - file: overview.md
+  - file: setup
+  - file: intro/whyjb
+- caption: Quick Tutorial
+  - file: course_template
+  - file: 10min
+- caption: In-depth Information
+  - file: tutorialcontent/writing/writing
+    sections:
+    - file: tutorialcontent/writing/cells
+    - file: tutorialcontent/writing/styling
+    - file: tutorialcontent/writing/media
+    - file: tutorialcontent/writing/interactive
+    - file: tutorialcontent/nbgrader
+  - file: tutorialcontent/structure
+  - file: tutorialcontent/publishing/publishing
+    sections:
+    - file: tutorialcontent/publishing/account
+  - file: tutorialcontent/troubleshooting
+- caption: Miscellaneous 
+  - file: ressources/info
+    sections:
+    - file: ressources/CoC
+    - file: ressources/dei
+    - file: ressources/open_science
+- caption: Course Examples
+  - file: intro/demo
+    sections:
+    - url: https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/
+    - url: https://peerherholz.github.io/Python_for_Psychologists_Winter2021
 
