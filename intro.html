@@ -159,12 +159,19 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Course overview &amp; procedure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Setup: Before Creating Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="intro/whyjb.html">Why should you use Jupyter Books?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Quick Tutorial</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="course_template.html">The course template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="10min.html">Quick Setup Guide for Deploying Courses using Jupyter Book on Github</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-depth Information</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="tutorialcontent/writing/writing.html">Creating Content</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorialcontent/writing/cells.html">Cells in Jupyter Notebooks: Types and Usages</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorialcontent/writing/styling.html">Styling: The Look and Feel</a></li>
@@ -179,12 +186,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="tutorialcontent/troubleshooting.html">Troubleshooting</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="ressources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="ressources/CoC.html">Code of Conduct</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ressources/dei.html">Diversity, Equity and Inclusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ressources/open_science.html">Open Science</a></li>
 </ul>
 </li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Examples</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="intro/demo.html">Further courses under the DiLER project</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference external" href="https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/">https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/</a></li>
 <li class="toctree-l2"><a class="reference external" href="https://peerherholz.github.io/Python_for_Psychologists_Winter2021">https://peerherholz.github.io/Python_for_Psychologists_Winter2021</a></li>
@@ -468,34 +481,42 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1><strong>Welcome!</strong><a class="headerlink" href="#welcome" title="Permalink to this heading">#</a></h1>
 <p>Hello and welcome everyone to the introduction page for the course: <strong>creating interactive content with “Jupyter Books”</strong>! created as part of <a class="reference external" href="https://www.uni-frankfurt.de/106206707/Projekt_DigiTeLL">DIGITELL</a>, by the <a class="reference external" href="https://diler-digitell.github.io/intro.html">DiLER</a> project.</p>
-<p>As you read through the subsections of this website, you will gain insight on how to quickly create beatiful, easy-to-deploy and interactive content. Simply follow along the outline discussed in the <a class="reference external" href="https://felixkoerber.github.io/jb/overview.html">Overview &amp; procedure section</a> to find out what this course is all about and how to navigate the materials.</p>
+<p>As you read through the subsections of this website, you will gain insight into how to quickly create beautiful, easy-to-deploy, and interactive content. Simply follow the outline discussed in the <a class="reference external" href="https://felixkoerber.github.io/jb/overview.html">Overview &amp; procedure section</a> to find out what this course is all about and how to navigate the materials.</p>
 <p>While this tutorial was created with the goal of an integrated framework for digital education at Goethe University, this doesn’t limit the content to members of Goethe University: We utilize free, open-source software available to anyone.</p>
 <section id="objectives">
 <h2>Objectives 📍<a class="headerlink" href="#objectives" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Learn how to create free online ressources for higher eductaion</p></li>
-<li><p>Learn about the benefits of free and acessible online courses and why this should be of interest for teaching staff/instructors</p></li>
+<li><p>Learn how to create free online resources for higher education</p></li>
+<li><p>Learn about the benefits of free and accessible online courses and why this should be of interest to teaching staff/instructors</p></li>
 </ul>
 </section>
 <section id="how-did-we-get-here">
 <h2>How did we get here?<a class="headerlink" href="#how-did-we-get-here" title="Permalink to this heading">#</a></h2>
-<p>We believe that education should be available to as many people as possible, which is why this website is created as an open and free ressource, if you’d like to creat a course following our framework please consider doing the same. Especially important should be the includison (and possibly adaptation) of our diversity, equity and inclusion statement, our open science statement, as well as the Code of conduct, to promote a fair and inclusive access to education.</p>
+<p>We believe that education should be available to as many people as possible, which is why this website is created as an open and free resource, if you’d like to create a course following our framework, please consider doing the same. Especially important should be the inclusion (and possibly adaptation) of our diversity, equity, and inclusion statement, our open science statement, as well as the Code of conduct, to promote fair and inclusive access to education.</p>
 </section>
 <hr class="docutils" />
 <section id="the-goal-of-this-project">
 <h2>The goal of this project<a class="headerlink" href="#the-goal-of-this-project" title="Permalink to this heading">#</a></h2>
-<p>The DiLER project aims to create a framework for providing, bundling, and introducing the benefits of free, open-source resources for promoting research-based learning, with a focus on the core competency of “digital literacy” in empirical sciences. This is done through multimedia, competence-oriented content and exams that cover the entire empirical research process, using examples from various requirements of psychology studies.</p>
-<p>Our project places a strong emphasis on promoting sustainability and transferability to other content and application areas, supported by integrated feedback options for students and teachers, and incorporating necessary hardware and software infrastructure. The project also primarily follows the FAIR principles (Findability, Accessibility, Interoperability, Reuse of digital assets) in order to maximize the benefits and accessibility of provided materials.</p>
+<p>The DiLER project aims to create a framework for providing, bundling, and introducing the benefits of free, open-source resources for promoting research-based learning, with a focus on the core competency of “digital literacy” in empirical sciences. This is done through multimedia, competence-oriented content, and exams that cover the entire empirical research process, using examples from various requirements of psychology studies.</p>
+<p>Our project places a strong emphasis on promoting sustainability and transferability to other content and application areas, supported by integrated feedback options for students and teachers, and incorporating necessary hardware and software infrastructure. The project also primarily follows the FAIR principles (Findability, Accessibility, Interoperability, and Reuse of digital assets) in order to maximize the benefits and accessibility of provided materials.</p>
 </section>
 <hr class="docutils" />
 <section id="mission-statement-digital-literacy">
 <h2>Mission statement: Digital Literacy<a class="headerlink" href="#mission-statement-digital-literacy" title="Permalink to this heading">#</a></h2>
-<p>With the surge of progressively more available and interconnected data, <em>Digital Literacy</em> has become a skill integral in teaching, science, and everyday life. Digital Literacy is a term describing competencies of using modern information technology, managing information, thinking critically, and selecting and applicating these reasonably. These skills are not only relevant due to the increasing levels of complexity of science, limited access to resources, and intransparencies of digital infrastructures, but also nessessary for independent emperical research.</p>
+<p>With the surge of progressively more available and interconnected data, <em>Digital Literacy</em> has become a skill integral in teaching, science, and everyday life. Digital Literacy is a term describing competencies of using modern information technology, managing information, thinking critically, and selecting and applicating these reasonably. These skills are not only relevant due to the increasing levels of complexity of science, limited access to resources, and transparencies of digital infrastructures, but also necessary for independent empirical research.</p>
 <p>Traditional educational models are often insufficient in conveying the intricacies of digital literacy. Therefore, this project aims to empower course instructors to take advantage of interactive, flexible, and open-source resources to enhance their teachings.</p>
 <p>Digital Literacy is not just about being tech-savvy but encompasses a broader set of competencies that include the ability to identify and evaluate information sources, to communicate and collaborate effectively, to manage digital footprints, and to protect privacy and data security. These competencies are essential for students to thrive in the digital age and to become active and responsible digital citizens.</p>
 <p>The project seeks to provide instructors with the necessary resources to incorporate digital literacy skills into their curriculum, enabling them to teach their students how to navigate the digital landscape safely, effectively, and ethically. By doing so, students will be better equipped to succeed in today’s digital world and will be prepared for the challenges and opportunities that the future holds.</p>
 </section>
 <hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </section>
