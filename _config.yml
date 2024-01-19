@@ -3,7 +3,7 @@
 # Book settings
 # Users are expected to override these values in their own `_config.yml` file.
 # Learn more at https://jupyterbook.org/customize/config.html
-title                       : "Creating educational content with Jupyter Books"  # The title of the book. Will be placed in the left navbar.
+title                       : "Creating Educational Content with Jupyter Books"  # The title of the book. Will be placed in the left navbar.
 author                      : Felix Körber, Michael Ernst, Peer Herholz  # The author of the book
 copyright                   : "2024"  # Copyright year to be placed in the footer
 logo                        : "static/logo.png"  # A path to the book logo
