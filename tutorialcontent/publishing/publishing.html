@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Publishing: Hosting a course website &#8212; Creating educational content with Jupyter Books</title>
+    <title>Publishing: Hosting a course website &#8212; Creating Educational Content with Jupyter Books</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -80,6 +81,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -133,9 +143,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -145,8 +157,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Creating Educational Content with Jupyter Books - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Creating Educational Content with Jupyter Books - Home"/>`);</script>
   
   
 </a></div>
@@ -192,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../ressources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ressources/CoC.html">Code of Conduct</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../ressources/dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ressources/dei.html">Diversity, Equity, and Inclusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ressources/open_science.html">Open Science</a></li>
 </ul>
 </li>
@@ -258,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=lab/tree/docs/tutorialcontent/publishing/publishing.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/DiLER-Digitell/Jupyter-Book/master?urlpath=lab/tree/docs/tutorialcontent/publishing/publishing.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +319,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +336,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/publishing/publishing.ipynb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/edit/master/docs/tutorialcontent/publishing/publishing.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,7 +353,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/publishing/publishing.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/publishing/publishing.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -423,20 +435,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -467,10 +481,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="publishing-hosting-a-course-website">
 <h1>Publishing: Hosting a course website<a class="headerlink" href="#publishing-hosting-a-course-website" title="Permalink to this heading">#</a></h1>
-<p><em>We believe that knowledge should be accessible to everyone and that the effort and time of people collecting and sharing knowledge is better spent on creating ressources that are open, free and at least somewhat constant.</em></p>
-<p><strong>An essential part of knowledge/sciene communication is reaching your target audience</strong>. In academia this is often constrained to a small group of students, the priviliged few that not only got admitted to university, but got further accepted into the courses that they actually want to take. This is of course an artifact of earlier times, were people were constrained to in-person teaching. <strong>With todays technology it is fairly easy to make your efforts accessible to the world</strong>, be it via a youtube lecture series or an online course, such as the one we’re trying to create here.</p>
-<p>How long are students actually going to have access to the closed platform your university uses? How long are they going to carry around their notes or collectes lecture slides? Why carry around a set of slides for a lecture, adpating them semester for semester, year for year or spending hours training new hires to take over courses, when we can instead maintain a documented online presence that we can freely share? Why rely on our own on certain topics certainly limited knowledge, when we can invite experts in the field to contribute guest chapters to our courses?</p>
-<p>Furthermore, in academia/research we often times are judged on our output wether we like it or not. Creating an online-ressource is an easy way to share your work not only with the world, but also to contribute to your portfolio, with properly licensed content. Using tools like <a class="reference external" href="https://zenodo.org/">Zenodo</a>, you can further get a DOI, so that you’re work may be properly cited in the future.</p>
+<p><em>We believe that knowledge should be accessible to everyone and that the effort and time of people collecting and sharing knowledge is better spent on creating resources that are open, free, and at least somewhat constant.</em></p>
+<p><strong>An essential part of knowledge/science communication is reaching your target audience</strong>. In academia, this is often constrained to a small group of students, the privileged few who not only got admitted to the university but got further accepted into the courses that they want to take. This is, of course, an artifact of earlier times when people were constrained to in-person teaching. <strong>With today’s technology, it is relatively easy to make your efforts accessible to the world</strong>, via a YouTube lecture series or an online course, such as the one we’re trying to create here.</p>
+<p>How long are students actually going to have access to the closed platform your university uses? How long are they going to carry around their notes or collect lecture slides? Why carry around a set of slides for a lecture, adapting them semester for semester, year for year, or spending hours training new hires to take over courses when we can instead maintain a documented online presence that we can freely share? Why rely on our own on specific topics, indeed limited knowledge, when we can invite experts in the field to contribute guest chapters to our courses?</p>
+<p>Furthermore, in academia/research, we are oftentimes judged on our output, whether we like it or not. Creating an online resource is an easy way to share your work not only with the world but also to contribute to your portfolio with properly licensed content. Using tools like <a class="reference external" href="https://zenodo.org/">Zenodo</a>, you can further get a DOI may be properly cited in the future.</p>
 <p><strong>The <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html">following content block</a> will focus on how to leverage free tools to create such an online presence for your course.</strong></p>
 <div class="toctree-wrapper compound">
 </div>
@@ -480,7 +494,7 @@ document.write(`
     {
         requestKernel: true,
         binderOptions: {
-            repo: "felixkoerber/jb",
+            repo: "DiLER-Digitell/Jupyter-Book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -501,8 +515,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../structure.html"
@@ -532,7 +548,7 @@ document.write(`
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -545,9 +561,10 @@ By Felix Körber, Michael Ernst, Peer Herholz
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
@@ -562,7 +579,7 @@ By Felix Körber, Michael Ernst, Peer Herholz
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -571,8 +588,8 @@ By Felix Körber, Michael Ernst, Peer Herholz
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

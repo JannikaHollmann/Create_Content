@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Digital Literarcy in higher education &#8212; Creating educational content with Jupyter Books</title>
+    <title>Digital Literarcy in higher education &#8212; Creating Educational Content with Jupyter Books</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -78,6 +79,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -131,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -143,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Creating Educational Content with Jupyter Books - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Creating Educational Content with Jupyter Books - Home"/>`);</script>
   
   
 </a></div>
@@ -190,7 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ressources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ressources/CoC.html">Code of Conduct</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ressources/dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ressources/dei.html">Diversity, Equity, and Inclusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ressources/open_science.html">Open Science</a></li>
 </ul>
 </li>
@@ -256,7 +268,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=lab/tree/docs/digital_literacy/digital_literacy.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/DiLER-Digitell/Jupyter-Book/master?urlpath=lab/tree/docs/digital_literacy/digital_literacy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,7 +334,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/edit/master/docs/digital_literacy/digital_literacy.ipynb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/edit/master/docs/digital_literacy/digital_literacy.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -339,7 +351,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/issues/new?title=Issue%20on%20page%20%2Fdigital_literacy/digital_literacy.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/issues/new?title=Issue%20on%20page%20%2Fdigital_literacy/digital_literacy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -421,20 +433,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -477,24 +491,24 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="digital-literarcy-in-higher-education">
 <h1>Digital Literarcy in higher education<a class="headerlink" href="#digital-literarcy-in-higher-education" title="Permalink to this heading">#</a></h1>
-<p>Finding an apropriate definition for digital literacy is unfortunately a non-trivial endeavour (see (Santos and Serpa, 2017; Tang and Chaw, 2016;  Shopova 2014)</p>
+<p>Finding an appropriate definition for digital literacy is, unfortunately, a non-trivial endeavor (see Santos and Serpa, 2017; Tang and Chaw, 2016;  Shopova 2014)</p>
 <p>To keep it simple, we will use the following working definition:
-“Digital literacy” can be surmised as the ability to independently find, evaluate, communicate, and handle information from digita media (Shopova 2014).</p>
-<p>Digital literacy, therfore, encompasses a range of skills that are necessary to participate and navigat in a society that is increasingly drifting into a digital age, such as</p>
+“Digital literacy” can be surmised as the ability to independently find, evaluate, communicate, and handle information from digital media (Shopova 2014).</p>
+<p>Digital literacy, therefore, encompasses a range of skills that are necessary to participate and navigate in a society that is increasingly drifting into a digital age, such as</p>
 <ul class="simple">
 <li><p>the ability to use and understand the use cases of new technologies</p></li>
 <li><p>to navigate the internet</p></li>
 <li><p>to evaluate the credibility of online information</p></li>
-<li><p>to participate in digital spaces (n a professional capacity</p></li>
+<li><p>to participate in digital spaces (in a professional capacity</p></li>
 <li><p>to communicate and express oneself through digital means</p></li>
 </ul>
 <section id="why-is-that-important">
 <h2>Why is that important?<a class="headerlink" href="#why-is-that-important" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>rising complexity of digital infrastructure and dependency on the skills to navigate and evaluate information to participate in in higher educatio due to the gradual transition of universities towards digital infrastructure</p></li>
-<li><p>escpecially in the natural sciences research is entirely dependent on dealing with digital externalities</p></li>
+<li><p>rising complexity of digital infrastructure and dependency on the skills to navigate and evaluate information to participate in higher educatio due to the gradual transition of universities towards digital infrastructure</p></li>
+<li><p>especially in the natural sciences, research is entirely dependent on dealing with digital externalities</p></li>
 <li><p>provides a way to circumvent structural barriers and provides access to information</p></li>
-<li><p>shields against dependency on university ressources and misinformation</p></li>
+<li><p>shields against dependency on university resources and misinformation</p></li>
 </ul>
 </section>
 <section id="what-can-we-do-about-it">
@@ -508,12 +522,12 @@ document.write(`
 <section id="what-tools-can-we-use-to-support-students">
 <h2>What tools can we use to support students<a class="headerlink" href="#what-tools-can-we-use-to-support-students" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
-<li><p>courses</p></li>
-<li><p>eductaional tools</p></li>
-<li><p>productivity tools</p></li>
-<li><p>lowering barriers</p></li>
-<li><p>adopting open science standards</p></li>
-<li><p>adhering to the fair principles</p></li>
+<li><p>Courses</p></li>
+<li><p>Educational tools</p></li>
+<li><p>Productivity tools</p></li>
+<li><p>Lowering barriers</p></li>
+<li><p>Adopting open science standards</p></li>
+<li><p>Adhering to the fair principles</p></li>
 </ul>
 </section>
 </section>
@@ -522,7 +536,7 @@ document.write(`
     {
         requestKernel: true,
         binderOptions: {
-            repo: "felixkoerber/jb",
+            repo: "DiLER-Digitell/Jupyter-Book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -543,8 +557,10 @@ document.write(`
 
               
               
-                <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -572,7 +588,7 @@ document.write(`
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -585,9 +601,10 @@ By Felix Körber, Michael Ernst, Peer Herholz
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
@@ -602,7 +619,7 @@ By Felix Körber, Michael Ernst, Peer Herholz
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -611,8 +628,8 @@ By Felix Körber, Michael Ernst, Peer Herholz
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

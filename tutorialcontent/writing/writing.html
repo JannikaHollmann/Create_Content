@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Creating Content &#8212; Creating educational content with Jupyter Books</title>
+    <title>Creating Content &#8212; Creating Educational Content with Jupyter Books</title>
   
   
   
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -39,8 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -80,6 +81,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -133,9 +143,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -145,8 +157,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Creating Educational Content with Jupyter Books - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Creating Educational Content with Jupyter Books - Home"/>`);</script>
   
   
 </a></div>
@@ -192,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../ressources/info.html">Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../ressources/CoC.html">Code of Conduct</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../ressources/dei.html">Diversity, Equity and Inclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ressources/dei.html">Diversity, Equity, and Inclusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../ressources/open_science.html">Open Science</a></li>
 </ul>
 </li>
@@ -258,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/felixkoerber/jb/master?urlpath=lab/tree/docs/tutorialcontent/writing/writing.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/DiLER-Digitell/Jupyter-Book/master?urlpath=lab/tree/docs/tutorialcontent/writing/writing.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +319,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -324,7 +336,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/edit/master/docs/tutorialcontent/writing/writing.ipynb" target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/edit/master/docs/tutorialcontent/writing/writing.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -341,7 +353,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/felixkoerber/jb/issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/writing/writing.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/DiLER-Digitell/Jupyter-Book/issues/new?title=Issue%20on%20page%20%2Ftutorialcontent/writing/writing.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -423,20 +435,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -506,14 +520,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="creating-content">
 <h1>Creating Content<a class="headerlink" href="#creating-content" title="Permalink to this heading">#</a></h1>
-<p><strong>Jupyter Book</strong> allows for the integration of various markup languages and formats, including Markdown files, Jupyter notebooks, MyST Markdown notebooks, reStructured Text and more.</p>
-<p>MyST is a markup language that draws inspiration from RMarkdown, and is fully integrated for the use with Jupyter Book. It allows for more advanced formatting options and the ability to include interactive elements, such as widgets and code snippets, within your content. Jupyter Book is able to parse MyST in both .ipybn and .md files, allowing for flexible content creation.</p>
-<p>Here, we present only a short overview of the features of MyST, however, there is much more documentation on <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-core">the MyST website.</a></p>
+<p><strong>Jupyter Book</strong> allows for the integration of various markup languages and formats, including Markdown files, Jupyter notebooks, MyST Markdown notebooks, reStructured Text, and more.</p>
+<p>MyST is a markup language that draws inspiration from RMarkdown and is fully integrated for use with Jupyter Book. It allows for more advanced formatting options and the ability to include interactive elements, such as widgets and code snippets, within your content. Jupyter Book is able to parse MyST in both .ipybn and .md files, allowing for flexible content creation.</p>
+<p>Here, we present only a short overview of the features of MyST. However, there is much more documentation on <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-core">the MyST website.</a></p>
 <section id="before-we-get-started">
 <h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this heading">#</a></h2>
 <br>
 <ul class="simple">
-<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter and Peer Herholz and further adapted for this course by Michael Ernst and Felix Körber</p></li>
+<li><p>most of what you’ll see within this lecture was prepared by Ross Markello, Michael Notter, and Peer Herholz and further adapted for this course by Michael Ernst and Felix Körber</p></li>
 <li><p>based on Tal Yarkoni’s <a class="reference external" href="https://neurohackademy.org/course/introduction-to-python-2/">“Introduction to Python” lecture at Neurohackademy 2019</a></p></li>
 <li><p>based on <a class="reference external" href="http://github.com/jrjohansson/scientific-python-lectures">IPython notebooks from J. R. Johansson</a></p></li>
 <li><p>based on <a class="reference external" href="http://www.stavros.io/tutorials/python/">http://www.stavros.io/tutorials/python/</a> &amp; <a class="reference external" href="http://www.swaroopch.com/notes/python">http://www.swaroopch.com/notes/python</a></p></li>
@@ -532,7 +546,7 @@ document.write(`
 </section>
 <section id="first-things-first">
 <h2>First things first<a class="headerlink" href="#first-things-first" title="Permalink to this heading">#</a></h2>
-<p>Open up Visual Studio Code (or Jupyter Lab if you prefer using that). Create a new file, by clicking on “File” and then on “New File”. Here, you can choose which file format you want to choose. Choose .iypbn for interactive Files or create a new .md (Markdown) file in the folder for your project.</p>
+<p>Open up Visual Studio Code (or Jupyter Lab if you prefer using that). Create a new file by clicking on “File” and then on “New File”. Here, you can choose which file format you want to choose. Choose .iypbn for interactive Files or create a new .md (Markdown) file in the folder for your project.</p>
 </section>
 <section id="to-jupyter-beyond">
 <h2>To Jupyter &amp; beyond<a class="headerlink" href="#to-jupyter-beyond" title="Permalink to this heading">#</a></h2>
@@ -552,7 +566,7 @@ document.write(`
 <h2>Files Tab<a class="headerlink" href="#files-tab" title="Permalink to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">files</span> <span class="pre">tab</span></code> provides an interactive view of the portion of the <code class="docutils literal notranslate"><span class="pre">filesystem</span></code> which is accessible by the <code class="docutils literal notranslate"><span class="pre">user</span></code>. This is typically rooted by the directory in which the notebook server was started.</p>
 <p>The top of the <code class="docutils literal notranslate"><span class="pre">files</span> <span class="pre">list</span></code> displays <code class="docutils literal notranslate"><span class="pre">clickable</span></code> breadcrumbs of the <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">directory</span></code>. It is possible to navigate the <code class="docutils literal notranslate"><span class="pre">filesystem</span></code> by clicking on these <code class="docutils literal notranslate"><span class="pre">breadcrumbs</span></code> or on the <code class="docutils literal notranslate"><span class="pre">directories</span></code> displayed in the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">list</span></code>.</p>
-<p>A new <code class="docutils literal notranslate"><span class="pre">notebook</span></code> can be created by clicking on the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">dropdown</span> <span class="pre">button</span></code> at the top of the list, and selecting the desired <code class="docutils literal notranslate"><span class="pre">language</span> <span class="pre">kernel</span></code>.</p>
+<p>A new <code class="docutils literal notranslate"><span class="pre">notebook</span></code> can be created by clicking on the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">dropdown</span> <span class="pre">button</span></code> at the top of the list and selecting the desired <code class="docutils literal notranslate"><span class="pre">language</span> <span class="pre">kernel</span></code>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">Notebooks</span></code> can also be <code class="docutils literal notranslate"><span class="pre">uploaded</span></code> to the <code class="docutils literal notranslate"><span class="pre">current</span> <span class="pre">directory</span></code> by dragging a <code class="docutils literal notranslate"><span class="pre">notebook</span></code> file onto the list or by clicking the <code class="docutils literal notranslate"><span class="pre">Upload</span> <span class="pre">button</span></code> at the top of the list.</p>
 <section id="the-notebook">
 <h3>The Notebook<a class="headerlink" href="#the-notebook" title="Permalink to this heading">#</a></h3>
@@ -562,20 +576,22 @@ document.write(`
 </section>
 <section id="header">
 <h3>Header<a class="headerlink" href="#header" title="Permalink to this heading">#</a></h3>
-<p>At the top of the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">document</span></code> is a <code class="docutils literal notranslate"><span class="pre">header</span></code> which contains the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">title</span></code>, a <code class="docutils literal notranslate"><span class="pre">menubar</span></code>, and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>. This <code class="docutils literal notranslate"><span class="pre">header</span></code> remains <code class="docutils literal notranslate"><span class="pre">fixed</span></code> at the top of the screen, even as the <code class="docutils literal notranslate"><span class="pre">body</span></code> of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is <code class="docutils literal notranslate"><span class="pre">scrolled</span></code>. The <code class="docutils literal notranslate"><span class="pre">title</span></code> can be edited <code class="docutils literal notranslate"><span class="pre">in-place</span></code> (which renames the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">file</span></code>), and the <code class="docutils literal notranslate"><span class="pre">menubar</span></code> and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> contain a variety of actions which control <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">navigation</span></code> and <code class="docutils literal notranslate"><span class="pre">document</span> <span class="pre">structure</span></code>.</p>
-<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_header_4_0.png" alt="logo" title="jupyter" width="600" /> </section>
+<p>At the top of the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">document</span></code> is a <code class="docutils literal notranslate"><span class="pre">header</span></code> which contains the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">title</span></code>, a <code class="docutils literal notranslate"><span class="pre">menubar</span></code>, and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code>. This <code class="docutils literal notranslate"><span class="pre">header</span></code> remains <code class="docutils literal notranslate"><span class="pre">fixed</span></code> at the top of the screen, even as the <code class="docutils literal notranslate"><span class="pre">body</span></code> of the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is <code class="docutils literal notranslate"><span class="pre">scrolled</span></code>. The <code class="docutils literal notranslate"><span class="pre">title</span></code> can be edited <code class="docutils literal notranslate"><span class="pre">in-place</span></code> (which renames the <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">file</span></code>), and the <code class="docutils literal notranslate"><span class="pre">menubar</span></code> and <code class="docutils literal notranslate"><span class="pre">toolbar</span></code> contain a variety of actions that control <code class="docutils literal notranslate"><span class="pre">notebook</span> <span class="pre">navigation</span></code> and <code class="docutils literal notranslate"><span class="pre">document</span> <span class="pre">structure.</span></code></p>
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_header_4_0.png" alt="logo" title="jupyter" width="600" /> 
+</section>
 <section id="body">
 <h3>Body<a class="headerlink" href="#body" title="Permalink to this heading">#</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">body</span></code> of a <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is composed of <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Each <code class="docutils literal notranslate"><span class="pre">cell</span></code> contains either <code class="docutils literal notranslate"><span class="pre">markdown</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">output</span></code>, or <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">text</span></code>. <code class="docutils literal notranslate"><span class="pre">Cells</span></code> can be included in any order and edited at-will, allowing for a large amount of flexibility for constructing a narrative.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">body</span></code> of a <code class="docutils literal notranslate"><span class="pre">notebook</span></code> is composed of <code class="docutils literal notranslate"><span class="pre">cells</span></code>. Each <code class="docutils literal notranslate"><span class="pre">cell</span></code> contains either <code class="docutils literal notranslate"><span class="pre">markdown,</span></code> <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">input,</span></code> <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">output,</span></code> or <code class="docutils literal notranslate"><span class="pre">raw</span> <span class="pre">text.</span></code> <code class="docutils literal notranslate"><span class="pre">Cells</span></code> can be included in any order and edited at will, allowing for a large amount of flexibility for constructing a narrative.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Markdown</span> <span class="pre">cells</span></code> - These are used to build a <code class="docutils literal notranslate"><span class="pre">nicely</span> <span class="pre">formatted</span> <span class="pre">narrative</span></code> around the <code class="docutils literal notranslate"><span class="pre">code</span></code> in the document. The majority of this lesson is composed of <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code>.</p></li>
 <li><p>to get a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code> you can either select the <code class="docutils literal notranslate"><span class="pre">cell</span></code> and use <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code> or via <code class="docutils literal notranslate"><span class="pre">Cell</span> <span class="pre">-&gt;</span> <span class="pre">cell</span> <span class="pre">type</span> <span class="pre">-&gt;</span> <span class="pre">markdown</span></code></p></li>
 </ul>
-<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700"  /><ul class="simple">
+<img align="center" src="https://raw.githubusercontent.com/PeerHerholz/ML-DL_workshop_SynAGE/master/lecture/static/notebook_body_4_0.png" alt="logo" title="jupyter" width="700"  />
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Code</span> <span class="pre">cells</span></code> - These are used to define the <code class="docutils literal notranslate"><span class="pre">computational</span> <span class="pre">code</span></code> in the <code class="docutils literal notranslate"><span class="pre">document</span></code>. They come in <code class="docutils literal notranslate"><span class="pre">two</span> <span class="pre">forms</span></code>:</p>
 <ul>
 <li><p>the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">cell</span></code> where the <code class="docutils literal notranslate"><span class="pre">user</span></code> types the <code class="docutils literal notranslate"><span class="pre">code</span></code> to be <code class="docutils literal notranslate"><span class="pre">executed</span></code>,</p></li>
-<li><p>and the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">cell</span></code> which is the <code class="docutils literal notranslate"><span class="pre">representation</span></code> of the <code class="docutils literal notranslate"><span class="pre">executed</span> <span class="pre">code</span></code>. Depending on the <code class="docutils literal notranslate"><span class="pre">code</span></code>, this <code class="docutils literal notranslate"><span class="pre">representation</span></code> may be a <code class="docutils literal notranslate"><span class="pre">simple</span> <span class="pre">scalar</span> <span class="pre">value</span></code>, or something more complex like a <code class="docutils literal notranslate"><span class="pre">plot</span></code> or an <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">widget</span></code>.</p></li>
+<li><p>and the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">cell</span></code>, which is the <code class="docutils literal notranslate"><span class="pre">representation</span></code> of the <code class="docutils literal notranslate"><span class="pre">executed</span> <span class="pre">code.</span></code> Depending on the <code class="docutils literal notranslate"><span class="pre">code,</span></code> this <code class="docutils literal notranslate"><span class="pre">representation</span></code> may be a <code class="docutils literal notranslate"><span class="pre">simple</span> <span class="pre">scalar</span> <span class="pre">value</span></code> or something more complex like a <code class="docutils literal notranslate"><span class="pre">plot</span></code> or an <code class="docutils literal notranslate"><span class="pre">interactive</span> <span class="pre">widget.</span></code></p></li>
 </ul>
 </li>
 <li><p>to get a <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cell</span></code> you can either select the <code class="docutils literal notranslate"><span class="pre">cell</span></code> and use <code class="docutils literal notranslate"><span class="pre">esc</span></code> + <code class="docutils literal notranslate"><span class="pre">y</span></code> or via <code class="docutils literal notranslate"><span class="pre">Cell</span> <span class="pre">-&gt;</span> <span class="pre">cell</span> <span class="pre">type</span> <span class="pre">-&gt;</span> <span class="pre">code</span></code></p></li>
@@ -1326,7 +1342,7 @@ if this is the most recent Jupyter kernel you have started.
     {
         requestKernel: true,
         binderOptions: {
-            repo: "felixkoerber/jb",
+            repo: "DiLER-Digitell/Jupyter-Book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -1347,8 +1363,10 @@ if this is the most recent Jupyter kernel you have started.
 
               
               
-                <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+              
+              
+                <footer class="prev-next-footer">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../../10min.html"
@@ -1421,7 +1439,7 @@ if this is the most recent Jupyter kernel you have started.
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -1434,9 +1452,10 @@ By Felix Körber, Michael Ernst, Peer Herholz
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
@@ -1451,7 +1470,7 @@ By Felix Körber, Michael Ernst, Peer Herholz
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -1460,8 +1479,8 @@ By Felix Körber, Michael Ernst, Peer Herholz
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
