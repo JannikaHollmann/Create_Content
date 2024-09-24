@@ -4,29 +4,17 @@
 format: jb-book
 root: intro
 parts:
-- caption: Getting Started
+- caption: Why are we here?
   chapters:
-  - file: overview.md
-  - file: setup
-  - file: intro/whyjb
-- caption: Quick Tutorial
+  - file: Motivation
+- caption: Getting started
+  chapters:
+  - file: Demo_website
+  - file: setup/setup
+- caption: Practical guidance
   chapters:
   - file: course_template
   - file: 10min
-- caption: In-depth Information
-  chapters:
-  - file: tutorialcontent/writing/writing
-    sections:
-    - file: tutorialcontent/writing/cells
-    - file: tutorialcontent/writing/styling
-    - file: tutorialcontent/writing/media
-    - file: tutorialcontent/writing/interactive
-    - file: tutorialcontent/nbgrader
-  - file: tutorialcontent/structure
-  - file: tutorialcontent/publishing/publishing
-    sections:
-    - file: tutorialcontent/publishing/account
-  - file: tutorialcontent/troubleshooting
 - caption: Miscellaneous 
   chapters:
   - file: ressources/info
